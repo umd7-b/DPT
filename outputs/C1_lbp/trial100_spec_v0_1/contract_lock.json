@@ -1,0 +1,26 @@
+{
+  "roi_contract_hash": "61b04936237bdc6a84f991688f667e06a252965d4e24b8028cc2e2f9f63eb69c",
+  "lbp_spec_hash": "7c078058780fc0de21f0b02084822c7b5fabfb767d2db2a9e71faead5afa3851",
+  "codebook_file_sha256": "7eb6a7a12b7374efb50d487f2e399b3475ef0e03594da35971bf083b0188ac94",
+  "trial_status": "EXPERIMENTAL_TECHNICAL_TRIAL",
+  "ROI_ANATOMY_STATUS": "PROVISIONAL",
+  "roi_schema_id": "C1_ROI_RAW_CONTRACT_v0.2.0",
+  "lbp_schema_id": "C1_LBP_236_IMPLEMENTATION_SPEC_v0.1.0",
+  "input_manifest_sha256": "ffe795e7104052ce96b3311a20e6e31cff2899a6be4d45fbf80f8b07cbcc60cb",
+  "landmark_archive_sha256": "a21e4abce28354d3a1fe5541bf0d2b7ab6d4b6d1119207d3231471bcacf263ed",
+  "region_order": [
+    "forehead_brow",
+    "cheek_left_viewer",
+    "cheek_right_viewer",
+    "nose_mouth"
+  ],
+  "dtype": "float64",
+  "dimension": 236,
+  "normalization": "four independent L1; no global normalization or fitted parameters",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "opencv": "5.1.0",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

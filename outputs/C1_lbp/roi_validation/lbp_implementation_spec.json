@@ -1,0 +1,154 @@
+{
+  "schema_id": "C1_LBP_236_IMPLEMENTATION_SPEC_v0.1.0",
+  "version": "0.1.0",
+  "status": "SPEC_ONLY_PROVISIONAL_ROI",
+  "report_sha256": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80",
+  "roi_contract_id": "C1_ROI_RAW_CONTRACT_v0.2.0",
+  "roi_contract_content_sha256": "61b04936237bdc6a84f991688f667e06a252965d4e24b8028cc2e2f9f63eb69c",
+  "roi_contract_file_sha256": "6d014ac00707bc158e8970a971548ed847331df19faebd4078bfca62347720a6",
+  "pdf_requirements": {
+    "P": 8,
+    "R": 2,
+    "threshold": "g_p >= g_c; no epsilon in bit test",
+    "uniform": "circular transitions <=2; non-rotation-invariant",
+    "bins": 59,
+    "regions": 4,
+    "dimension": 236,
+    "per_region_normalization": "L1",
+    "distance": "0.5*sum((h1-h2)^2/(h1+h2+epsilon))"
+  },
+  "conventions": {
+    "grayscale": "gray_uint8=floor((1868*B+9617*G+4899*R+8192)/16384); uint32 accumulation, then float64 interpolation",
+    "grayscale_coefficients_bgr": [
+      1868,
+      9617,
+      4899
+    ],
+    "grayscale_denominator": 16384,
+    "grayscale_rounding_bias": 8192,
+    "interpolation": "float64 bilinear via horizontal lerp then vertical lerp; no intensity rounding or padding",
+    "offsets_xy": [
+      "(2,0)",
+      "(sqrt(2),-sqrt(2))",
+      "(0,-2)",
+      "(-sqrt(2),-sqrt(2))",
+      "(-2,0)",
+      "(-sqrt(2),sqrt(2))",
+      "(0,2)",
+      "(sqrt(2),sqrt(2))"
+    ],
+    "bit_order": "p0 east; counterclockwise on displayed image; p contributes 2**p",
+    "bin_mapping": "0 word ->0; 255 word ->57; nonuniform ->58; otherwise 1+8*(ones-1)+((-run_start)%8)",
+    "support": "centre plus every nonzero-weight bilinear stencil pixel must be inside same raw ROI and image",
+    "support_footprint_xy": [
+      [
+        -2,
+        -2
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "overlap": "retain shared pixels independently; no priority subtraction",
+    "min_eligible_centres": 64,
+    "missing": "any required region invalid/small -> missing_C1; no 236-vector or zero-fill",
+    "concatenation": [
+      "forehead_brow",
+      "cheek_left_viewer",
+      "cheek_right_viewer",
+      "nose_mouth"
+    ],
+    "histogram": "uint64 counts, divide float64 by integer eligible count; no epsilon L1",
+    "nonfinite": "reject image/landmarks/interpolation/histogram; no nan_to_num, imputation or clipping",
+    "distance_epsilon": 1e-08,
+    "dtype": "float64 C1 after per-region L1; no added feature or refit A/B",
+    "new_query": "same aligned 256x256 RGB input, pinned geometry/grayscale/codebook/support; explicit missing state"
+  },
+  "provenance": {
+    "nri_definition": "PDF; technical terminology cross-check only: scikit-image 0.25.2 documentation",
+    "label_numbering_reference": "https://github.com/scikit-image/scikit-image/blob/v0.25.2/skimage/feature/_texture.pyx",
+    "full_backend_equivalence_claimed": false,
+    "backend_caveat": "scikit-image rounds neighbour coordinates to 5 decimals and has its own border/interpolation arithmetic; this specification does not blindly delegate those conventions"
+  },
+  "extractor_implemented": false,
+  "lbp_codes_computed_on_images": false,
+  "feature_vectors_created": false,
+  "content_sha256": "7c078058780fc0de21f0b02084822c7b5fabfb767d2db2a9e71faead5afa3851"
+}

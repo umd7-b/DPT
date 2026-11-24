@@ -1,0 +1,14 @@
+{
+  "schema.json": "5d137857a94d7d21561035fcb94ee05f53d4ff8ed958e637233c921bc8c8c452",
+  "manifest.csv": "6bd4c01c9bfdb2fa7e4747bdfdd48505aae5d77ed213de429fe2c721753e465a",
+  "feature_rows.csv": "0f12d9c10842c4c0fafe5aca67bc247e6e77dd44b645282c36e447f0d4b3fe54",
+  "fit_manifest.csv": "c80b71ea40b86b1a374bb050a5a867b4e6487a5d82fdbdfef5930d1c215693fa",
+  "missing_features.csv": "71639bcd8fc699d45169b63758b2c93ea387b0da44b96f3cf1a7469a356fa96f",
+  "moment_normalization_stats.npz": "dd4a290979aefc54bdbcecc098cecc5ebf7ac151f2235d206aafca46be37ba29",
+  "final_normalization_stats.npz": "3ff1fa1295d46c1ccadcda3eff1da8b02b09506ad34d630705f98cb1eab9cca7",
+  "features_B_raw.npy": "202fadf9cde3f00b36b9ed538e3418517a712e2032ce6968c26a8f4708b86053",
+  "features_B_after_moments.npy": "396ad11a7297cc6d3b4d90eaa975402afee696c9f368979c534bfeab4b152cba",
+  "features_B_normalized.npy": "4b2ed87a67e49e101e53d10d6f9eceb78ab782c49250bcbd9f356a52f82d53ba",
+  "source_provenance.json": "76282850ed1ea97c5f19f579c248f9eebc0947b6e979d7b9abb1fcd51e72eb1f",
+  "comparison_v1_v2.json": "b41dbeb1513ea9300acc7f42b85047f4e516eab46d052b244de8a680f72234b4"
+}

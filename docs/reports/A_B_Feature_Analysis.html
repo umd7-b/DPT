@@ -1,0 +1,462 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Phân tích kỹ thuật A & B — Portrait Retrieval</title><style>
+@page{size:A4;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#e7ecef;color:#172b36}
+body{font-family:"Times New Roman",serif;font-size:10.5pt;line-height:1.35}
+.sheet{position:relative;width:210mm;height:297mm;padding:18mm 17mm 18mm;background:white;break-after:page;break-inside:avoid;overflow:visible}
+.sheet:last-of-type{break-after:auto}.content{height:256mm;overflow:visible}
+.running{position:absolute;top:7.5mm;left:17mm;right:17mm;border-bottom:.25mm solid #becbd2;padding-bottom:1.5mm;font:8pt Arial,sans-serif;color:#527083;letter-spacing:.6pt}
+.footer{position:absolute;left:17mm;right:17mm;bottom:9mm;display:flex;justify-content:space-between;font:8pt Arial,sans-serif;color:#527083;border-top:.25mm solid #ccd7de;padding-top:2mm}
+h1,h2,h3{font-family:Arial,sans-serif;color:#153c52;break-after:avoid}h1{font-size:18.5pt;line-height:1.18;margin:0 0 4mm}h2{font-size:12pt;margin:3mm 0 2mm}h3{font-size:11pt;margin:2mm 0}
+p{margin:0 0 2.3mm;text-align:justify}strong{font-weight:bold}code{font-family:Consolas,monospace;font-size:.83em;overflow-wrap:anywhere;color:#244d64}
+table{width:100%;border-collapse:collapse;margin:2mm 0 3mm;table-layout:auto;font-size:9pt;line-height:1.23;break-inside:avoid}
+th{background:#e9f0f4;color:#173b50;font-family:Arial,sans-serif;text-align:left;font-weight:bold}th,td{border:.2mm solid #bdcbd3;padding:1.5mm 1.8mm;vertical-align:top;overflow-wrap:anywhere}tr{break-inside:avoid}
+figure{margin:2mm 0 1mm;text-align:center;break-inside:avoid}figure img{max-width:100%;height:auto;max-height:130mm;object-fit:contain}
+p:has(em){font-size:9pt;color:#526774;text-align:center;line-height:1.25}.equation{margin:2.5mm 0;padding:1.5mm 2mm;background:#f4f7f9;text-align:center;break-inside:avoid}
+.equation img{max-width:100%;height:auto;max-height:15mm;object-fit:contain}a{color:#235d78;text-decoration:none}ul{margin:1mm 0 3mm;padding-left:5mm}li{margin-bottom:1mm}
+.sheet[data-n="1"] .running{display:none}.sheet[data-n="1"] .content{border-top:2mm solid #235d78;padding-top:18mm}
+.sheet[data-n="1"] h1{font-size:30pt;letter-spacing:.5pt;margin:0 0 7mm}.sheet[data-n="1"] h2{font-size:26pt;margin:0 0 12mm}.sheet[data-n="1"] p{margin-bottom:6mm;font-size:12pt;text-align:left}
+.sheet[data-n="5"] figure img{max-height:125mm}.sheet[data-n="19"] figure img{max-height:60mm}
+.sheet[data-n="20"] table,.sheet[data-n="21"] table{font:8.5pt Consolas,monospace;line-height:1.2}.sheet[data-n="20"] td,.sheet[data-n="21"] td{padding:.7mm 1.3mm}
+.sheet[data-n="22"] figure img{max-height:101mm}.sheet[data-n="23"] figure img{max-height:100mm}.sheet[data-n="24"] figure img{max-height:120mm}.sheet[data-n="25"] figure img{max-height:105mm}.sheet[data-n="27"] figure img{max-height:105mm}
+@media print{html,body{background:white}.sheet{margin:0;box-shadow:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body><section class="sheet" data-n="1" data-title="Bìa"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>PHÂN TÍCH KỸ THUẬT</h1>
+<h2>BỘ ĐẶC TRƯNG A &amp; B</h2>
+<p><strong>PORTRAIT RETRIEVAL</strong></p>
+<p>Geometry A150 · Color B144</p>
+<p>Báo cáo nghiên cứu và kiểm toán triển khai</p>
+<p><strong>Dữ liệu đã kiểm tra:</strong> 1.438 ảnh chân dung, 256×256, CFD và HF.</p>
+<p><strong>Artifact:</strong> A150 — 1.438 vector; B144 — 1.437 vector hợp lệ.</p>
+<p><strong>Phiên bản màu:</strong> B144_raw_v1.0.0, quyết định D01–D17 đã được chấp thuận.</p>
+<p>Ngày lập: <strong>22/11/2026</strong></p>
+<p>Nguồn học thuật duy nhất: báo cáo nhóm <code>csdldpt.pdf</code>.</p>
+<p>Phạm vi: giải thích công thức, dữ liệu và code đang chạy; không sửa A/B, không tạo lại kho và không triển khai C1/C2.</p>
+<p>Tài liệu phân biệt rõ yêu cầu trong báo cáo gốc, quy ước hiện thực, quyết định được chấp thuận và những điểm chưa đủ bằng chứng. Kết quả kiểm thử chương trình không được diễn giải thành độ chính xác nhận diện hoặc phân đoạn.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>01 / 28</span></footer></section><section class="sheet" data-n="2" data-title="Mục lục"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>MỤC LỤC</h1>
+<table><thead><tr><th>Nội dung</th><th>Trang</th></tr></thead><tbody>
+<tr><td>Chương 1. Tổng quan hệ thống và dữ liệu</td><td>3–4</td></tr>
+<tr><td>Chương 2. Bộ A: landmarks, chuẩn hóa và A1</td><td>5–6</td></tr>
+<tr><td>Chương 2. 14 đặc trưng A2, phân tích từng thành phần</td><td>7–13</td></tr>
+<tr><td>Chương 3. Z-score Bộ A: công thức và dữ liệu</td><td>14–15</td></tr>
+<tr><td>Chương 4. Bộ B: parsing, HS, Lab và Hue vòng</td><td>16–19</td></tr>
+<tr><td>Chương 4. Bảng index đầy đủ B144</td><td>20–21</td></tr>
+<tr><td>Chương 5. Z-score Bộ B</td><td>22</td></tr>
+<tr><td>Chương 6. Euclid, Top-5 và kết quả thật</td><td>23–25</td></tr>
+<tr><td>Chương 7. Kết quả, giới hạn và ngoại lệ</td><td>26–27</td></tr>
+<tr><td>Nguồn, kiểm chứng và cách tái lập</td><td>28</td></tr>
+</tbody></table>
+<h2>Quy ước đọc tài liệu</h2>
+<p><strong>[PDF]</strong>: nội dung được báo cáo nhóm quy định rõ; dẫn trang là <strong>trang PDF đếm từ 1</strong>, không phải số trang trong mục lục gốc.</p>
+<p><strong>[CODE]</strong>: biểu thức/lựa chọn được đọc trực tiếp từ source hiện tại. Khi PDF chưa chốt landmarks, epsilon hoặc serialization, tài liệu gọi đó là quy ước hiện thực.</p>
+<p><strong>[APPROVED]</strong>: D01–D17 được người dùng chấp thuận cho B v1, không mặc nhiên trở thành công thức nguyên văn của PDF.</p>
+<p><strong>[AUDIT]</strong>: kết quả đo trực tiếp từ artifact, hash hoặc phép kiểm tra độc lập trong lần lập báo cáo này.</p>
+<p><strong>[DEVIATION]</strong>: khác biệt cụ thể giữa code và quy định rõ trong PDF; không tự sửa trong nhiệm vụ viết báo cáo.</p>
+<p><strong>[UNVERIFIED]</strong>: chưa đủ bằng chứng để xác nhận. Không điền số liệu suy đoán.</p>
+<p>Các phép tính minh họa được ghi rõ là ví dụ giải tích hoặc được tính từ <code>cfd_final_00001.png</code>. Hình chân dung/mask đều lấy từ dataset hoặc artifact thật, không dùng ảnh sinh tạo.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>02 / 28</span></footer></section><section class="sheet" data-n="3" data-title="Chương 1 — Tổng quan"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 1. TỔNG QUAN HỆ THỐNG</h1>
+<h2>1.1. Từ ảnh đến biểu diễn đặc trưng</h2>
+<p>Hệ thống biểu diễn mỗi ảnh bằng một dãy số có ý nghĩa và thứ tự cố định — <strong>feature vector</strong>. Thay vì so sánh trực tiếp toàn bộ pixel, truy hồi tính khoảng cách giữa các vector của query và ảnh kho. Mỗi chiều đại diện một tọa độ, tỉ lệ hoặc thống kê màu; một vector chỉ có thể so sánh đúng với vector dùng cùng định nghĩa và cùng tham số chuẩn hóa.</p>
+<p><strong>A150</strong> mô tả hình học: vị trí tương đối của 68 điểm mốc, tỉ lệ và góc. <strong>B144</strong> mô tả phân bố màu của hai ROI da/tóc. Hai ảnh có hình học gần nhau vẫn có thể khác màu; hai ảnh cùng màu chưa chắc giống đường nét. Hai bộ cung cấp thông tin bổ sung chứ không chứng minh danh tính.</p>
+<figure><img src="figures/pipeline.png" alt="Hình 1. Pipeline khái niệm; nhánh A và B có extractor và thống kê riêng."></figure>
+<p><em>Hình 1. Pipeline khái niệm; nhánh A và B có extractor và thống kê riêng.</em></p>
+<h2>1.2. Thiết kế 854 chiều và phạm vi hiện có</h2>
+<table><thead><tr><th>Bộ</th><th>Biểu diễn</th><th>Số chiều</th><th>Tình trạng</th></tr></thead><tbody>
+<tr><td>A</td><td>Geometry: 136 tọa độ + 14 tỉ lệ/góc</td><td>150</td><td>Đã có artifact</td></tr>
+<tr><td>B</td><td>Skin72 + Hair72</td><td>144</td><td>Đã có v1 chính thức</td></tr>
+<tr><td>C1</td><td>LBP theo 4 vùng</td><td>236</td><td>Chưa triển khai</td></tr>
+<tr><td>C2</td><td>Root-HOG</td><td>324</td><td>Chưa triển khai</td></tr>
+</tbody></table>
+<p>[PDF: §2.1, tr.7; §2.5.1, tr.16] Tổng thiết kế là 854 chiều. Báo cáo này kiểm tra hai bộ A/B đã có; không coi tổng 854 là một ma trận đã triển khai. Luồng A+B fusion và bốn bộ chưa hoàn thiện.</p>
+<p>Khi tính riêng B, khoảng cách Euclid được áp dụng trên B144 đã Z-score. Chuẩn hóa khoảng cách theo median ở §2.5 dành cho kết hợp các bộ; không âm thầm cộng các khoảng cách thô hoặc trộn tham số A và B.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>03 / 28</span></footer></section><section class="sheet" data-n="4" data-title="Chương 1 — Dữ liệu và tiền xử lý"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>1.3. DỮ LIỆU VÀ TIỀN XỬ LÝ</h1>
+<p>[AUDIT] Đọc trực tiếp 1.438 file PNG trong dataset: tất cả có kích thước <code>(256,256,3)</code>. Metadata và prefix có <strong>710 CFD + 728 HF</strong>. README dataset nói ảnh được sao chép giữ nguyên byte và có ảnh HF cần duyệt; đây không phải bằng chứng mọi ảnh đều thỏa điều kiện một người/chính diện.</p>
+<table><thead><tr><th>Bước được PDF mô tả</th><th>Bằng chứng trong repo hiện tại</th></tr></thead><tbody>
+<tr><td>Phát hiện khuôn mặt, loại ảnh có 0 hoặc &gt;1 mặt</td><td>A giới hạn num_faces=1; chỉ kiểm tra số output. Không chứng minh đã sàng lọc đủ ảnh nhiều người.</td></tr>
+<tr><td>478 → 68 landmarks</td><td>Có mapping và code đang dùng; kiểm tra một ảnh thật tái tạo đúng vector đã lưu.</td></tr>
+<tr><td>Xoay đường mắt nằm ngang, scale/crop về khuôn chuẩn</td><td>Không thấy quy trình warp/crop này trong module A/shared/retrieval hiện tại; code đọc ảnh đã chuẩn hóa.</td></tr>
+<tr><td>Bicubic 256×256</td><td>Toàn bộ kích thước được xác minh; INTER_CUBIC trong map_68_landmarks chỉ phóng hình minh họa, không chứng minh lịch sử crop.</td></tr>
+<tr><td>Vị trí/scale mắt theo tiêu chí báo cáo</td><td>Metadata có eye_distance nhưng không có đầy đủ tọa độ mắt, ma trận biến đổi hoặc log alignment.</td></tr>
+</tbody></table>
+<p>[PDF: §1.2–1.3, tr.5] Báo cáo mô tả khoảng cách mắt trung vị 29,45% chiều rộng và tâm mắt ở 40% chiều cao. [AUDIT] Metadata A có trung vị d=<strong>78,494411 px</strong> (30,6619% của 256), min <strong>72,415794</strong>, max <strong>85,929054</strong>. Đây là khoảng cách hai tâm tính trung bình 6 landmarks/mắt của code; không nhất thiết là cùng thước đo/công đoạn của số liệu alignment trong PDF. Chưa đủ bằng chứng để xác nhận các con số lịch sử hoặc suy ra chính xác pipeline cũ.</p>
+<p>Không suy đoán tuổi, giới tính hoặc nguồn gốc sinh trắc từ ảnh. Các mô tả tập dữ liệu trong PDF được ghi là thông tin của báo cáo, không thay cho nhãn đã được kiểm chứng độc lập.</p>
+<h2>1.4. Nguyên tắc kiểm toán</h2>
+<p>Đọc source và artifact trước khi viết công thức. Đối chiếu tên ảnh/thứ tự, shape, dtype, tính hữu hạn và thống kê thực. Giữ nguyên cả ảnh bất thường, warning và hàng thiếu B. Chỉ tạo tài liệu/hình dẫn xuất dưới <code>docs/reports/</code>; không chạy main ghi lại vector A/B hoặc mask nguồn.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>04 / 28</span></footer></section><section class="sheet" data-n="5" data-title="Chương 2 — Landmarks"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 2. A150 — GEOMETRY</h1>
+<h2>2.1. MediaPipe và ánh xạ 478 → 68</h2>
+<p>[PDF: §2.2.2, tr.8] Dùng 478 landmarks rồi ánh xạ về 68 điểm. [CODE] <code>geometry_features.detect_landmarks</code> đọc BGR, đổi RGB/SRGB, chạy <code>FaceLandmarker</code> chế độ IMAGE với model <code>.task</code> có sẵn và num_faces=1. Tọa độ x,y chuẩn hóa của model nhân w,h thành pixel float32; z không được đưa vào A150.</p>
+<figure><img src="figures/landmarks_68.png" alt="Hình 2. 68 landmarks thật trên cfd_final_00001.png; chỉ số code bắt đầu từ 0."></figure>
+<p><em>Hình 2. 68 landmarks thật trên cfd_final_00001.png; chỉ số code bắt đầu từ 0.</em></p>
+<p>Mapping là danh sách INDICES chọn trực tiếp các nút MediaPipe, không phải một lần chạy detector 68 điểm khác. PDF không liệt kê đủ 68 ID; danh sách này là quy ước code. Thứ tự nhóm: hàm → mày trái → mày phải → mũi → mắt trái → mắt phải → miệng. Tên trái/phải theo code; không suy ra mọi quy ước trái/phải giải phẫu đã được tài liệu gốc định nghĩa.</p>
+<p>Ảnh đọc lỗi → FileNotFoundError; không có đúng một output → RuntimeError. Batch bắt exception, ghi failed_images và tiếp tục. Artifact hiện có 0 hàng lỗi. Do cap num_faces=1, len(output)==1 không chứng minh ảnh chỉ có một người.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>05 / 28</span></footer></section><section class="sheet" data-n="6" data-title="Chương 2 — Chuẩn hóa và A1"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.2. CHUẨN HÓA TỌA ĐỘ VÀ A1</h1>
+<p>[PDF: §2.2.2–2.2.3, tr.9] Công thức chuẩn hóa điểm:</p>
+<div class="equation"><img src="figures/equation_d3578a30cba3.svg" alt="p&#x27;_i=\frac{p_i-c}{d},\qquad c=\frac{e_L+e_R}{2},\quad d=\|e_L-e_R\|_2"></div>
+<p>[CODE] eL là mean p36…p41, eR là mean p42…p47. Trừ c đưa tâm mắt về gốc; chia d đặt khoảng cách hai tâm mắt thành 1. Lựa chọn trung bình 6 nút/mắt là quy ước hiện thực của <code>normalize_landmarks</code>, không phải danh sách điểm được PDF viết đầy đủ. d&lt;1e-6 gây lỗi thay vì tạo vector giả.</p>
+<h2>Ví dụ từ tọa độ thật</h2>
+<table><thead><tr><th>Đại lượng</th><th>Giá trị pixel hoặc chuẩn hóa</th></tr></thead><tbody>
+<tr><td>eL</td><td>(88.170799, 102.113586)</td></tr>
+<tr><td>eR</td><td>(168.958511, 102.824928)</td></tr>
+<tr><td>c</td><td>(128.564651, 102.469254)</td></tr>
+<tr><td>d</td><td>80.790840 px</td></tr>
+<tr><td>p0</td><td>(46.358055, 121.232712)</td></tr>
+<tr><td>p′0</td><td>(-1.017524, 0.232247)</td></tr>
+</tbody></table>
+<p><code>(46.358055−128.564651)/80.790840 ≈ -1.017524</code>; tọa độ y tính tương tự. Ví dụ là <code>cfd_final_00001.png</code>. Tái trích một ảnh bằng model/code hiện tại khớp <strong>đúng từng phần tử A150 đã lưu</strong>. Sai số tính A2 độc lập bằng float64 tối đa 3.345e-07, phù hợp khác biệt độ chính xác float32.</p>
+<h2>2.3. A1 và vector A150</h2>
+<p>68×2=136 tọa độ: <code>[x′0,y′0,x′1,y′1,…,x′67,y′67]</code>. Chỉ số 2i là x′i, 2i+1 là y′i. A150 nối <strong>A1[0:136] và A2[136:150]</strong>, float32. Không đưa eye_distance thành chiều thứ 151; nó được lưu riêng trong metadata.</p>
+<p>Bảng mapping đầy đủ theo INDICES (0-based code → ID MediaPipe):</p>
+<table><thead><tr><th>Nhóm</th><th>Index code</th><th>ID MediaPipe theo thứ tự</th></tr></thead><tbody>
+<tr><td>Hàm</td><td>0–16</td><td>234, 93, 132, 58, 172, 136, 150, 149, 152, 378, 379, 365, 397, 288, 361, 323, 454</td></tr>
+<tr><td>Lông mày trái</td><td>17–21</td><td>70, 63, 105, 66, 107</td></tr>
+<tr><td>Lông mày phải</td><td>22–26</td><td>336, 296, 334, 293, 300</td></tr>
+<tr><td>Mũi</td><td>27–35</td><td>168, 6, 197, 1, 129, 48, 4, 278, 358</td></tr>
+<tr><td>Mắt trái</td><td>36–41</td><td>33, 160, 158, 133, 153, 144</td></tr>
+<tr><td>Mắt phải</td><td>42–47</td><td>362, 385, 387, 263, 373, 380</td></tr>
+<tr><td>Miệng</td><td>48–67</td><td>61, 40, 37, 0, 267, 270, 291, 321, 314, 17, 84, 91, 78, 81, 13, 311, 308, 402, 14, 178</td></tr>
+</tbody></table>
+<p>Chuẩn hóa này bất biến tịnh tiến và scale dương trong mô hình toán học. Nó không tự loại xoay, phối cảnh, biểu cảm hoặc sai landmarks; d nhỏ khuếch đại nhiễu. Chỉ số (x,y) và mapping phải đồng nhất cho cả kho/query.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>06 / 28</span></footer></section><section class="sheet" data-n="7" data-title="Chương 2 — A2 1–2"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 1–2</h1>
+<p>D(a,b)=norm Euclid 2D; h=D((p21+p22)/2,p8); d=norm(eL−eR); ε=1e-8 <strong>trong code tỉ lệ</strong>, đơn vị tương ứng tọa độ pixel. Đây không phải ε của phương trình Z-score trong PDF.</p>
+<h2>1. Rộng gò má / cao mặt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 136.</p>
+<p><strong>Landmarks:</strong> p2,14,21,22,8. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_285d598f38e3.svg" alt="\frac{D(p_2,p_{14})}{h+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 157.164312/(150.211240+1e-8) → <strong>1.046289</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Tỉ lệ bề ngang so với chiều cao giúp phân biệt mặt rộng với mặt dài.</p>
+<p><strong>Giới hạn:</strong> Code dùng p2–p14 làm đại diện bề ngang; h từ trung điểm mày đến cằm, không phải một phép đo gò má/đỉnh trán được PDF quy định đủ. Góc chụp ảnh hưởng cả hai độ dài.</p>
+<h2>2. Khoảng cách hai mắt / cao mặt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 137.</p>
+<p><strong>Landmarks:</strong> p36…47,21,22,8. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_595b4a03ecf6.svg" alt="\frac{d}{h+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 80.790850/(150.211240+1e-8) → <strong>0.537848</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Mô tả độ tách hai tâm mắt tương đối với trục dọc mặt.</p>
+<p><strong>Giới hạn:</strong> Tâm mắt là trung bình 6 điểm mỗi mắt. Nhắm mắt, nheo mắt hoặc mày/cằm sai làm thay đổi tỉ lệ; không phải khoảng cách đồng tử đo trực tiếp.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>07 / 28</span></footer></section><section class="sheet" data-n="8" data-title="Chương 2 — A2 3–4"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 3–4</h1>
+<h2>3. Bề ngang mắt trái / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 138.</p>
+<p><strong>Landmarks:</strong> p36,39 và 36…47. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_d19f8a6eabb2.svg" alt="\frac{D(p_{36},p_{39})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 32.228357/(80.790850+1e-8) → <strong>0.398911</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Chuẩn hóa chiều rộng mắt theo kích thước vùng giữa mặt, hỗ trợ đối sánh hình dạng mắt.</p>
+<p><strong>Giới hạn:</strong> Đầu mút 36/39 do mapping quyết định. Tư thế nghiêng và che khuất làm bề ngang chiếu trên ảnh thay đổi; nhãn trái/phải theo code.</p>
+<h2>4. Bề ngang mắt phải / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 139.</p>
+<p><strong>Landmarks:</strong> p42,45 và 36…47. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_69f6dfb16d9c.svg" alt="\frac{D(p_{42},p_{45})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 32.753391/(80.790850+1e-8) → <strong>0.405410</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Bổ sung chiều rộng mắt bên còn lại và thông tin bất đối xứng quan sát được.</p>
+<p><strong>Giới hạn:</strong> Chênh hai phía có thể do phối cảnh, che khuất hoặc sai điểm, không tự kết luận là bất đối xứng giải phẫu.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>08 / 28</span></footer></section><section class="sheet" data-n="9" data-title="Chương 2 — A2 5–6"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 5–6</h1>
+<h2>5. Độ mở mi mắt trái</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 140.</p>
+<p><strong>Landmarks:</strong> p37,41,38,40,36,39. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_fe227bf2e6a0.svg" alt="\frac{D(p_{37},p_{41})+D(p_{38},p_{40})}{2D(p_{36},p_{39})+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> (12.924338+13.184732)/(2×32.228357+1e-8) → <strong>0.405064</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Hai khoảng dọc biểu diễn mức mở mi so với bề ngang mắt; phân biệt mắt mở lớn/hẹp.</p>
+<p><strong>Giới hạn:</strong> PDF chỉ gọi tên độ mở mi. Công thức hai cặp dọc/chia bề ngang là quy ước code, nhạy mạnh với chớp mắt và nheo mắt.</p>
+<h2>6. Độ mở mi mắt phải</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 141.</p>
+<p><strong>Landmarks:</strong> p43,47,44,46,42,45. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_d85e4fee59fc.svg" alt="\frac{D(p_{43},p_{47})+D(p_{44},p_{46})}{2D(p_{42},p_{45})+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> (13.589474+13.294606)/(2×32.753391+1e-8) → <strong>0.410401</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Mô tả độ mở mắt còn lại và hỗ trợ so sánh hai bên.</p>
+<p><strong>Giới hạn:</strong> Không thể coi khác biệt chớp mắt là khác danh tính. Bề ngang gần 0 hoặc sai landmark có thể làm tỉ lệ tăng bất thường.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>09 / 28</span></footer></section><section class="sheet" data-n="10" data-title="Chương 2 — A2 7–8"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 7–8</h1>
+<h2>7. Rộng cánh mũi / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 142.</p>
+<p><strong>Landmarks:</strong> p31,35 và 36…47. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_07f24f1e3040.svg" alt="\frac{D(p_{31},p_{35})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 46.784446/(80.790850+1e-8) → <strong>0.579081</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Biểu diễn bề ngang mũi tương đối với vùng giữa mặt.</p>
+<p><strong>Giới hạn:</strong> Việc gán hai nút MediaPipe cho p31/p35 là xấp xỉ giải phẫu của mapping; phối cảnh hoặc tay che mũi làm sai khoảng cách.</p>
+<h2>8. Rộng miệng / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.9] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 143.</p>
+<p><strong>Landmarks:</strong> p48,54 và 36…47. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_3bda1f64c458.svg" alt="\frac{D(p_{48},p_{54})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 54.961407/(80.790850+1e-8) → <strong>0.680293</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Khoảng hai khóe miệng chuẩn hóa mô tả miệng rộng/nhỏ.</p>
+<p><strong>Giới hạn:</strong> Nụ cười và biểu cảm làm khóe miệng dịch rõ; đây vừa là thông tin hình thái vừa nhạy với trạng thái ảnh.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>10 / 28</span></footer></section><section class="sheet" data-n="11" data-title="Chương 2 — A2 9–10"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 9–10</h1>
+<h2>9. Độ mở môi / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 144.</p>
+<p><strong>Landmarks:</strong> p62,66 và 36…47. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_b975b3d394e4.svg" alt="\frac{D(p_{62},p_{66})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 1.596677/(80.790850+1e-8) → <strong>0.019763</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Phân biệt môi đóng, hé hoặc mở tương đối với kích thước mặt.</p>
+<p><strong>Giới hạn:</strong> Dùng đúng cặp môi trong 62/66 của code. Biểu cảm và phát âm làm thay đổi lớn; số gần 0 không chứng minh môi đóng tuyệt đối khi landmark có nhiễu.</p>
+<h2>10. Khoảng cách trung điểm mắt–mũi / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 145.</p>
+<p><strong>Landmarks:</strong> p36…47 và 30. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_bc722490955f.svg" alt="\frac{D(c,p_{30})}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 47.144439/(80.790850+1e-8) → <strong>0.583537</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Mô tả vị trí mũi so với tâm hai mắt trong bố cục mặt.</p>
+<p><strong>Giới hạn:</strong> Code dùng Euclid 2D, nên chịu cả lệch ngang lẫn dọc; không phải chỉ lấy chênh tọa độ y. Đầu mũi theo mapping là p30.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>11 / 28</span></footer></section><section class="sheet" data-n="12" data-title="Chương 2 — A2 11–12"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 11–12</h1>
+<h2>11. Khoảng cách trung điểm mắt–khóe miệng / khoảng cách hai mắt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 146.</p>
+<p><strong>Landmarks:</strong> p36…47,48,54. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_e01de02f9219.svg" alt="\frac{D(c,(p_{48}+p_{54})/2)}{d+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 78.895153/(80.790850+1e-8) → <strong>0.976536</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Mô tả quan hệ bố cục nửa trên và nửa dưới mặt.</p>
+<p><strong>Giới hạn:</strong> Code chọn trung điểm hai khóe miệng. PDF không chỉ rõ cách tổng hợp hai khóe; cười làm điểm giữa dịch chuyển.</p>
+<h2>12. Khoảng cách chóp mũi–đáy cằm / cao mặt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 147.</p>
+<p><strong>Landmarks:</strong> p30,8,21,22. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_7b90f83a809e.svg" alt="\frac{D(p_{30},p_8)}{h+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 74.196541/(150.211240+1e-8) → <strong>0.493948</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Biểu diễn phần dưới mặt so với chiều cao mặt theo proxy đang dùng.</p>
+<p><strong>Giới hạn:</strong> Cằm bị cắt, râu/phụ kiện hoặc landmark sai có thể làm thay đổi số đo. h là proxy mày–cằm, không phải một chiều cao giải phẫu được xác thực.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>12 / 28</span></footer></section><section class="sheet" data-n="13" data-title="Chương 2 — A2 13–14"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>2.4. A2 — ĐẶC TRƯNG 13–14</h1>
+<h2>13. Rộng xương hàm / cao mặt</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 148.</p>
+<p><strong>Landmarks:</strong> p4,12,21,22,8. <strong>Đơn vị/miền:</strong> không thứ nguyên, không âm khi hợp lệ; không ép vào [0,1].</p>
+<div class="equation"><img src="figures/equation_30064966b798.svg" alt="\frac{D(p_4,p_{12})}{h+\epsilon}"></div>
+<p><strong>Ví dụ thật:</strong> 131.203921/(150.211240+1e-8) → <strong>0.873463</strong>.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code>; dùng distance/midpoint khi cần.</p>
+<p><strong>Thông tin truy hồi:</strong> Bổ sung độ rộng vùng hàm, hỗ trợ phân biệt mặt thuôn với hàm rộng.</p>
+<p><strong>Giới hạn:</strong> Hai nút p4/p12 và phép chiếu 2D là lựa chọn code. Góc quay đầu và đường tóc/che khuất có thể làm landmark trôi.</p>
+<h2>14. Góc xương hàm tại cằm</h2>
+<p><strong>Nguồn:</strong> [PDF §2.2.3, tr.10] quy định tên/ý nghĩa; [CODE] chốt điểm và biểu thức dưới đây. <strong>Index A150:</strong> 149.</p>
+<p><strong>Landmarks:</strong> p4,8,12. <strong>Đơn vị/miền:</strong> độ, 0…180 khi hai cạnh không suy biến.</p>
+<div class="equation"><img src="figures/equation_bd044ca96079.svg" alt="\theta=\frac{180}{\pi}\arccos\left(\operatorname{clip}\left(\frac{u\cdot v}{\|u\|\|v\|},-1,1\right)\right)"></div>
+<p><strong>Ví dụ thật:</strong> u=(-63.8098,-32.6512), v=(67.3838,-31.0021); dot=-3287.4900; norm(u)norm(v)=5316.6317; acos(dot/norms)×180/π → <strong>128.195068</strong>°.</p>
+<p><strong>Hàm Python:</strong> <code>geometry_features.calculate_ratios</code> gọi <code>angle_degrees</code>.</p>
+<p><strong>Thông tin truy hồi:</strong> Góc ở cằm mô tả độ mở của hai cạnh hàm, giúp phân biệt cằm nhọn/tròn theo cấu trúc điểm đang dùng.</p>
+<p><strong>Giới hạn:</strong> angle_degrees từ chối tích norm&lt;1e-8; clip chống lỗi acos do làm tròn. Mapping điểm góc hàm chưa có chứng nhận giải phẫu độc lập.</p>
+<p>Nguồn số liệu ví dụ: cfd_final_00001.png, tọa độ thật đã lưu trong _build/facts.json. Chữ số hiển thị được làm tròn; không gán công thức chi tiết do code bổ sung thành nguyên văn PDF.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>13 / 28</span></footer></section><section class="sheet" data-n="14" data-title="Chương 3 — Z-score A"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 3. Z-SCORE BỘ A</h1>
+<h2>3.1. Công thức PDF và biểu thức code</h2>
+<p>[PDF §2.5.2, tr.17] Từng chiều j dùng thống kê kho:</p>
+<div class="equation"><img src="figures/equation_0e990512d2fb.svg" alt="z_j=\frac{x_j-\mu_j}{\sigma_j+\epsilon}"></div>
+<p>xj là giá trị đặc trưng; μj là trung bình trên các ảnh kho; σj là độ lệch chuẩn cùng chiều; ε ổn định mẫu số. PDF không chốt trị số ε. Fit theo cột của ma trận, không theo hàng từng ảnh: tọa độ và góc có đơn vị/thang đo khác nhau, nên chuẩn hóa riêng mỗi ảnh sẽ trộn các đại lượng không đồng nhất và làm query không còn cùng hệ tham chiếu với kho.</p>
+<p>[CODE: normalize_features.main] Chuyển A raw sang float64, tính mean/std axis=0, NumPy ddof=0; <strong>không cộng ε cho mọi chiều</strong>:</p>
+<div class="equation"><img src="figures/equation_868e086b920b.svg" alt="s_j=1\ (\sigma_j&lt;10^{-8}),\quad s_j=\sigma_j\ (\sigma_j\geq10^{-8}),\qquad z_j=\frac{x_j-\mu_j}{s_j}"></div>
+<p><strong>[DEVIATION] Mẫu số s khác σ+ε.</strong> Ngưỡng 1e-8 của code không được tự coi là ε cộng vào mẫu số. Khi σ&gt;0, hai công thức thường gần nhau nếu ε nhỏ nhưng không bằng nhau; khi σ=0 và query khác mean, tác động có thể rất lớn. Không sửa thuật toán trong báo cáo này.</p>
+<h2>3.2. Ví dụ tính tay và NumPy</h2>
+<p>Cho cột minh họa x={1,3,5}: μ=3; variance=[4+0+4]/3=8/3; σ=1,632993162; code cho Z={−1,224744871;0;1,224744871}. NumPy std(ddof=0) và phép biến đổi cho cùng kết quả.</p>
+<p>Nếu <strong>giả định minh họa</strong> ε=1e-8 trong công thức PDF (không phải giá trị PDF đã chốt), hai đầu là ±1,224744864. Cột {7,7,7}: training Z=0 ở cả hai cách; query x=9 thì code trả 2, còn σ+ε trả 2/ε. Training toàn số 0 không chứng minh hai chính sách giống nhau cho query.</p>
+<p>Điều kiện dương của divisor, NaN/Inf và shape phải kiểm tra. Batch A hiện có lỗi thì ghi manifest lỗi; không tự thay vector không hợp lệ bằng zero.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>14 / 28</span></footer></section><section class="sheet" data-n="15" data-title="Chương 3 — Phân bố A"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>3.3. ARTIFACT A VÀ PHÂN BỐ THỰC</h1>
+<figure><img src="figures/A_distributions.png" alt="Hình 3. Ba chiều A thật trước/sau Z-score; mỗi cột histogram đếm số ảnh trong kho."></figure>
+<p><em>Hình 3. Ba chiều A thật trước/sau Z-score; mỗi cột histogram đếm số ảnh trong kho.</em></p>
+<table><thead><tr><th>Kiểm tra A</th><th>Giá trị đo trực tiếp</th></tr></thead><tbody>
+<tr><td>Raw / normalized shape</td><td>(1438,150) / (1438,150)</td></tr>
+<tr><td>Raw / normalized dtype</td><td>float32 / float32</td></tr>
+<tr><td>Mean/std lưu</td><td>float64, 150 phần tử</td></tr>
+<tr><td>Ảnh lỗi trong failed_images.csv</td><td>0</td></tr>
+<tr><td>Chiều std&lt;1e-8</td><td>0</td></tr>
+<tr><td>Khoảng std raw</td><td>0.004174 … 6.555324</td></tr>
+<tr><td>Sai số Z lưu so với phép tính float64</td><td>2.346e-07</td></tr>
+</tbody></table>
+<p>Normalized được cast float32 khi lưu. Vì vậy query tính float64 không nhất thiết bằng đúng từng bit với hàng normalized đã lưu, dù raw descriptor khớp. Audit kiểm tra <strong>chính xác</strong> phép tính float64 rồi cast float32 tạo ra artifact hiện có; sai số lượng tử không được coi là nhận diện sai.</p>
+<p><code>geometry_stats.npz</code> lưu mean và std_safe; query A dùng lại <code>(features.astype(float64)−mean)/std</code>. Không fit lại một ảnh. Mỗi đặc trưng vẫn giữ ngữ nghĩa khác nhau sau chuẩn hóa; Z-score không biến tỉ lệ/góc thành thước đo độc lập về thống kê hoặc loại bỏ biểu cảm.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>15 / 28</span></footer></section><section class="sheet" data-n="16" data-title="Chương 4 — Parsing và mask"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 4. B144 — COLOR</h1>
+<h2>4.1. Face parsing và ROI</h2>
+<p>UniFace là thư viện hiện thực; BiSeNet ResNet18 phân lớp ngữ nghĩa pixel (semantic face parsing). [APPROVED D09] lấy class 1 làm Skin và class 17 làm Hair, tạo hai mask uint8 0/255. PDF §2.3 chỉ nêu hai vùng da/tóc, <strong>không chỉ định UniFace/BiSeNet đích danh</strong>.</p>
+<p>Mask raw được chọn theo <strong>D10</strong>, giữ nguyên tập pixel dự đoán, không phải vì đã chứng minh tốt hơn erosion. Clean 3×3 và Skin+Nose là thí nghiệm lịch sử, không trộn vào vector chính thức. Skin=1 bỏ nose=10 và lớp tai/cổ theo schema; không tự thêm vào để hình nhìn đầy hơn.</p>
+<figure><img src="figures/raw_masks.png" alt="Hình 4. Dự đoán thật: ảnh gốc, hai mask nhị phân và ROI màu; hàng dưới HF00209 có tóc raw rỗng."></figure>
+<p><em>Hình 4. Dự đoán thật: ảnh gốc, hai mask nhị phân và ROI màu; hàng dưới HF00209 có tóc raw rỗng.</em></p>
+<p>Trước trích đặc trưng, code đối chiếu image hash, receipt, mask hash, số pixel, shape 256×256 và giá trị 0/255; kiểm tra hai vùng không chồng lấn. Trong kho đã có 2.876 raw mask kỹ thuật hợp lệ. Hash chỉ xác nhận tính toàn vẹn/provenance, không xác nhận pixel đúng ngữ nghĩa.</p>
+<p>Model source: UniFace 4.3.0, parsing_resnet18.onnx, provider của lần parsing là CPUExecutionProvider. Nhiệm vụ lập báo cáo không chạy lại parsing hoặc tải model. ROI pixel lấy trực tiếp <code>image[mask&gt;0]</code>; ảnh da/tóc nền đen chỉ dùng hiển thị, không làm đầu vào histogram.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>16 / 28</span></footer></section><section class="sheet" data-n="17" data-title="Chương 4 — B1"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>4.2. B1 — HSV 2D HISTOGRAM</h1>
+<p>Hue H mô tả hướng sắc màu, Saturation S mô tả độ bão hòa, Value V biểu diễn độ sáng trong HSV. [PDF §2.3.1, tr.12] chọn H và S để mô tả phổ màu/bão hòa, không lấy V trong histogram. Điều này giảm phụ thuộc trực tiếp V nhưng không tạo bất biến hoàn toàn với ánh sáng/cân bằng trắng.</p>
+<p>12 Hue ×4 Saturation =48 chiều/vùng, 96 cho hai vùng. [D01] HSV uint8: H=0…179, S=0…255; cạnh H=0,15,…,180 và S=0,64,…,256. Với H,S hợp lệ: <code>h=floor(H/15)</code>, <code>s=floor(S/64)</code>, index trong HS48 là <code>4*h+s</code>. Ví dụ số học H=16,S=70 thuộc h=1,s=1,index=5; đây là ví dụ gán bin, không giả mạo pixel/nhãn thật.</p>
+<div class="equation"><img src="figures/equation_0953074a545f.svg" alt="h&#x27;_k=\frac{n_k}{\sum_i n_i},\qquad \sum_{k=0}^{47}h&#x27;_k=1"></div>
+<figure><img src="figures/HS_histograms.png" alt="Hình 5. H–S thực của da và tóc cfd_final_00001.png; colorbar là tần suất sau L1."></figure>
+<p><em>Hình 5. H–S thực của da và tóc cfd_final_00001.png; colorbar là tần suất sau L1.</em></p>
+<p>Ở ảnh thật, bin da cực đại h=1,s=1 có khối lượng <strong>0.515282</strong>, tóc cực đại h=0,s=1 có khối lượng <strong>0.258604</strong>. Cả hai histogram tổng đúng 1 theo artifact.</p>
+<p>Không cộng pixel nền đen ngoài mask; pixel đen thật trong mask vẫn được đếm (H=0,S=0 theo biểu diễn OpenCV). Không loại pixel S thấp theo cảm nhận: D11 chỉ ghi warning. Thay cạnh bin làm đổi phân bố dù tổng số chiều không đổi; biên bin là quy ước được chấp thuận, không phải tất cả đều được PDF ghi nguyên văn.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>17 / 28</span></footer></section><section class="sheet" data-n="18" data-title="Chương 4 — B2"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>4.3. B2 — CIE-LAB COLOR MOMENTS</h1>
+<p>L<em> là độ sáng cảm nhận, a</em> là trục lục–đỏ, b* là trục lam–vàng. [PDF §2.3.2, tr.12] yêu cầu bốn thống kê trên ba kênh: 12/vùng, 24 cho hai vùng. [D02] BGR float32/255 → Lab float OpenCV, rồi mô-men float64; không dùng Lab uint8 có offset/scale như một phép thay thế ngầm.</p>
+<p>[APPROVED D03–D05] Với N pixel có trọng số bằng nhau:</p>
+<div class="equation"><img src="figures/equation_7f933100a15f.svg" alt="\mu=\frac{1}{N}\sum_i x_i,\quad m_k=\frac{1}{N}\sum_i(x_i-\mu)^k"></div>
+<div class="equation"><img src="figures/equation_bdde30063108.svg" alt="\sigma=\sqrt{m_2},\quad \operatorname{skew}=\frac{m_3}{\sigma^3},\quad \operatorname{kurt}=\frac{m_4}{\sigma^4}"></div>
+<p>Mean biểu diễn mức màu trung tâm; std đo độ phân tán; skew mô tả bất đối xứng; kurtosis nhạy với đuôi/phần giá trị cực đoan. Đó không phải phép đo chất lượng ảnh độc lập. Code dùng std quần thể ddof=0, skew không bias và <strong>Pearson kurtosis</strong>, không trừ 3. PDF liệt kê tên thống kê nhưng không chốt các chi tiết này.</p>
+<p><strong>Ví dụ giải tích</strong> x={0,0,0,4}: μ=1; các sai lệch {−1,−1,−1,3}; m2=3, m3=6, m4=21. Vì vậy std=√3=1,732051; skew=2/√3=1,154701; Pearson=7/3=2,333333 (excess sẽ là −0,666667). Đây là oracle số học, không phải nhãn hoặc ảnh giả trong dataset.</p>
+<table><thead><tr><th>ROI/kênh</th><th>Mean</th><th>Std</th><th>Skew</th><th>Pearson</th></tr></thead><tbody>
+<tr><td>skin L*</td><td>70.31785</td><td>8.98516</td><td>-2.07193</td><td>10.67935</td></tr>
+<tr><td>skin a*</td><td>9.09620</td><td>2.08260</td><td>0.91053</td><td>7.51477</td></tr>
+<tr><td>skin b*</td><td>23.47390</td><td>2.93696</td><td>-2.02431</td><td>14.42218</td></tr>
+<tr><td>hair L*</td><td>21.94723</td><td>23.20562</td><td>1.62627</td><td>4.78546</td></tr>
+<tr><td>hair a*</td><td>1.76485</td><td>2.15065</td><td>0.19552</td><td>6.23997</td></tr>
+<tr><td>hair b*</td><td>4.43500</td><td>4.22328</td><td>1.33926</td><td>4.99006</td></tr>
+</tbody></table>
+<p>Bảng 1. Mô-men thật của cfd_final_00001.png. Nếu std&lt;1e-12, code đặt std/skew/kurt=0 và warning; đây là fallback đã chấp thuận vì skew/kurt kênh hằng không xác định. Vùng &lt;100 pixel không được áp fallback để tạo vector giả.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>18 / 28</span></footer></section><section class="sheet" data-n="19" data-title="Chương 4 — B3"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>4.4. B3 — CIRCULAR HUE STATISTICS</h1>
+<p>H=179 và H=1 có khoảng cách số học 178 nhưng gần nhau trên vòng Hue. Trung bình số học bằng 90 chỉ về phía đối diện; cần thống kê hướng (directional statistics). [PDF §2.3.3, tr.13] quy định histogram Hue10 L1, góc φ=2πH/180, circular mean/std và miền [0,1].</p>
+<div class="equation"><img src="figures/equation_6e1780aa37db.svg" alt="\varphi_i=\frac{2\pi H_i}{180},\quad C=\operatorname{mean}(\cos\varphi_i),\quad S=\operatorname{mean}(\sin\varphi_i)"></div>
+<div class="equation"><img src="figures/equation_c7ba0544a962.svg" alt="R=\operatorname{clip}(\sqrt{C^2+S^2},0,1),\quad \bar H_c=\frac{\operatorname{atan2}(S,C)\operatorname{mod} 2\pi}{2\pi}"></div>
+<div class="equation"><img src="figures/equation_b006f640aa5c.svg" alt="s_c=\min\left(\frac{\sqrt{-2\log(\max(R,10^{-12}))}}{2\pi},1\right)"></div>
+<p>Sin/cos chiếu hướng thành hai thành phần; mean của chúng là resultant. atan2 dùng cả dấu hai trục để xác định góc; modulo đưa góc về [0,2π), rồi chia 2π. R gần 1 biểu thị hướng tập trung; log tạo độ phân tán trong công thức hiện tại. Floor chống log(0), clip giữ miền. D06–D08 phê duyệt biểu thức cụ thể; PDF không cho đủ công thức scale std để gọi toàn bộ biểu thức là nguyên văn PDF.</p>
+<figure><img src="figures/hue_circle.png" alt="Hình 6. Ví dụ giải tích vòng Hue; không phải một ảnh/nhãn tổng hợp thay dataset."></figure>
+<p><em>Hình 6. Ví dụ giải tích vòng Hue; không phải một ảnh/nhãn tổng hợp thay dataset.</em></p>
+<p>Với H={179,1}, R=cos(π/90)=<strong>0.999390827</strong>, mean vòng≈0, std vòng=<strong>0.005556120</strong>. Với R&lt;1e-8, mean=0 kèm warning; std tiếp tục theo floor/clip. Mean dạng scalar vẫn có mép vòng khi dùng Euclid; không tự đổi thành sin/cos tăng chiều.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>19 / 28</span></footer></section><section class="sheet" data-n="20" data-title="Chương 4 — Index Skin"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>4.5. B144 — ÁNH XẠ INDEX SKIN</h1>
+<p>Nguồn trực tiếp: <code>color_features_full_v1/feature_layout.csv</code>. B144=[Skin72,Hair72]; index bắt đầu từ 0. Trang này liệt kê đủ 72 chiều Skin, không chỉ mô tả theo khoảng. Tên cùng schema phải dùng thống nhất trong vector, stats và query.</p>
+<table><thead><tr><th>Index</th><th>Tên chính xác</th><th>Index</th><th>Tên chính xác</th></tr></thead><tbody>
+<tr><td>0</td><td>skin_HS_h00_s0</td><td>36</td><td>skin_HS_h09_s0</td></tr>
+<tr><td>1</td><td>skin_HS_h00_s1</td><td>37</td><td>skin_HS_h09_s1</td></tr>
+<tr><td>2</td><td>skin_HS_h00_s2</td><td>38</td><td>skin_HS_h09_s2</td></tr>
+<tr><td>3</td><td>skin_HS_h00_s3</td><td>39</td><td>skin_HS_h09_s3</td></tr>
+<tr><td>4</td><td>skin_HS_h01_s0</td><td>40</td><td>skin_HS_h10_s0</td></tr>
+<tr><td>5</td><td>skin_HS_h01_s1</td><td>41</td><td>skin_HS_h10_s1</td></tr>
+<tr><td>6</td><td>skin_HS_h01_s2</td><td>42</td><td>skin_HS_h10_s2</td></tr>
+<tr><td>7</td><td>skin_HS_h01_s3</td><td>43</td><td>skin_HS_h10_s3</td></tr>
+<tr><td>8</td><td>skin_HS_h02_s0</td><td>44</td><td>skin_HS_h11_s0</td></tr>
+<tr><td>9</td><td>skin_HS_h02_s1</td><td>45</td><td>skin_HS_h11_s1</td></tr>
+<tr><td>10</td><td>skin_HS_h02_s2</td><td>46</td><td>skin_HS_h11_s2</td></tr>
+<tr><td>11</td><td>skin_HS_h02_s3</td><td>47</td><td>skin_HS_h11_s3</td></tr>
+<tr><td>12</td><td>skin_HS_h03_s0</td><td>48</td><td>skin_Lab_L_mean</td></tr>
+<tr><td>13</td><td>skin_HS_h03_s1</td><td>49</td><td>skin_Lab_L_std</td></tr>
+<tr><td>14</td><td>skin_HS_h03_s2</td><td>50</td><td>skin_Lab_L_skew</td></tr>
+<tr><td>15</td><td>skin_HS_h03_s3</td><td>51</td><td>skin_Lab_L_kurtosis</td></tr>
+<tr><td>16</td><td>skin_HS_h04_s0</td><td>52</td><td>skin_Lab_a_mean</td></tr>
+<tr><td>17</td><td>skin_HS_h04_s1</td><td>53</td><td>skin_Lab_a_std</td></tr>
+<tr><td>18</td><td>skin_HS_h04_s2</td><td>54</td><td>skin_Lab_a_skew</td></tr>
+<tr><td>19</td><td>skin_HS_h04_s3</td><td>55</td><td>skin_Lab_a_kurtosis</td></tr>
+<tr><td>20</td><td>skin_HS_h05_s0</td><td>56</td><td>skin_Lab_b_mean</td></tr>
+<tr><td>21</td><td>skin_HS_h05_s1</td><td>57</td><td>skin_Lab_b_std</td></tr>
+<tr><td>22</td><td>skin_HS_h05_s2</td><td>58</td><td>skin_Lab_b_skew</td></tr>
+<tr><td>23</td><td>skin_HS_h05_s3</td><td>59</td><td>skin_Lab_b_kurtosis</td></tr>
+<tr><td>24</td><td>skin_HS_h06_s0</td><td>60</td><td>skin_Hue_bin00</td></tr>
+<tr><td>25</td><td>skin_HS_h06_s1</td><td>61</td><td>skin_Hue_bin01</td></tr>
+<tr><td>26</td><td>skin_HS_h06_s2</td><td>62</td><td>skin_Hue_bin02</td></tr>
+<tr><td>27</td><td>skin_HS_h06_s3</td><td>63</td><td>skin_Hue_bin03</td></tr>
+<tr><td>28</td><td>skin_HS_h07_s0</td><td>64</td><td>skin_Hue_bin04</td></tr>
+<tr><td>29</td><td>skin_HS_h07_s1</td><td>65</td><td>skin_Hue_bin05</td></tr>
+<tr><td>30</td><td>skin_HS_h07_s2</td><td>66</td><td>skin_Hue_bin06</td></tr>
+<tr><td>31</td><td>skin_HS_h07_s3</td><td>67</td><td>skin_Hue_bin07</td></tr>
+<tr><td>32</td><td>skin_HS_h08_s0</td><td>68</td><td>skin_Hue_bin08</td></tr>
+<tr><td>33</td><td>skin_HS_h08_s1</td><td>69</td><td>skin_Hue_bin09</td></tr>
+<tr><td>34</td><td>skin_HS_h08_s2</td><td>70</td><td>skin_circular_mean</td></tr>
+<tr><td>35</td><td>skin_HS_h08_s3</td><td>71</td><td>skin_circular_std</td></tr>
+</tbody></table>
+<p>HS48 flatten theo Hue ngoài/S trong. Lab12 theo L,a,b và trong mỗi kênh mean,std,skew,kurtosis. Hue10 tiếp theo, cuối cùng mean vòng và std vòng. Hoán vị đồng bộ toàn bộ vector/stats giữ Euclid; trộn hai serialization khác nhau làm kết quả sai dù shape vẫn 144. D13 chốt thứ tự này, PDF không liệt kê từng index.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>20 / 28</span></footer></section><section class="sheet" data-n="21" data-title="Chương 4 — Index Hair"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>4.5. B144 — ÁNH XẠ INDEX HAIR</h1>
+<p>Nguồn trực tiếp: <code>color_features_full_v1/feature_layout.csv</code>. B144=[Skin72,Hair72]; index bắt đầu từ 0. Trang này liệt kê đủ 72 chiều Hair, không chỉ mô tả theo khoảng. Tên cùng schema phải dùng thống nhất trong vector, stats và query.</p>
+<table><thead><tr><th>Index</th><th>Tên chính xác</th><th>Index</th><th>Tên chính xác</th></tr></thead><tbody>
+<tr><td>72</td><td>hair_HS_h00_s0</td><td>108</td><td>hair_HS_h09_s0</td></tr>
+<tr><td>73</td><td>hair_HS_h00_s1</td><td>109</td><td>hair_HS_h09_s1</td></tr>
+<tr><td>74</td><td>hair_HS_h00_s2</td><td>110</td><td>hair_HS_h09_s2</td></tr>
+<tr><td>75</td><td>hair_HS_h00_s3</td><td>111</td><td>hair_HS_h09_s3</td></tr>
+<tr><td>76</td><td>hair_HS_h01_s0</td><td>112</td><td>hair_HS_h10_s0</td></tr>
+<tr><td>77</td><td>hair_HS_h01_s1</td><td>113</td><td>hair_HS_h10_s1</td></tr>
+<tr><td>78</td><td>hair_HS_h01_s2</td><td>114</td><td>hair_HS_h10_s2</td></tr>
+<tr><td>79</td><td>hair_HS_h01_s3</td><td>115</td><td>hair_HS_h10_s3</td></tr>
+<tr><td>80</td><td>hair_HS_h02_s0</td><td>116</td><td>hair_HS_h11_s0</td></tr>
+<tr><td>81</td><td>hair_HS_h02_s1</td><td>117</td><td>hair_HS_h11_s1</td></tr>
+<tr><td>82</td><td>hair_HS_h02_s2</td><td>118</td><td>hair_HS_h11_s2</td></tr>
+<tr><td>83</td><td>hair_HS_h02_s3</td><td>119</td><td>hair_HS_h11_s3</td></tr>
+<tr><td>84</td><td>hair_HS_h03_s0</td><td>120</td><td>hair_Lab_L_mean</td></tr>
+<tr><td>85</td><td>hair_HS_h03_s1</td><td>121</td><td>hair_Lab_L_std</td></tr>
+<tr><td>86</td><td>hair_HS_h03_s2</td><td>122</td><td>hair_Lab_L_skew</td></tr>
+<tr><td>87</td><td>hair_HS_h03_s3</td><td>123</td><td>hair_Lab_L_kurtosis</td></tr>
+<tr><td>88</td><td>hair_HS_h04_s0</td><td>124</td><td>hair_Lab_a_mean</td></tr>
+<tr><td>89</td><td>hair_HS_h04_s1</td><td>125</td><td>hair_Lab_a_std</td></tr>
+<tr><td>90</td><td>hair_HS_h04_s2</td><td>126</td><td>hair_Lab_a_skew</td></tr>
+<tr><td>91</td><td>hair_HS_h04_s3</td><td>127</td><td>hair_Lab_a_kurtosis</td></tr>
+<tr><td>92</td><td>hair_HS_h05_s0</td><td>128</td><td>hair_Lab_b_mean</td></tr>
+<tr><td>93</td><td>hair_HS_h05_s1</td><td>129</td><td>hair_Lab_b_std</td></tr>
+<tr><td>94</td><td>hair_HS_h05_s2</td><td>130</td><td>hair_Lab_b_skew</td></tr>
+<tr><td>95</td><td>hair_HS_h05_s3</td><td>131</td><td>hair_Lab_b_kurtosis</td></tr>
+<tr><td>96</td><td>hair_HS_h06_s0</td><td>132</td><td>hair_Hue_bin00</td></tr>
+<tr><td>97</td><td>hair_HS_h06_s1</td><td>133</td><td>hair_Hue_bin01</td></tr>
+<tr><td>98</td><td>hair_HS_h06_s2</td><td>134</td><td>hair_Hue_bin02</td></tr>
+<tr><td>99</td><td>hair_HS_h06_s3</td><td>135</td><td>hair_Hue_bin03</td></tr>
+<tr><td>100</td><td>hair_HS_h07_s0</td><td>136</td><td>hair_Hue_bin04</td></tr>
+<tr><td>101</td><td>hair_HS_h07_s1</td><td>137</td><td>hair_Hue_bin05</td></tr>
+<tr><td>102</td><td>hair_HS_h07_s2</td><td>138</td><td>hair_Hue_bin06</td></tr>
+<tr><td>103</td><td>hair_HS_h07_s3</td><td>139</td><td>hair_Hue_bin07</td></tr>
+<tr><td>104</td><td>hair_HS_h08_s0</td><td>140</td><td>hair_Hue_bin08</td></tr>
+<tr><td>105</td><td>hair_HS_h08_s1</td><td>141</td><td>hair_Hue_bin09</td></tr>
+<tr><td>106</td><td>hair_HS_h08_s2</td><td>142</td><td>hair_circular_mean</td></tr>
+<tr><td>107</td><td>hair_HS_h08_s3</td><td>143</td><td>hair_circular_std</td></tr>
+</tbody></table>
+<p>HS48 flatten theo Hue ngoài/S trong. Lab12 theo L,a,b và trong mỗi kênh mean,std,skew,kurtosis. Hue10 tiếp theo, cuối cùng mean vòng và std vòng. Hoán vị đồng bộ toàn bộ vector/stats giữ Euclid; trộn hai serialization khác nhau làm kết quả sai dù shape vẫn 144. D13 chốt thứ tự này, PDF không liệt kê từng index.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>21 / 28</span></footer></section><section class="sheet" data-n="22" data-title="Chương 5 — Z-score B"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 5. Z-SCORE BỘ B</h1>
+<h2>5.1. Các lớp chuẩn hóa và tập fit</h2>
+<p>Histogram H–S và Hue10 được L1 riêng trong mỗi ROI; circular mean/std đưa về [0,1]; ghép đủ B144 rồi <strong>một lần Z-score all144</strong>. D14 chốt cách hiện thực thống nhất này. §2.3.3 (PDF 13) và §2.5.2 (PDF 17) diễn đạt khác về mô-men trước ghép; không khẳng định PDF chỉ cho duy nhất trình tự trên.</p>
+<p>Fit mean/std ddof=0 trên <strong>tất cả 1.437 vector hợp lệ</strong> của kho 1.438 ảnh. <code>hf_merged_00209.png</code> không có tóc raw nên không có B144. Không có hàng vector zero/NaN để che thiếu. fit_manifest lưu danh sách ảnh, feature index và hash; warning không tự loại ảnh hợp lệ.</p>
+<div class="equation"><img src="figures/equation_f39d1404d64d.svg" alt="d_j=1\ (\sigma_j&lt;10^{-8}),\quad d_j=\sigma_j\ (\sigma_j\geq10^{-8}),\qquad z_j=\frac{x_j-\mu_j}{d_j}"></div>
+<h2>5.2. So sánh chính xác với A</h2>
+<p><strong>Code A và B hiện cùng quy tắc divisor dạng std_safe</strong> (ddof=0, ngưỡng 1e-8, thay bằng 1). Không bịa rằng mẫu số hai code khác nhau. Khác biệt quan trọng: A lệch phương trình σ+ε của PDF, còn B được D15 phê duyệt rõ; A lưu normalized float32, B lưu float64; tập fit A=1.438 và B=1.437, số chiều khác nhau.</p>
+<figure><img src="figures/B_distributions.png" alt="Hình 7. Ba chiều B thật trước/sau Z-score; không L1 lại sau bước cuối."></figure>
+<p><em>Hình 7. Ba chiều B thật trước/sau Z-score; không L1 lại sau bước cuối.</em></p>
+<h2>5.3. Query và giới hạn</h2>
+<p>Query dùng đúng mean/divisor đã lưu, không fit theo ảnh hoặc cặp query–candidate. Cột hằng có Z=0 trong training; query khác mean ở cột này vẫn chia 1 chứ không ép 0. Kho B hiện không có cột std&lt;1e-8. Z-score có thể khuếch đại bin hiếm; histogram sau Z-score có thể âm và tổng khác 1. Không điều chỉnh để làm Top-5 đẹp hơn.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>22 / 28</span></footer></section><section class="sheet" data-n="23" data-title="Chương 6 — Euclid và A Top-5"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 6. TÌM KIẾM TƯƠNG ĐỒNG</h1>
+<h2>6.1. Euclid và luồng Top-5</h2>
+<div class="equation"><img src="figures/equation_321448053c3f.svg" alt="d(q,i)=\sqrt{\sum_{j=1}^{D}(z_{qj}-z_{ij})^2},\quad D=150\ (A),\ 144\ (B)"></div>
+<p>Trích query → dùng stats kho của đúng bộ → tính Euclid → loại self theo quy ước → sắp tăng dần → lấy 5. Khoảng cách A/B chưa cùng thang đo để cộng trực tiếp. L2 ở đây có căn bậc hai; không thay bằng cosine hoặc Chi-square cho B.</p>
+<p><strong>Code A:</strong> query trích lại từ ảnh, Z float64; kho normalized float32 cast float64 trước tính d. Self-match theo <code>Path(image_path).resolve()</code>; <code>np.argsort</code> mặc định, không có tie-break theo tên được code quy định rõ.</p>
+<p><strong>Code B:</strong> query dùng cùng schema và stats, self theo image_id (có nhận diện hash duy nhất khi gọi API); hòa d theo tên file (<code>lexsort</code>). Không tự áp quy ước B hồi tố lên A.</p>
+<figure><img src="figures/saved_A_grid.png" alt="Hình 8. Top-5 A thật đã lưu cho cfd_final_00144.png; d và tên được kiểm tra lại, không ghi đè artifact."></figure>
+<p><em>Hình 8. Top-5 A thật đã lưu cho cfd_final_00144.png; d và tên được kiểm tra lại, không ghi đè artifact.</em></p>
+<table><thead><tr><th>Hạng</th><th>Ảnh kết quả</th><th>Euclid A</th></tr></thead><tbody>
+<tr><td>1</td><td>cfd_final_00325.png</td><td>6.324556</td></tr>
+<tr><td>2</td><td>hf_merged_00429.png</td><td>6.436708</td></tr>
+<tr><td>3</td><td>cfd_final_00352.png</td><td>6.623885</td></tr>
+<tr><td>4</td><td>cfd_final_00510.png</td><td>6.795212</td></tr>
+<tr><td>5</td><td>cfd_final_00340.png</td><td>6.798524</td></tr>
+</tbody></table>
+<p>Danh tính ảnh trong 6 ô PNG gốc được xác định bằng khớp pixel với dataset; thứ tự khớp tính lại từ ma trận thật. Hình gốc một hàng giữ ở figures/original_A_top5.png. Khoảng cách bảng dùng độ chính xác tính lại; nhãn PNG lịch sử làm tròn ba chữ số.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>23 / 28</span></footer></section><section class="sheet" data-n="24" data-title="Chương 6 — B Top-5"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>6.2. TOP-5 B — KẾT QUẢ ĐÃ LƯU</h1>
+<p>Query <code>cfd_final_00537.png</code>, dùng B144_raw_v1.0.0 và stats kho hợp lệ 1.437 ảnh. Dữ liệu tên/thứ tự/d lấy từ <code>retrieval/top5.csv</code>, hình gốc từ <code>retrieval/queries/</code>; không tự gán các ảnh “trông giống” để thay cho kết quả máy.</p>
+<figure><img src="figures/saved_B_grid.png" alt="Hình 9. Query và Top-5 B thật; bố cục lại từ ảnh thật, giữ tên, thứ tự và khoảng cách artifact."></figure>
+<p><em>Hình 9. Query và Top-5 B thật; bố cục lại từ ảnh thật, giữ tên, thứ tự và khoảng cách artifact.</em></p>
+<table><thead><tr><th>Hạng</th><th>Ảnh kết quả</th><th>Euclid B</th></tr></thead><tbody>
+<tr><td>1</td><td>cfd_final_00536.png</td><td>1.174659</td></tr>
+<tr><td>2</td><td>cfd_final_00535.png</td><td>1.651839</td></tr>
+<tr><td>3</td><td>cfd_final_00539.png</td><td>2.474773</td></tr>
+<tr><td>4</td><td>cfd_final_00702.png</td><td>3.800347</td></tr>
+<tr><td>5</td><td>cfd_final_00699.png</td><td>3.839057</td></tr>
+</tbody></table>
+<p>Với query trong kho hợp lệ, sau bỏ self còn 1.436 ứng viên B. Các ảnh khác cùng người/khác biểu cảm vẫn có thể xuất hiện; image_id là ID ảnh, không phải danh tính người. Kho dữ liệu có ảnh cùng người theo mô tả PDF, nhưng việc kết quả gần không chứng minh thuật toán nhận diện đúng người.</p>
+<p>Đây là minh họa khả năng vận hành: không có nhãn relevance độc lập để tính accuracy, precision/recall hoặc mAP truy hồi. Các số d chỉ là khoảng cách trong không gian B đã chuẩn hóa; không so sánh trực tiếp d nhỏ của A với d của B để chọn bộ tốt hơn.</p>
+<p>Tập 10 query đã lưu của B gồm 5 CFD +5 HF, chọn theo độ phủ mean Lab. Quy tắc chọn query không thay metric; kiểm tra đủ 50 dòng không self-match đã có trong hồ sơ v1. Báo cáo này không sửa công thức dựa trên kết quả nhìn thấy.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>24 / 28</span></footer></section><section class="sheet" data-n="25" data-title="Chương 6 — So sánh cùng query"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>6.3. SO SÁNH ĐÚNG PHẠM VI</h1>
+<p>Hai hình trước là các ví dụ <strong>đã lưu</strong> nhưng khác query; không dùng chúng để kết luận A/B thắng nhau. Để minh họa cùng đầu vào, bảng dưới giữ kết quả A đã lưu cho CFD00144 và tính kiểm tra B từ hàng B144 normalized thật của đúng ảnh đó. Phần B bổ sung chỉ ghi dưới docs/reports/_build/report_only_B_same_query.csv; không thay kết quả Top-5 hiện có trong outputs.</p>
+<table><thead><tr><th>Hạng</th><th>A: tên ảnh</th><th>dA</th><th>B: tên ảnh</th><th>dB</th></tr></thead><tbody>
+<tr><td>1</td><td>cfd_final_00325.png</td><td>6.3246</td><td>cfd_final_00346.png</td><td>10.2004</td></tr>
+<tr><td>2</td><td>hf_merged_00429.png</td><td>6.4367</td><td>cfd_final_00146.png</td><td>10.6407</td></tr>
+<tr><td>3</td><td>cfd_final_00352.png</td><td>6.6239</td><td>cfd_final_00145.png</td><td>10.8115</td></tr>
+<tr><td>4</td><td>cfd_final_00510.png</td><td>6.7952</td><td>cfd_final_00334.png</td><td>11.1250</td></tr>
+<tr><td>5</td><td>cfd_final_00340.png</td><td>6.7985</td><td>cfd_final_00347.png</td><td>11.8573</td></tr>
+</tbody></table>
+<figure><img src="figures/derived_B_same_query.png" alt="Hình 10. B cho query CFD00144, tính kiểm tra từ artifact thật; không gắn nhãn giả là PNG lịch sử đã lưu."></figure>
+<p><em>Hình 10. B cho query CFD00144, tính kiểm tra từ artifact thật; không gắn nhãn giả là PNG lịch sử đã lưu.</em></p>
+<p>A đo cấu trúc điểm và tỉ lệ; B đo phân bố màu trong ROI. Hai bộ có thể chọn ảnh khác nhau theo tiêu chí mà mỗi bộ biểu diễn. Không được suy ra chất lượng định danh hoặc “A+B đã hoàn thiện”. Một phân bố màu tương tự có thể thuộc hình học khác và ngược lại.</p>
+<p><strong>Ba loại đánh giá khác nhau:</strong> unit test xác nhận thuật toán số; đánh giá segmentation cần mask thủ công độc lập cùng protocol ROI; đánh giá retrieval cần nhãn/tiêu chí relevance và giao thức query/gallery. Không chuyển một loại kiểm tra thành số đo của loại còn lại.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>25 / 28</span></footer></section><section class="sheet" data-n="26" data-title="Chương 7 — Kết quả và kiểm chứng"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>CHƯƠNG 7. KẾT QUẢ VÀ HẠN CHẾ</h1>
+<h2>7.1. Tổng hợp đo trực tiếp</h2>
+<table><thead><tr><th>Hạng mục</th><th>Bộ A</th><th>Bộ B</th></tr></thead><tbody>
+<tr><td>Shape raw / normalized</td><td>(1438,150) / (1438,150)</td><td>(1437,144) / (1437,144)</td></tr>
+<tr><td>Ảnh không có vector</td><td>0 theo failed_images.csv</td><td>1: hf_merged_00209.png</td></tr>
+<tr><td>Dtype raw / Z</td><td>float32 / float32</td><td>float64 / float64</td></tr>
+<tr><td>Fit theo cột</td><td>1.438 hàng hợp lệ</td><td>1.437 hàng hợp lệ</td></tr>
+<tr><td>Chiều std&lt;1e-8</td><td>0</td><td>0</td></tr>
+<tr><td>NaN/Inf trong matrices</td><td>0</td><td>0</td></tr>
+<tr><td>Max abs(mean Z)</td><td>2.400e-09</td><td>2.624e-15</td></tr>
+<tr><td>Max abs(std Z−1)</td><td>3.433e-09</td><td>4.086e-14</td></tr>
+<tr><td>Sai số reconstruct so với float64</td><td>2.346e-07 (cast32)</td><td>0.000e+00</td></tr>
+</tbody></table>
+<p>Số đo mean/std trên đây được tính lại trong lần audit này, không sao chép summary để giả là kiểm tra độc lập. Sai số giảm tổng/cách bố trí mảng ở mức floating point có thể khác chữ số cuối so với summary lúc trích; ma trận không bị thay đổi. A khớp chính xác khi reconstruct rồi cast32; B reconstruct đúng bằng stats lưu.</p>
+<h2>7.2. Kiểm thử kỹ thuật</h2>
+<p>40/40 color unit tests chạy lại thành công trong .venv-uniface, log lưu riêng dưới _build. Repo chưa có bộ unit test riêng đầy đủ cho A; báo cáo bổ sung kiểm tra số học độc lập của 14 A2 trên tọa độ thật, sai số tối đa 3,345e-7, tái tạo A150 sample bằng đúng hàng kho, và đối chiếu trực tiếp thống kê toàn ma trận. Không gọi những kiểm tra này là accuracy.</p>
+<p>B v1 đã có hồ sơ xác minh 2.876 raw mask, 5.748 histogram L1, đủ 144 chiều và 50 dòng Top-5. Báo cáo đối chiếu lại dtype/shape/finite/statistics và nguồn; không chạy lại segmentation hoặc trích toàn kho. Chỉ chạy landmarks cho một ảnh thật để dựng hình/ví dụ, không ghi vào kho A.</p>
+<h2>7.3. Sai lệch A cần nêu rõ</h2>
+<p>Mẫu số A std_safe không giống σ+ε của PDF. Face-height và các điểm đại diện gò má/hàm là proxy hiện thực; mapping 68 điểm không được PDF liệt kê đủ để xác nhận từng nút. Bản đồ 2D, pose, ánh sáng tác động detector và biểu cảm đều có thể ảnh hưởng A. Không sửa code hoặc che các giới hạn này bằng tên “đặc trưng nhân trắc”.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>26 / 28</span></footer></section><section class="sheet" data-n="27" data-title="Chương 7 — ROI và hướng tiếp theo"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>7.4. CHẤT LƯỢNG MASK VÀ DỮ LIỆU THIẾU</h1>
+<p>B có <strong>1.169 ảnh có warning raw/feature</strong>, trong đó <strong>1.168 vector hợp lệ</strong>; warning không tự loại khỏi fit. Có <strong>305 ảnh abs(Z)&gt;5</strong> ở ít nhất một chiều theo hồ sơ v1, không đồng nghĩa 305 lỗi. Pixel tóc ít nhất trong các vector hợp lệ là <strong>106</strong>; ngưỡng 100 không bảo đảm tính đại diện màu tóc.</p>
+<figure><img src="figures/mask_caveats.png" alt="Hình 11. Hai dự đoán thật: khăn che tóc HF00694 và tay che mặt HF00722; không phải nhãn chuẩn."></figure>
+<p><em>Hình 11. Hai dự đoán thật: khăn che tóc HF00694 và tay che mặt HF00722; không phải nhãn chuẩn.</em></p>
+<p>Ở HF00694, hair raw chỉ 355 pixel sát mép trên, dễ không đại diện cho tóc nhìn thấy. Ở HF00722, raw skin quan sát chứa phần tay; không có nhãn độc lập để định lượng ảnh hưởng. HF00676 có tóc hồng hiếm và kết quả khác màu quan sát; không thay công thức để tối ưu ví dụ này. HF00209 có hair=0; trạng thái thiếu là dữ liệu được công khai, không bịa màu tóc.</p>
+<h2>7.5. Trước khi chuyển sang C</h2>
+<p>Cần protocol ROI và relevance độc lập nếu muốn đo chất lượng, đặc biệt khi nhiều người, che khuất, nền phức tạp hoặc hue ít bão hòa. Nhãn thủ công lịch sử không tự trở thành bộ GT đầy đủ cho UniFace toàn kho hoặc nhãn truy hồi.</p>
+<p>Giữ đúng thiết kế §2.5: khi kết hợp, dùng median normalization từng d rồi tổng trọng số không âm, tổng bằng 1. Ghép theo image_id/a_row_index, không theo số hàng mặc định vì B thiếu một ảnh. Không gán dB=0 hay vector B=0 để che thiếu. C1/C2 và A+B fusion chưa triển khai; tài liệu không tự công bố chúng đã hoàn thiện.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>27 / 28</span></footer></section><section class="sheet" data-n="28" data-title="Nguồn và tái lập"><div class="running">PORTRAIT RETRIEVAL · PHÂN TÍCH A150 &amp; B144</div><main class="content"><h1>NGUỒN, KIỂM CHỨNG VÀ TÁI LẬP</h1>
+<h2>8.1. Nguồn chính và hồ sơ cục bộ</h2>
+<p>1. Báo cáo nhóm <code>csdldpt.pdf</code>, 18 trang; SHA-256 <strong>8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80</strong>. Các công thức viện dẫn từ tr.9–13 và 17; quy trình dataset tại tr.4–5. 2. A: <code>geometry_features.py</code>, <code>extract_all_features.py</code>, <code>normalize_features.py</code>, <code>map_68_landmarks.py</code>; <code>shared/paths.py</code>, <code>shared/detect_landmarks.py</code>; <code>retrieval/search_geometry.py</code>. 3. B: <code>color_features.py</code>, <code>full_color.py</code>, <code>search_full_color.py</code>, <code>verify_full_color.py</code>, <code>batch_uniface.py</code>; schema/feature_layout/stats/manifest của color_features_full_v1. 4. <code>docs/report_compliance_audit.md</code>, <code>B_implementation_decisions.md</code>, <code>B_color_feature_spec.md</code>, <code>B_color_final_report.md</code>; README/metadata dataset và log tests.</p>
+<p>Không dùng nguồn web để bổ sung ngầm công thức. Phần giải thích toán học suy ra trực tiếp từ công thức và dữ liệu, được phân biệt với trích dẫn báo cáo. Chi tiết source của 42 module được lưu cùng hash/dòng/hàm trong <code>_build/source_inventory.json</code> và bản source_review.txt để truy vết, gồm cả module cũ không thuộc pipeline B v1.</p>
+<h2>8.2. File đi kèm</h2>
+<p><code>A_B_Feature_Analysis.md</code> là bản nguồn có thể chỉnh sửa; <code>A_B_Formula_Audit.md</code> đối chiếu công thức; <code>A_B_Report_Validation.md</code> ghi kiểm tra dữ liệu/PDF. Hình, số liệu và script build đặt trong figures/ và _build/. Công thức LaTeX trong Markdown được render SVG vector, không chụp công thức bằng ảnh mờ.</p>
+<p>Muốn render lại sau khi chỉnh Markdown: chạy <code>.venv311\Scripts\python.exe -X utf8 -B docs/reports/_build/render_report.py</code>, rồi Chrome headless theo lệnh trong file validation. Không cần cài thư viện hoặc tải model. Không chạy main của extractor/normalizer A/B để tạo báo cáo.</p>
+<h2>8.3. Phạm vi bảo toàn</h2>
+<p>Hash được chụp trước/sau cho source, artifact, dataset, annotations, model và PDF gốc, loại trừ thư mục báo cáo mới và bytecode cache. Mọi sai lệch được ghi, không tự sửa thuật toán. Kiểm tra PDF gồm A4, số trang, font tiếng Việt, cấu trúc bảng/công thức, không tràn vùng nội dung và raster từng trang để review.</p>
+<p>Báo cáo mô tả <strong>hệ thống đã quan sát</strong>, nêu rõ phần chưa đủ bằng chứng. Vector hữu hạn, unit tests đạt và Top-5 vận hành không thay thế đánh giá phân đoạn hoặc nhận diện có ground truth.</p></main><footer class="footer"><span>Báo cáo kỹ thuật · 22/11/2026</span><span>28 / 28</span></footer></section><script>
+window.addEventListener('load',async()=>{await document.fonts.ready;
+ const checks=[...document.querySelectorAll('.sheet')].map(s=>{const c=s.querySelector('.content');const cr=c.getBoundingClientRect();const foot=s.querySelector('.footer').getBoundingClientRect();
+ const bad=[...c.querySelectorAll('p,table,h1,h2,figure,.equation')].filter(e=>e.getBoundingClientRect().bottom>cr.bottom+1||e.getBoundingClientRect().right>cr.right+1);
+ return {page:Number(s.dataset.n),title:s.dataset.title,overflow:Math.max(0,c.scrollHeight-c.clientHeight),bad_elements:bad.map(e=>e.tagName+':'+e.textContent.slice(0,65)),footer_clear:cr.bottom<foot.top,images_ok:[...s.querySelectorAll('img')].every(x=>x.complete&&x.naturalWidth>0)};});
+ const p=document.createElement('pre');p.id='layout-validation';p.style.display='none';p.textContent=JSON.stringify(checks);document.body.appendChild(p);
+});
+</script></body></html>

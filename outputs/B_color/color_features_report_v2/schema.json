@@ -1,0 +1,52 @@
+{
+  "id": "B144_report_v2.0.0",
+  "version": "2.0.0",
+  "dimension": 144,
+  "regions": [
+    "skin72",
+    "hair72"
+  ],
+  "moment_indices": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131
+  ],
+  "normalization_stages": [
+    "Lab24 Z-score on separate regions",
+    "concatenate Skin72+Hair72",
+    "all144 Z-score"
+  ],
+  "moment_stage": "ddof0; sigma<1e-8 -> divisor1",
+  "final_stage": "D15: ddof0; sigma<1e-8 -> divisor1",
+  "raw_skin_class": 1,
+  "raw_hair_class": 17,
+  "erosion": false,
+  "include_nose": false,
+  "minimum_pixels": 100,
+  "descriptor": "Unchanged approved HS48/Lab12/Hue12; Pearson kurtosis; approved circular statistics",
+  "missing_policy": "No B144 when either region is missing; no zero-fill",
+  "normalized_dtype": "float64",
+  "query_refit": false,
+  "authority": "PDF sections 2.3.3/2.5.2 + explicit v2 two-stage user decision"
+}

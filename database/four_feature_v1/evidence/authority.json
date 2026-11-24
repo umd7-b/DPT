@@ -1,0 +1,24 @@
+{
+  "schema_id": "FOUR_FEATURE_SQLITE_AUTHORITY_v1",
+  "source_database": "D:\\TuNam4\\portrait-retrieval\\database\\data\\portrait_ab_v2_eye_metadata_v1.sqlite3",
+  "source_database_sha256": "6fc6213286c715edf997ed9484ca1da8da0d07dff59e2c486375fd53e34f4396",
+  "fingerprint": {
+    "D:\\TuNam4\\portrait-retrieval\\database\\data\\portrait_ab_v2_eye_metadata_v1.sqlite3": "6fc6213286c715edf997ed9484ca1da8da0d07dff59e2c486375fd53e34f4396",
+    "D:\\TuNam4\\portrait-retrieval\\database\\schema.sql": "2c48434fdd24e7e4f7c280d2738d5c7364c86eeb07674796f5aabc89f326c98c",
+    "D:\\TuNam4\\portrait-retrieval\\database\\store.py": "ddb2792ab8c69193b5665bd66686cb5b83d6411ab44c15ac61a201e3eec80f96",
+    "D:\\TuNam4\\portrait-retrieval\\retrieval\\fusion_four.py": "24c7250c44a89ad117277e793f501b8886eb27400a7dc2c0d89471d6f623cd2b",
+    "D:\\TuNam4\\portrait-retrieval\\retrieval\\search_fusion.py": "fea09c9bd6d28215df18a9e0457746e5f75fece3554db7b1c3a0a6a7b5bcc880",
+    "D:\\TuNam4\\portrait-retrieval\\retrieval\\fusion_four_policy.json": "18f4b7d92d6926cfef48030609a0bba6d529a5860db7ce836fb8a44620cf3798",
+    "D:\\TuNam4\\portrait-retrieval\\outputs\\retrieval\\fusion_ab_c1_c2_v1\\calibration\\median_params.json": "fbe5c728bf348af89dfcd7445d98bfcc6cf314339c68213460c18db6b2abc956",
+    "D:\\TuNam4\\portrait-retrieval\\outputs\\retrieval\\fusion_ab_c1_c2_v1\\calibration\\representative_pairs.csv": "d441a6447fccf1d7a6cfebf2427146710e0485a15d94df6a93fb579605053e82"
+  },
+  "parity_atol": 1e-12,
+  "parity_rtol": 1e-12,
+  "expected_medians": {
+    "a": 16.44198984041917,
+    "b": 10.81430055226477,
+    "c1": 0.30520587913351654,
+    "c2": 0.21819130381743668
+  },
+  "note": "Frozen before import/query; no resampling/refit; new database only"
+}

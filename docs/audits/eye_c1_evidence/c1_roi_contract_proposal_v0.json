@@ -1,0 +1,568 @@
+{
+  "id": "C1_ROI_PROPOSAL_v0.1",
+  "status": "PROPOSAL_UNVERIFIED_NOT_FOR_FEATURE_EXTRACTION",
+  "pdf_region_order": [
+    "forehead_and_eyebrows",
+    "left_cheek",
+    "right_cheek",
+    "nose_and_mouth"
+  ],
+  "provisional_order": [
+    "forehead_brow",
+    "cheek_left_viewer",
+    "cheek_right_viewer",
+    "nose_mouth"
+  ],
+  "overlap_priority": [
+    "forehead_brow",
+    "nose_mouth",
+    "cheek_left_viewer",
+    "cheek_right_viewer"
+  ],
+  "polygons": {
+    "forehead_brow": [
+      {
+        "ref": "MP478_AUX",
+        "index": 127,
+        "mediapipe_index": 127,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 162,
+        "mediapipe_index": 162,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 21,
+        "mediapipe_index": 21,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 54,
+        "mediapipe_index": 54,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 103,
+        "mediapipe_index": 103,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 67,
+        "mediapipe_index": 67,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 109,
+        "mediapipe_index": 109,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 10,
+        "mediapipe_index": 10,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 338,
+        "mediapipe_index": 338,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 297,
+        "mediapipe_index": 297,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 332,
+        "mediapipe_index": 332,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 284,
+        "mediapipe_index": 284,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 251,
+        "mediapipe_index": 251,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 389,
+        "mediapipe_index": 389,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 356,
+        "mediapipe_index": 356,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 26,
+        "mediapipe_index": 300,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 25,
+        "mediapipe_index": 293,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 24,
+        "mediapipe_index": 334,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 23,
+        "mediapipe_index": 296,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 22,
+        "mediapipe_index": 336,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 21,
+        "mediapipe_index": 107,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 20,
+        "mediapipe_index": 66,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 19,
+        "mediapipe_index": 105,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 18,
+        "mediapipe_index": 63,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 17,
+        "mediapipe_index": 70,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      }
+    ],
+    "cheek_left_viewer": [
+      {
+        "ref": "A68",
+        "index": 36,
+        "mediapipe_index": 33,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 41,
+        "mediapipe_index": 144,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 40,
+        "mediapipe_index": 153,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 5,
+        "mediapipe_index": 136,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 4,
+        "mediapipe_index": 172,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 3,
+        "mediapipe_index": 58,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 2,
+        "mediapipe_index": 132,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 1,
+        "mediapipe_index": 93,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 0,
+        "mediapipe_index": 234,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "cheek_right_viewer": [
+      {
+        "ref": "A68",
+        "index": 45,
+        "mediapipe_index": 263,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 46,
+        "mediapipe_index": 373,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 47,
+        "mediapipe_index": 380,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 11,
+        "mediapipe_index": 365,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 12,
+        "mediapipe_index": 397,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 13,
+        "mediapipe_index": 288,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 14,
+        "mediapipe_index": 361,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 15,
+        "mediapipe_index": 323,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 16,
+        "mediapipe_index": 454,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "nose_mouth": [
+      {
+        "ref": "A68",
+        "index": 27,
+        "mediapipe_index": 168,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 55,
+        "mediapipe_index": 321,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 56,
+        "mediapipe_index": 314,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 57,
+        "mediapipe_index": 17,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 58,
+        "mediapipe_index": 84,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 59,
+        "mediapipe_index": 91,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": -0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      }
+    ]
+  },
+  "auxiliary_upper_face_oval": [
+    127,
+    162,
+    21,
+    54,
+    103,
+    67,
+    109,
+    10,
+    338,
+    297,
+    332,
+    284,
+    251,
+    389,
+    356
+  ],
+  "side_convention": "viewer/code left/right; relation to PDF anatomical frame requires approval",
+  "frame": "u=normalized right-eye minus left-eye; v=(-u_y,u_x), positive image-y; D=inter-eye distance",
+  "vertex_equation": "P=source_landmark + D*(offset_u_ipd*u + offset_v_ipd*v)",
+  "connection": "straight edges in listed order; last vertex connects to first; no splines or hull",
+  "pixel_rule": "float64 derived vertices cast to float32 contour; integer pixel centres (x,y); cv2.pointPolygonTest >=0 includes boundary",
+  "clipping": "evaluate only 0<=x<width,0<=y<height; no clamp of vertices; no extrapolation",
+  "overlap_rule": "assign raw membership to first region in priority; others subtract earlier assigned pixels",
+  "missing_rule": "missing/nonfinite/degenerate/self-intersecting/empty region is invalid, never fabricated",
+  "future_descriptor_missing_policy": "PROPOSED: any missing/invalid required region means missing_C1; no 236-vector or zero-fill; no descriptor is implemented here",
+  "uncovered_rule": "unassigned pixels remain unassigned; do not stretch/fill the four regions",
+  "occlusion_rule": "geometry masks do not attest visible skin; known dataset violations remain review flags",
+  "lbp_boundary_proposal": "future LBP centre eligible only if full radius-2 support remains within assigned region; not implemented here",
+  "all_vertex_choices_and_offsets": "IMPLEMENTATION DETAIL PROPOSED; anatomical endpoints UNVERIFIED",
+  "numerical_guards": {
+    "min_ipd_pixels": 1e-06,
+    "min_polygon_area_pixels_squared": 1e-06,
+    "min_edge_length_pixels": 1e-09,
+    "segment_collinearity_and_bounds_tolerance": 1e-09
+  },
+  "native_topology_scope": "membership in saved MediaPipe contours is verified, canonical A68 identities are not",
+  "indices68_unchanged": [
+    234,
+    93,
+    132,
+    58,
+    172,
+    136,
+    150,
+    149,
+    152,
+    378,
+    379,
+    365,
+    397,
+    288,
+    361,
+    323,
+    454,
+    70,
+    63,
+    105,
+    66,
+    107,
+    336,
+    296,
+    334,
+    293,
+    300,
+    168,
+    6,
+    197,
+    1,
+    129,
+    48,
+    4,
+    278,
+    358,
+    33,
+    160,
+    158,
+    133,
+    153,
+    144,
+    362,
+    385,
+    387,
+    263,
+    373,
+    380,
+    61,
+    40,
+    37,
+    0,
+    267,
+    270,
+    291,
+    321,
+    314,
+    17,
+    84,
+    91,
+    78,
+    81,
+    13,
+    311,
+    308,
+    402,
+    14,
+    178
+  ],
+  "c1_c2_vectors_created": false,
+  "retrieval_used_for_selection": false
+}

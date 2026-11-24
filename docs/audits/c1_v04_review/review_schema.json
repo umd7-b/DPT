@@ -1,0 +1,59 @@
+{
+  "schema_id": "C1_V04_HUMAN_REVIEW_SCHEMA_v1",
+  "required_fields": [
+    "image_id",
+    "roi_name",
+    "contract_version",
+    "geometry_status",
+    "anatomy_review_status",
+    "reviewer",
+    "review_date",
+    "evidence_path",
+    "reason",
+    "decision_notes",
+    "covers_described_anatomy",
+    "cuts_important_part",
+    "excess_non_target_material",
+    "expression_boundary_reasonable",
+    "pdf_landmark_verification_needed",
+    "left_right_reference",
+    "occlusion_observation",
+    "reviewer_authority_evidence",
+    "decision_evidence_path",
+    "decision_evidence_sha256",
+    "contract_content_sha256",
+    "image_sha256"
+  ],
+  "unique_key": [
+    "image_id",
+    "roi_name",
+    "contract_version"
+  ],
+  "anatomy_review_status": [
+    "ACCEPT",
+    "REJECT",
+    "UNCERTAIN",
+    "NOT_REVIEWED"
+  ],
+  "default_anatomy_review_status": "NOT_REVIEWED",
+  "question_columns": [
+    "covers_described_anatomy",
+    "cuts_important_part",
+    "excess_non_target_material",
+    "expression_boundary_reasonable",
+    "pdf_landmark_verification_needed"
+  ],
+  "question_values": [
+    "YES",
+    "NO",
+    "UNCERTAIN",
+    "NOT_ANSWERED"
+  ],
+  "left_right_reference_values": [
+    "VIEWER",
+    "IMAGE_SUBJECT",
+    "UNCERTAIN",
+    "NOT_ANSWERED"
+  ],
+  "note": "Geometry and prior observations must never supply anatomy_review_status; evidence paths are relative to package root"
+}

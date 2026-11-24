@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portrait Atlas · Tra cứu chân dung</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Portrait Atlas"><span class="brand-symbol">P<span>•</span></span><span>Portrait<span class="brand-sub">ATLAS / RESEARCH</span></span></a>
+  <div class="nav-label">KHÔNG GIAN NGHIÊN CỨU</div>
+  <nav aria-label="Điều hướng">
+    <button class="nav-item active" id="nav-search"><span aria-hidden="true">⌕</span>Tra cứu chân dung</button>
+    <button class="nav-item" id="nav-gallery"><span aria-hidden="true">▦</span>Bộ sưu tập</button>
+    <button class="nav-item" id="nav-method"><span aria-hidden="true">≋</span>Phương pháp</button>
+  </nav>
+  <div class="sidebar-note"><span class="pill dark-pill">LOCAL DEMO</span><h3>Bốn bộ đặc trưng.<br>Một góc nhìn tổng hợp.</h3><p>Đối chiếu hình học, màu sắc, kết cấu và hướng biên trên cùng một kho ảnh.</p></div>
+  <div class="sidebar-bottom"><span class="lock-icon" aria-hidden="true">▣</span><div><strong>Snapshot chỉ đọc</strong><span>Không lưu lịch sử truy vấn</span></div></div>
+</aside>
+<main>
+  <header class="topbar"><span>Portrait retrieval <span class="breadcrumb">/</span> <strong>Không gian tra cứu</strong></span><button id="system-button" class="text-button">Thông tin hệ thống</button></header>
+  <section class="intro"><div><div class="eyebrow">EXPLORE THE GALLERY</div><h1>Khám phá độ tương đồng</h1><p>Chọn một chân dung và đối chiếu kết quả từ năm chế độ tìm kiếm.</p></div><button class="secondary" id="open-gallery">Duyệt bộ sưu tập <span class="key-hint">1.438 ảnh</span></button></section>
+  <section id="overview" class="stats" aria-label="Tổng quan dữ liệu">
+    <article class="stat"><span class="stat-icon lavender">▦</span><div><span>Ảnh trong gallery</span><strong id="stat-images">—</strong></div></article>
+    <article class="stat"><span class="stat-icon blue">◇</span><div><span>Vector hợp lệ</span><strong id="stat-vectors">—</strong></div></article>
+    <article class="stat"><span class="stat-icon green">⊞</span><div><span>Ảnh đủ bốn bộ</span><strong id="stat-pool">—</strong></div></article>
+    <article class="stat"><span class="stat-icon amber">!</span><div><span>Trạng thái thiếu B</span><strong id="stat-missing">—</strong></div></article>
+  </section>
+  <div id="global-error" class="notice error" role="alert" hidden></div>
+  <section class="workspace" aria-label="Công cụ tra cứu">
+    <aside class="query-panel panel">
+      <div class="section-kicker">ẢNH TRUY VẤN <span class="small-badge">GALLERY</span></div>
+      <button class="query-photo" id="query-detail" aria-label="Xem metadata ảnh truy vấn"><img id="query-image" alt="Ảnh truy vấn đã chọn" hidden><span id="query-placeholder">Đang tải gallery…</span></button>
+      <div class="query-caption"><strong id="query-filename">Chưa chọn ảnh</strong><span id="query-source">Chỉ sử dụng ảnh có trong kho</span></div>
+      <div id="query-features" class="feature-badges" aria-label="Trạng thái đặc trưng của query"></div>
+      <label for="query-input">ID hoặc tên file</label>
+      <div class="query-input-wrap"><input id="query-input" type="text" placeholder="cfd_final_00001.png" autocomplete="off" spellcheck="false" list="query-suggestions"><datalist id="query-suggestions"></datalist></div>
+      <button type="button" class="primary" id="search-button">Tìm kiếm chân dung <span aria-hidden="true">⌕</span></button>
+      <button class="text-button full" id="change-image">Chọn ảnh khác trong gallery</button>
+      <div class="query-footnote"><strong>Chỉ truy vấn gallery</strong><p>Ảnh mới: chưa hỗ trợ — cần pipeline A/B/C1/C2 cho ảnh mới.</p></div>
+    </aside>
+    <div class="results-workspace">
+      <section class="panel controls">
+        <div class="control-heading"><div><h2>Chế độ tìm kiếm</h2><p>Các chế độ dùng chung tập ảnh đủ bốn đặc trưng.</p></div><span class="pill">SQLITE · CHỈ ĐỌC</span></div>
+        <div class="modes" role="tablist" aria-label="Chế độ tìm kiếm">
+          <button data-mode="a" role="tab" aria-selected="false">A <span>Hình học</span></button>
+          <button data-mode="b" role="tab" aria-selected="false">B <span>Màu sắc</span></button>
+          <button data-mode="c1" role="tab" aria-selected="false">C1 <span>LBP</span></button>
+          <button data-mode="c2" role="tab" aria-selected="false">C2 <span>Root-HOG</span></button>
+          <button data-mode="fusion" role="tab" aria-selected="true" class="selected">Fusion <span>Bốn bộ</span></button>
+          <button data-mode="compare" role="tab" aria-selected="false">So sánh <span>Cả 5 chế độ</span></button>
+        </div>
+        <fieldset id="weights-fieldset"><legend>Trọng số Fusion <span>EXPERIMENTAL_EQUAL_WEIGHTS mặc định</span></legend>
+          <div class="weight-grid">
+            <label>A · Hình học<input type="number" id="weight-a" data-weight="a" min="0" step="any" value="0.25" aria-label="Trọng số A"></label>
+            <label>B · Màu sắc<input type="number" id="weight-b" data-weight="b" min="0" step="any" value="0.25" aria-label="Trọng số B"></label>
+            <label>C1 · Kết cấu<input type="number" id="weight-c1" data-weight="c1" min="0" step="any" value="0.25" aria-label="Trọng số C1"></label>
+            <label>C2 · Hướng biên<input type="number" id="weight-c2" data-weight="c2" min="0" step="any" value="0.25" aria-label="Trọng số C2"></label>
+          </div>
+        </fieldset>
+        <div class="weights-summary"><span id="weight-total">Tổng trọng số: 1,00</span><span>Trọng số thử nghiệm, không phải trọng số PDF bắt buộc.</span><button class="text-button" id="reset-weights">Đặt lại 0,25</button></div>
+        <div id="weight-error" class="notice error" role="alert" hidden></div>
+      </section>
+      <div id="query-notice" class="notice info" role="status" hidden></div>
+      <section id="result-section" aria-live="polite" aria-busy="false">
+        <div class="result-header"><div><h2 id="result-title">Kết quả tương đồng</h2><p id="result-meta">Khoảng cách nhỏ hơn thể hiện độ tương đồng cao hơn theo đặc trưng.</p></div><span class="result-count" id="result-count">TOP 5</span></div>
+        <div id="results" class="result-groups"><div class="empty-state">Chọn ảnh trong gallery để bắt đầu truy vấn.</div></div>
+      </section>
+      <section class="panel distance-panel" id="distance-panel" hidden><div class="distance-heading"><div><h2>Giải thích khoảng cách</h2><p>Mỗi ô hiển thị khoảng cách gốc và giá trị sau chuẩn hóa trung vị.</p></div><span class="small-badge">TỪ BACKEND SQL</span></div><div class="table-scroll"><table><thead><tr><th>Ảnh kết quả</th><th>A · Euclid</th><th>B · Euclid</th><th>C1 · Chi-square</th><th>C2 · Euclid</th><th>D Fusion</th></tr></thead><tbody id="distance-body"></tbody></table></div></section>
+      <footer class="workspace-footer"><span>Kết quả phục vụ nghiên cứu; chưa có relevance ground truth để kết luận accuracy.</span><button class="text-button" id="method-footer">Xem độ đo & phiên bản</button></footer>
+    </div>
+  </section>
+</main>
+<dialog id="gallery-dialog"><div class="dialog-heading"><div><div class="eyebrow">VERIFIED CATALOG</div><h2>Chọn ảnh trong gallery</h2></div><button class="icon-button close-dialog" aria-label="Đóng gallery">×</button></div><div class="gallery-tools"><label class="sr-only" for="gallery-filter">Tìm ID hoặc tên file</label><input id="gallery-filter" placeholder="Tìm theo ID hoặc tên file…" autocomplete="off"><label class="sr-only" for="gallery-source">Nguồn ảnh</label><select id="gallery-source"><option value="">Tất cả nguồn</option><option>CFD</option><option>HF</option></select><span id="gallery-total"></span></div><div id="gallery-error" class="notice error" role="alert" hidden></div><div id="gallery-grid" class="gallery-grid"></div><button class="secondary load-more" id="gallery-more">Xem thêm ảnh</button></dialog>
+<dialog id="detail-dialog"><div class="dialog-heading"><div><div class="eyebrow">CATALOG METADATA</div><h2>Chi tiết chân dung</h2></div><button class="icon-button close-dialog" aria-label="Đóng chi tiết">×</button></div><div id="detail-content"></div></dialog>
+<dialog id="method-dialog"><div class="dialog-heading"><div><div class="eyebrow">RETRIEVAL METHODS</div><h2>Độ đo & thông tin hệ thống</h2></div><button class="icon-button close-dialog" aria-label="Đóng thông tin">×</button></div><div class="method-copy"><p>A150, B144 và C2_324 dùng Euclid. C1_236 dùng Chi-square với hệ số 0,5. Fusion cộng bốn khoảng cách sau khi chia cho median tương ứng cộng epsilon.</p><div id="method-values"></div><p><strong>Trọng số mặc định:</strong> 0,25 / 0,25 / 0,25 / 0,25 — cấu hình thử nghiệm, không phải trọng số PDF bắt buộc. Không tự tối ưu hoặc chia lại trọng số.</p><p><strong>Tập so sánh:</strong> cùng 1.437 ảnh đủ bốn bộ; loại chính image_id query, giữ thứ tự distance/image_id khi hòa. Query đầy đủ còn 1.436 ứng viên.</p><p><strong>Giới hạn:</strong> C1 ROI v0.4 chưa anatomy-approved. Chưa có relevance ground truth để kết luận chất lượng. Metadata mắt là phép đo audit, không chứng minh alignment lịch sử.</p><p>Ứng dụng chỉ đọc snapshot SQLite. Không có endpoint sửa dữ liệu, lưu lịch sử hoặc xử lý ảnh mới.</p><details><summary>Phiên bản dữ liệu đã xác minh</summary><pre id="version-details"></pre></details></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

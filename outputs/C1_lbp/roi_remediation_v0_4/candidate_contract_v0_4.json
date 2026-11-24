@@ -1,0 +1,613 @@
+{
+  "schema_id": "C1_ROI_ANATOMICAL_CANDIDATE_v0.4.0",
+  "version": "0.4.0",
+  "status": "PROVISIONAL",
+  "report_sha256": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80",
+  "polygons": {
+    "forehead_brow": [
+      {
+        "ref": "MP478_AUX",
+        "index": 127,
+        "mediapipe_index": 127,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 162,
+        "mediapipe_index": 162,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 21,
+        "mediapipe_index": 21,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 54,
+        "mediapipe_index": 54,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 103,
+        "mediapipe_index": 103,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 67,
+        "mediapipe_index": 67,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 109,
+        "mediapipe_index": 109,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 10,
+        "mediapipe_index": 10,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 338,
+        "mediapipe_index": 338,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 297,
+        "mediapipe_index": 297,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 332,
+        "mediapipe_index": 332,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 284,
+        "mediapipe_index": 284,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 251,
+        "mediapipe_index": 251,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 389,
+        "mediapipe_index": 389,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 356,
+        "mediapipe_index": 356,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 276,
+        "mediapipe_index": 276,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 283,
+        "mediapipe_index": 283,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 282,
+        "mediapipe_index": 282,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 295,
+        "mediapipe_index": 295,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 285,
+        "mediapipe_index": 285,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 55,
+        "mediapipe_index": 55,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 65,
+        "mediapipe_index": 65,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 52,
+        "mediapipe_index": 52,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 53,
+        "mediapipe_index": 53,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX_PROPOSED_LOWER_BROW",
+        "index": 46,
+        "mediapipe_index": 46,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "cheek_left_viewer": [
+      {
+        "ref": "A68",
+        "index": 36,
+        "mediapipe_index": 33,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 41,
+        "mediapipe_index": 144,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 40,
+        "mediapipe_index": 153,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 5,
+        "mediapipe_index": 136,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 4,
+        "mediapipe_index": 172,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 3,
+        "mediapipe_index": 58,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 2,
+        "mediapipe_index": 132,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 1,
+        "mediapipe_index": 93,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 0,
+        "mediapipe_index": 234,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "cheek_right_viewer": [
+      {
+        "ref": "A68",
+        "index": 45,
+        "mediapipe_index": 263,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 46,
+        "mediapipe_index": 373,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 47,
+        "mediapipe_index": 380,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 11,
+        "mediapipe_index": 365,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 12,
+        "mediapipe_index": 397,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 13,
+        "mediapipe_index": 288,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 14,
+        "mediapipe_index": 361,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 15,
+        "mediapipe_index": 323,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 16,
+        "mediapipe_index": 454,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "nose_mouth": [
+      {
+        "ref": "A68",
+        "index": 27,
+        "mediapipe_index": 168,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 55,
+        "mediapipe_index": 321,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 56,
+        "mediapipe_index": 314,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 57,
+        "mediapipe_index": 17,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 58,
+        "mediapipe_index": 84,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 59,
+        "mediapipe_index": 91,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": -0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      }
+    ]
+  },
+  "geometry_changed_from_v0_1": false,
+  "region_order": [
+    "forehead_brow",
+    "cheek_left_viewer",
+    "cheek_right_viewer",
+    "nose_mouth"
+  ],
+  "side_convention": "viewer/code left/right; relation to PDF anatomical frame requires approval",
+  "auxiliary_upper_face_oval": [
+    127,
+    162,
+    21,
+    54,
+    103,
+    67,
+    109,
+    10,
+    338,
+    297,
+    332,
+    284,
+    251,
+    389,
+    356
+  ],
+  "indices68_unchanged": [
+    234,
+    93,
+    132,
+    58,
+    172,
+    136,
+    150,
+    149,
+    152,
+    378,
+    379,
+    365,
+    397,
+    288,
+    361,
+    323,
+    454,
+    70,
+    63,
+    105,
+    66,
+    107,
+    336,
+    296,
+    334,
+    293,
+    300,
+    168,
+    6,
+    197,
+    1,
+    129,
+    48,
+    4,
+    278,
+    358,
+    33,
+    160,
+    158,
+    133,
+    153,
+    144,
+    362,
+    385,
+    387,
+    263,
+    373,
+    380,
+    61,
+    40,
+    37,
+    0,
+    267,
+    270,
+    291,
+    321,
+    314,
+    17,
+    84,
+    91,
+    78,
+    81,
+    13,
+    311,
+    308,
+    402,
+    14,
+    178
+  ],
+  "frame": "u=normalized right-eye minus left-eye; v=(-u_y,u_x), positive image-y; D=inter-eye distance",
+  "vertex_equation": "P=source_landmark + D*(offset_u_ipd*u + offset_v_ipd*v)",
+  "connection": "straight edges in listed order; last vertex connects to first; no splines or hull",
+  "pixel_rule": "float64 derived vertices cast to float32 contour; integer pixel centres (x,y); cv2.pointPolygonTest >=0 includes boundary",
+  "clipping": "evaluate only 0<=x<width,0<=y<height; no clamp of vertices; no extrapolation",
+  "overlap_policy": "RAW_INDEPENDENT_MEMBERSHIP; shared pixels remain in each region; no priority subtraction",
+  "priority_subtraction_applied": false,
+  "future_pooling": "Each raw ROI pools independently; overlap ownership is not assigned to one ROI",
+  "missing_policy": "Future C1 unavailable if any required ROI invalid or fewer than 64 support-valid centres; no zero-fill",
+  "numerical_guards": {
+    "min_ipd_pixels": 1e-06,
+    "min_polygon_area_pixels_squared": 1e-06,
+    "min_edge_length_pixels": 1e-09,
+    "segment_collinearity_and_bounds_tolerance": 1e-09
+  },
+  "technical_review_thresholds": {
+    "raw_pixels_lt": 256,
+    "support_centres_lt": 64,
+    "authority": "Implementation conventions selected before full-dataset metrics; not PDF quality thresholds"
+  },
+  "anatomical_validation": "UNVERIFIED; native-contour and eyebrow proxies are not manual anatomical ground truth",
+  "retrieval_used_to_choose_roi": false,
+  "anatomy_status": "ANATOMY_PROVISIONAL",
+  "active": false,
+  "source_contract": {
+    "schema_id": "C1_ROI_RAW_CONTRACT_v0.2.0",
+    "content_sha256": "61b04936237bdc6a84f991688f667e06a252965d4e24b8028cc2e2f9f63eb69c",
+    "file_sha256": "6d014ac00707bc158e8970a971548ed847331df19faebd4078bfca62347720a6"
+  },
+  "source_forehead_proposal": {
+    "schema_id": "C1_FOREHEAD_AMENDMENT_PROPOSAL_v0.3.0",
+    "file_sha256": "3a09e0a312005645e7af9d8d6635132c406b87803e235b763f0d1e246d3c37a6"
+  },
+  "boundary_rationale": {
+    "upper": "Retain all15 upper FACE_OVAL nodes and their order; not a hairline annotation",
+    "lower": "Replace the five-point upper brow per side with the native lower brow contours; retain their anatomical order",
+    "zero_offset": "Remove unsupported +0.02D downshift from v0.3. At HF00198 the sloped temporal face boundary makes a global downward shift cross it.",
+    "no_arbitrary_vertex_deletion": true,
+    "no_reorder_or_hull": true,
+    "offset_search_performed": false,
+    "limitations": "Sparse native contours are model proxies; neither perfect coverage nor a simple polygon is anatomical ground truth"
+  },
+  "changes": {
+    "forehead_lower_chain": [
+      276,
+      283,
+      282,
+      295,
+      285,
+      55,
+      65,
+      52,
+      53,
+      46
+    ],
+    "forehead_lower_offset_v_ipd": 0.0,
+    "unchanged_regions": [
+      "cheek_left_viewer",
+      "cheek_right_viewer",
+      "nose_mouth"
+    ],
+    "unchanged_A_mapping": true,
+    "no_active_extractor_or_trial_updates": true
+  },
+  "outside_rule": "Only image clipping at raster evaluation, not face-oval clipping or vertex repair",
+  "overlapping_regions": "Raw independent membership retained; no ownership subtraction",
+  "source_hashes": {
+    "landmarks": "a21e4abce28354d3a1fe5541bf0d2b7ab6d4b6d1119207d3231471bcacf263ed",
+    "native_topology": "86a172923e8d18919e3cb58d50efbeca7512ab1f2548f3cb155dc5378024db12",
+    "report": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80"
+  },
+  "decision_basis": "HF00198 edge/offset diagnosis and lower-brow membership; chosen before full census, never retrieval scores",
+  "geometric_validation": "See separate census and verification; this candidate file does not grant anatomical acceptance",
+  "geometry_sha256": "9225276c190fffb8c1974794d47ad805b5e0cb4909f4744f68f4c5a2a9eea030",
+  "content_sha256": "c6d839d420e03555a5e34a5ae9c5b02a3a5e6a6e8e456310576c11215031bb39"
+}

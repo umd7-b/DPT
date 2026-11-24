@@ -1,0 +1,81 @@
+{
+  "id": "B144_raw_v1.0.0",
+  "dimension": 144,
+  "report_sha256": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80",
+  "regions": [
+    "skin",
+    "hair"
+  ],
+  "region_order": [
+    "HS48",
+    "Lab12",
+    "Hue10",
+    "circular_mean",
+    "circular_std"
+  ],
+  "hs_bins": [
+    12,
+    4
+  ],
+  "hs_ranges": [
+    [
+      0,
+      180
+    ],
+    [
+      0,
+      256
+    ]
+  ],
+  "histogram_order": "C: hue outer, saturation inner",
+  "hue_bins": 10,
+  "hue_range": [
+    0,
+    180
+  ],
+  "histogram_normalization": "L1 per histogram",
+  "lab": "OpenCV float32 BGR/255 to CIE Lab; L* approximately [0,100], signed a*,b*",
+  "lab_channel_order": [
+    "L",
+    "a",
+    "b"
+  ],
+  "lab_stat_order": [
+    "mean",
+    "population_std",
+    "population_skewness",
+    "Pearson_kurtosis"
+  ],
+  "zero_variance": "std/skew/kurt=0; explicit diagnostic; skew/kurt mathematically undefined for constants",
+  "circular_mean": "(atan2(mean(sin(phi)),mean(cos(phi))) mod 2pi)/(2pi)",
+  "circular_std": "min(sqrt(-2*log(max(R,1e-12)))/(2pi),1)",
+  "undefined_circular_mean": "0 with warning if R<1e-8",
+  "conventions_status": "APPROVED FOR IMPLEMENTATION by user for D01-D17",
+  "missing_policy": "vector=None if either region empty or below minimum pixels; never zero-fill missing data",
+  "version": "1.0.0",
+  "approval_date": "2026-11-22",
+  "authority": "PDF explicit requirements plus user-approved implementation conventions; not all formulas are verbatim PDF",
+  "skin_class": 1,
+  "hair_class": 17,
+  "mask_variant": "raw",
+  "erosion_for_features": false,
+  "minimum_region_pixels": 100,
+  "saturation_filter": false,
+  "low_saturation_warning": {
+    "threshold": 10,
+    "fraction_gt": 0.5
+  },
+  "normalization": {
+    "profile": "all144",
+    "stage": "descriptor, concatenate B144, then one gallery Z-score",
+    "ddof": 0,
+    "std_threshold": 1e-08,
+    "small_std_divisor": 1.0,
+    "query_refit": false,
+    "fit_scope": "all valid vectors in the 1438-image gallery"
+  },
+  "distance": "Euclidean on Z-score vectors",
+  "self_match": "exclude by image_id",
+  "tie_break": "filename ascending",
+  "image_id": "metadata image_id if present, otherwise filename stem"
+}

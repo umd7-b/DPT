@@ -1,0 +1,720 @@
+{
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "docs\\audits\\c1_final_tools\\render_contact_sheets.py",
+      "bytes": 12568,
+      "sha256": "14e6e3eb9b6abeabbeebd2e3c0ae6490fa0502089f61f151840b6e159dc79355"
+    },
+    {
+      "path": "docs\\audits\\c1_final_tools\\test_c1_specs.py",
+      "bytes": 5899,
+      "sha256": "bf411196da5f766e4cb32080815e9c2839cf9f587cd0012169e82b0245e07d54"
+    },
+    {
+      "path": "docs\\audits\\c1_final_tools\\validate_roi_all.py",
+      "bytes": 21627,
+      "sha256": "8a3693dd94975c48fd891aceeaf14486bd430fdfaffd3ce5d5935f363e464ff2"
+    },
+    {
+      "path": "docs\\audits\\c1_final_tools\\verify_full_validation.py",
+      "bytes": 6173,
+      "sha256": "784a1e40631dedeb6501b0162c0fe4a1cce087594da2edc26fb9cc216686c769"
+    },
+    {
+      "path": "docs\\audits\\c1_final_tools\\write_final_specs.py",
+      "bytes": 36801,
+      "sha256": "fa63c61be5afb9a0404fd4727f8a3cdfaae70b93db9064e4a3a57f1794e60526"
+    },
+    {
+      "path": "docs\\audits\\C1_ROI_FULL_DATASET_VALIDATION.md",
+      "bytes": 12083,
+      "sha256": "03a3770cd90a5b969c833cfe190b733b6a803836be535998e5d4b9761bcad8a4"
+    },
+    {
+      "path": "docs\\C1_final_roi_contract.md",
+      "bytes": 11069,
+      "sha256": "7743a056bc3d19fed23cd0ac72e1382f7461d9125cc6c30eaee6b5f4af4886fa"
+    },
+    {
+      "path": "docs\\C1_lbp_236_feature_spec.md",
+      "bytes": 10137,
+      "sha256": "ba4e227e56dc2748e5ab6259779aa37f4df780f26136136752946ad8671b640e"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\baseline_before.json",
+      "bytes": 2507527,
+      "sha256": "09ca8eeaaea7350af708dbc96078bededd9e3875f54cc2354004f0cabbe4e679"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\case_selection.json",
+      "bytes": 4629,
+      "sha256": "8d4ac3a69cffef254553dd80866510c188074fd3f64dda48fbe4c65862d40723"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00001\\cheek_left_viewer_raw_mask.png",
+      "bytes": 840,
+      "sha256": "872caa0e572bef4b96587a52df0a43c441c0eb963b818a78e3345887694644cd"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00001\\cheek_right_viewer_raw_mask.png",
+      "bytes": 847,
+      "sha256": "a5d057c565098dd409ae978292e10d9946988a608c73b5f628b27c0f97cff62d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00001\\contact.png",
+      "bytes": 1129009,
+      "sha256": "a471bac01e073f3597309527d48c7ad7cd93363cecf5408ba163a3b13156dc12"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00001\\forehead_brow_raw_mask.png",
+      "bytes": 868,
+      "sha256": "a27144ee1cf8a2a59b7549c7028319974d9c41216b920db2c208c216a8c19436"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00001\\nose_mouth_raw_mask.png",
+      "bytes": 848,
+      "sha256": "372943e19b1d6005d0f2241b69582fbed2c7eed684025639de87f7b8bf9e5791"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00069\\cheek_left_viewer_raw_mask.png",
+      "bytes": 874,
+      "sha256": "8d6ca23487f2a17ec196bfebf76dc938e48051019db683f3c68e5a43e8ceaef5"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00069\\cheek_right_viewer_raw_mask.png",
+      "bytes": 876,
+      "sha256": "4aba0ccd9ccaabf4626433a3fa346e2cfaaf9e308c4ab39031eea1c68f28356c"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00069\\contact.png",
+      "bytes": 1013494,
+      "sha256": "882d54928c046c365497bee164b4e0adb535f4cb0e46db2a31c768d4af859742"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00069\\forehead_brow_raw_mask.png",
+      "bytes": 888,
+      "sha256": "edff5178c0b9a4c0e8bfb81581928cdf142574f88a0ddf5e5f34bc7b7615bf30"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00069\\nose_mouth_raw_mask.png",
+      "bytes": 911,
+      "sha256": "adc6f8dc8a41692601c9b156a8901431016876d996e96acb36db64d157163161"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00112\\cheek_left_viewer_raw_mask.png",
+      "bytes": 852,
+      "sha256": "d4ad8677622b61feeabf36ddfee0c6c62094b01f6093bb8908a377125e8fb0d9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00112\\cheek_right_viewer_raw_mask.png",
+      "bytes": 851,
+      "sha256": "b446ac2f19c3a227a78ad13ce3baa4d318c61178bd0a597452c768b28d1326d4"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00112\\contact.png",
+      "bytes": 1304478,
+      "sha256": "65b939538a668ef92bbd31fdd75e949f45394e3a4839291f129cfba604c60265"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00112\\forehead_brow_raw_mask.png",
+      "bytes": 806,
+      "sha256": "c15be6f79a6077796ebd9a7ccb11768d5e59ee0909efdd328b7f768e68182ea1"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00112\\nose_mouth_raw_mask.png",
+      "bytes": 925,
+      "sha256": "e9a9859c40fca5c84a742ace83e049a96ffcab29a8efda0ae78d5835ee7a5d2f"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00115\\cheek_left_viewer_raw_mask.png",
+      "bytes": 954,
+      "sha256": "b0bf612ad6bc0123462936502d0c28dc698ba1708eeddf0797e9aec6a3ad8cec"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00115\\cheek_right_viewer_raw_mask.png",
+      "bytes": 967,
+      "sha256": "bf0e04e161fbbbc7c939173c6f41d2175cbceba95c491e01b384ac6c689c3c3a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00115\\contact.png",
+      "bytes": 1157275,
+      "sha256": "67f79592894ebf99cfcf8b681fdc28891f20c0a5c3207ff73c3a900362692876"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00115\\forehead_brow_raw_mask.png",
+      "bytes": 964,
+      "sha256": "6e4ae15555e298a2905df0a95d05afd66eaa0aa44d38c8e192fa3bf32eb37a8e"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00115\\nose_mouth_raw_mask.png",
+      "bytes": 988,
+      "sha256": "6c5da82927c7c1de6dd54dc0a67dd7106b93fc4e52d7c8ee3486869a77721e6a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00192\\cheek_left_viewer_raw_mask.png",
+      "bytes": 890,
+      "sha256": "cd274f31f19a90a059303deb4795da213eaa98c55704481e106c1e3cb7423ec1"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00192\\cheek_right_viewer_raw_mask.png",
+      "bytes": 888,
+      "sha256": "96154a93509dc389e5c74e0529a5fdbe67beb629a232ae45f5f257c3dc7c4a39"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00192\\contact.png",
+      "bytes": 1147951,
+      "sha256": "7e2a0822b6e7a637057840d7827f5d7a4849512f47f3d926a81ff7bd4e3bb51c"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00192\\forehead_brow_raw_mask.png",
+      "bytes": 877,
+      "sha256": "7a5d4fbb54d1d241bd04a147c59ac340c20eeaa5f7f6dc0d736d21f6b6fa588d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00192\\nose_mouth_raw_mask.png",
+      "bytes": 967,
+      "sha256": "80f6a5481ebcc668e5caa6b395f53f6246d558cfe38a48527315613355d1836f"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00268\\cheek_left_viewer_raw_mask.png",
+      "bytes": 900,
+      "sha256": "0312b74fa7f03c74499621a636fdc394bad0067b56a4a346de4dade1af5e2deb"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00268\\cheek_right_viewer_raw_mask.png",
+      "bytes": 916,
+      "sha256": "941f66cf980710cb8f542e46f3361961929cf5573665a1bf2641e6556d821669"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00268\\contact.png",
+      "bytes": 1201381,
+      "sha256": "21d513fde4ad238d7131fb135896b59c2a2cec9f2da14685b0c17723c3236342"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00268\\forehead_brow_raw_mask.png",
+      "bytes": 927,
+      "sha256": "3c48b64ce12636c4ba9679fec1326323851065cb28ad374cccd4d8580b70ea46"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00268\\nose_mouth_raw_mask.png",
+      "bytes": 962,
+      "sha256": "f243c4866711344134d3c2cf4710e77f03c3a76a90041e29b5ac9b7e7e39f98b"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00543\\cheek_left_viewer_raw_mask.png",
+      "bytes": 844,
+      "sha256": "bb2c789c35c84250e76fc992c2a39dd1ccfdecb80966977c5b436b9ca61ce747"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00543\\cheek_right_viewer_raw_mask.png",
+      "bytes": 843,
+      "sha256": "2f25f1d54788554ab071446bdc31fc0729f2ff95902ce417a54eea3ec9b3f276"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00543\\contact.png",
+      "bytes": 936367,
+      "sha256": "bbeccfd25769432fede719276ad486c0153cdd5e9bddccbfe8d7f51cc9f595f1"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00543\\forehead_brow_raw_mask.png",
+      "bytes": 816,
+      "sha256": "79a7a56f9285607cf2cca074e0d08cc64d3dfed0af34c4bffd1f7b944e477d41"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\cfd_final_00543\\nose_mouth_raw_mask.png",
+      "bytes": 795,
+      "sha256": "89876d0ee7a136b8b700944976d46809bfe47a114c223397b562f68a91194e79"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00001\\cheek_left_viewer_raw_mask.png",
+      "bytes": 873,
+      "sha256": "b054a5f844a5db79720027f31796d7321823ea51ee9c3fa948f5ad272146e858"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00001\\cheek_right_viewer_raw_mask.png",
+      "bytes": 874,
+      "sha256": "f105edd4b6e2656c7b7f81b6352eea6e4d0d063b8fd100d66b688661ae3085ee"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00001\\contact.png",
+      "bytes": 1260618,
+      "sha256": "f280fe8c1bd631990e6fdad73738e525159e4df5cd960f316a248024f00d2297"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00001\\forehead_brow_raw_mask.png",
+      "bytes": 845,
+      "sha256": "ccf76db39e934fd346c94d15e8e7eee092a2cfafb11417ef3405d93f07bd8af2"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00001\\nose_mouth_raw_mask.png",
+      "bytes": 874,
+      "sha256": "54c651d1442eda886c9474616aad8cc27086f1f243488d15390c8315cba2e99a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00069\\cheek_left_viewer_raw_mask.png",
+      "bytes": 893,
+      "sha256": "caed302f9ea9ae18942cc111021aeb7fff65d97d02e9fa452eb99b85fc714580"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00069\\cheek_right_viewer_raw_mask.png",
+      "bytes": 859,
+      "sha256": "7506e85e0cc6669138037d4fe8f5e6b6dc457a688e8854595323f449a6ce9c09"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00069\\contact.png",
+      "bytes": 1192124,
+      "sha256": "e663755f6e28143478532d5e765eb241f0df92cbcc083443b215f1564a85a7d9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00069\\forehead_brow_raw_mask.png",
+      "bytes": 796,
+      "sha256": "ad9f3c24f3727fc63c1889f08fa4ecb1b4e8530d483d0b87c3f77f34649254f7"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00069\\nose_mouth_raw_mask.png",
+      "bytes": 909,
+      "sha256": "52462c69b7069662ee4d2810ab9eee8c9d33c7b66d70e435127e98fd1da5c637"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00198\\cheek_left_viewer_raw_mask.png",
+      "bytes": 853,
+      "sha256": "8715f0bd205b7d5cede7bb9e8f660922730f62489cd878b6137d619a8b0ba1d9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00198\\cheek_right_viewer_raw_mask.png",
+      "bytes": 917,
+      "sha256": "2678283c22ff90da000563f139e6d3f64de9ca4a23b2bfddf9bae267959724f3"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00198\\contact.png",
+      "bytes": 1263531,
+      "sha256": "8c14673d8ba4815e68b17f2f812d1cd9a7ac66383fab39011988adef3f61e06e"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00198\\forehead_brow_raw_mask.png",
+      "bytes": 799,
+      "sha256": "e4aa262e9c43b51f53f204584acd1516a75b49e95b0527c1d4357f4bd36e31fe"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00198\\nose_mouth_raw_mask.png",
+      "bytes": 940,
+      "sha256": "726a0eca4e84e9620592c888d564d38f906204840698af041366b51430ea1f79"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00209\\cheek_left_viewer_raw_mask.png",
+      "bytes": 845,
+      "sha256": "4fd0c8e18048f4133b41788114b456439b6dce44f38c96ea229441f041e5208a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00209\\cheek_right_viewer_raw_mask.png",
+      "bytes": 835,
+      "sha256": "4cb4eb2c76ee6b004e417e7fa999c3d37290234f4529f2fdb87864bcb249481d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00209\\contact.png",
+      "bytes": 1327669,
+      "sha256": "97f6affac69acda046c9fe3891b325f3e7de9cf2ac012ed433dcf9761d5bb683"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00209\\forehead_brow_raw_mask.png",
+      "bytes": 784,
+      "sha256": "4a5c893bf637f856b1e43b48f530a444b64ac43dedcdca2247fb8444dbe78b38"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00209\\nose_mouth_raw_mask.png",
+      "bytes": 900,
+      "sha256": "542eef985d321c39522d0570ad93653ed135d03f6b4e653bf3e423f9d6d69b98"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00267\\cheek_left_viewer_raw_mask.png",
+      "bytes": 910,
+      "sha256": "4f3caefaee8dd7af3a3f3335450dcff899a62c81386cef63269d426a66fab777"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00267\\cheek_right_viewer_raw_mask.png",
+      "bytes": 856,
+      "sha256": "a802c2f2a5621356c958fd533d850a4e35a8de162f6db364eee51c30679a1210"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00267\\contact.png",
+      "bytes": 1282829,
+      "sha256": "947dafcfd78b598a60cc71ae727e05939aba492c500dcdd78f0d5cee1e5e6d81"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00267\\forehead_brow_raw_mask.png",
+      "bytes": 807,
+      "sha256": "be7e68310da3d796239d4c8d69003174e2b0dd3dc35b491c9a36dc17d3297c58"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00267\\nose_mouth_raw_mask.png",
+      "bytes": 904,
+      "sha256": "8d14b8b0fe3845ccf525e8e2b3c3b88fe7682d8be25cca9fba48a671a1f425f2"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00311\\cheek_left_viewer_raw_mask.png",
+      "bytes": 857,
+      "sha256": "eac7f9c2d73060ecdb7a78c775420acb9ea557afdd707ca5827c64116fb201f0"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00311\\cheek_right_viewer_raw_mask.png",
+      "bytes": 855,
+      "sha256": "af7dc94f72832840fece289e3e898d7024f51dae5e462ddd4cd647fd76aa1627"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00311\\contact.png",
+      "bytes": 1358006,
+      "sha256": "632fa6a89dc20c7d487317fc99cee2f531d3777116301a28b5d0866c7190e7ce"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00311\\forehead_brow_raw_mask.png",
+      "bytes": 805,
+      "sha256": "69aeda5c588ef5144951fef0192080c947911f5b7c37ffdd154bac6d0a564db0"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00311\\nose_mouth_raw_mask.png",
+      "bytes": 878,
+      "sha256": "f08db8af7ad571f81fba6b03e512130b71589a4929ce1c3045dd0875b85d0d6c"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00333\\cheek_left_viewer_raw_mask.png",
+      "bytes": 870,
+      "sha256": "56364b513996a9d0ceb0db77a1123ce97a87f8cb2c1835690ee164ee07c21427"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00333\\cheek_right_viewer_raw_mask.png",
+      "bytes": 881,
+      "sha256": "b7820ccde4886906eed886a847677db44e76df54f7b3e737aa2dd389da8f8b4d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00333\\contact.png",
+      "bytes": 1266481,
+      "sha256": "8736cd27b0b254111cf6301c7f3f1ef5e62c942cb239f4b7a24cfba3c8835cef"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00333\\forehead_brow_raw_mask.png",
+      "bytes": 808,
+      "sha256": "a7bb7d259e616076279824001b51a77000b20c4b6667e8ea86f1389225b37a79"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00333\\nose_mouth_raw_mask.png",
+      "bytes": 930,
+      "sha256": "5f834149bc51beb40ce15f2084d982ec68a422b488fbf3d5b1545b2e98585010"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00463\\cheek_left_viewer_raw_mask.png",
+      "bytes": 885,
+      "sha256": "31174796cd2cbdcd0e72789fe912c2e091cd270442fbc24e18e5998a7fef9c39"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00463\\cheek_right_viewer_raw_mask.png",
+      "bytes": 862,
+      "sha256": "93ffb942322ca07e4107f5cc8ba3e81beb9fba2f2b332a2bf6bb0446a3e9c47a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00463\\contact.png",
+      "bytes": 1271598,
+      "sha256": "1fddef33a25a88624cafd7de46c48818a577ba03b3de97af517339c830907239"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00463\\forehead_brow_raw_mask.png",
+      "bytes": 770,
+      "sha256": "52f8a1986f5849a43b4bba2335c5b56c91d8a1fae59059522ecf98a6edbd4f19"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00463\\nose_mouth_raw_mask.png",
+      "bytes": 889,
+      "sha256": "4dea5ba63c5320f86ada9f8acf811ce82d92c04d1aa136cbaee0c5484b957b45"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00561\\cheek_left_viewer_raw_mask.png",
+      "bytes": 879,
+      "sha256": "aadc26aed8af79a9ff5826e1f04c81140fa9c9db7c47347aa75b8a5a4e2cfa53"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00561\\cheek_right_viewer_raw_mask.png",
+      "bytes": 905,
+      "sha256": "100315deb82d71f018d05d261d275d8ff4e2c93e9098454f1a422b97f36f1aa6"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00561\\contact.png",
+      "bytes": 1348375,
+      "sha256": "a48bbe9b738d2c20fd942a902c73bdd431790ce5c5cf1b26193ba654efbe58e8"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00561\\forehead_brow_raw_mask.png",
+      "bytes": 826,
+      "sha256": "cd5235f75863cf93dd43fda8452c32e6b922786f40534bf600d626ab1da310be"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00561\\nose_mouth_raw_mask.png",
+      "bytes": 909,
+      "sha256": "9325b76b29ad54d072b334bc89494fd34dfc5263ff3624fec77209bc0c273fe2"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00694\\cheek_left_viewer_raw_mask.png",
+      "bytes": 873,
+      "sha256": "d4c70f8de1b1c280a64f51ebfc96d4079bf630ed10fb505cac2baf73c1470afb"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00694\\cheek_right_viewer_raw_mask.png",
+      "bytes": 865,
+      "sha256": "5d5adbeb2b7dccec7e4d6b4f47f9f0f082082f32302f14622602fdfd1e5c54ed"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00694\\contact.png",
+      "bytes": 1353798,
+      "sha256": "bf626657b16f7db19bfd3736c7578c6980b4069df791550ea790fdd7c515c349"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00694\\forehead_brow_raw_mask.png",
+      "bytes": 884,
+      "sha256": "7a50f9c985a08a0a893f02232f932cb86faaeeb66ab8e21eb0a4363ae03dc891"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00694\\nose_mouth_raw_mask.png",
+      "bytes": 893,
+      "sha256": "0f5132fffc2c33e05e3bc3c8b9195ab47c5f78465f4487ea7703631e6e81ed56"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00722\\cheek_left_viewer_raw_mask.png",
+      "bytes": 896,
+      "sha256": "2741541affceb1f9734860b0a0957eb03c9740876b308a824a93436840165da3"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00722\\cheek_right_viewer_raw_mask.png",
+      "bytes": 911,
+      "sha256": "59fb58b100a2ae68fb2c314540d1dea026455758445546340c12b8b47819b848"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00722\\contact.png",
+      "bytes": 1254288,
+      "sha256": "fc9bbde409c307ec4cf683bf9d0ed6da51e5748ec4d69cd62c7c459dfbee6b02"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00722\\forehead_brow_raw_mask.png",
+      "bytes": 876,
+      "sha256": "1c746561157acf8c50a6a1d99b412449dab6a505e37a0a9da7ab1c864ed92933"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\hf_merged_00722\\nose_mouth_raw_mask.png",
+      "bytes": 906,
+      "sha256": "1d5c3fc5604e3dc2d7f045ee686c98c55314245920dbd7b56b811ac58317b655"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\index.md",
+      "bytes": 1823,
+      "sha256": "9f6948f5f370270d4a2f598cba189b7bda58ce411940b2d8a141a9721b8afbdb"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contact_sheets\\overview.png",
+      "bytes": 4147895,
+      "sha256": "bfd6a43953e3ba87728977b8868c43991f352ab4d03fa2386c1603794f06bc0e"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contract_v0_2.json",
+      "bytes": 13102,
+      "sha256": "6d014ac00707bc158e8970a971548ed847331df19faebd4078bfca62347720a6"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\contract_v0_2.sha256",
+      "bytes": 86,
+      "sha256": "4d6e414a235664c5f92da1ca5d337eaaac2626ca359cc356e5b9f0f35e87d9ad"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\final_scope.json",
+      "bytes": 629,
+      "sha256": "7ca539ff3503440f9cb4c72ecfcfec1c7b533e5c45b32d258dae8573bef1cf44"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\forehead_amendment_comparisons.json",
+      "bytes": 6030,
+      "sha256": "698f47b14b046d9e70bac3e67f01f28a6ae467dc59106f05f3422e524fb5c3fe"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\forehead_amendment_proposal_v0_3.json",
+      "bytes": 4372,
+      "sha256": "3a09e0a312005645e7af9d8d6635132c406b87803e235b763f0d1e246d3c37a6"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\geometry_anomalies.json",
+      "bytes": 6097,
+      "sha256": "a1384db8722d38f92f5a26d49c5c60de8a86ae0f77d7af8395a5dc23d68dd3a6"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\image_metrics.csv",
+      "bytes": 192049,
+      "sha256": "4690622bf7fe01282445ae0eaf4f001d19fa8d038d1a76ca50c71e51a2708ff8"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\intersection_diagnostics\\hf_merged_00069.png",
+      "bytes": 545391,
+      "sha256": "5c28e5354e8f8d75c9173c2c5fbb705ae4cccb520b64c4dff6bc970568f1a64a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\intersection_diagnostics\\hf_merged_00198.png",
+      "bytes": 574729,
+      "sha256": "9a613bb9d1ee6f949e8dfc63d1d7d9a435381f8e0c04a003a4fb5b8b0d6b7edd"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\intersection_diagnostics\\hf_merged_00267.png",
+      "bytes": 590462,
+      "sha256": "936a0b6f5773c231b584792eca6bd6ad603c0d9b41ee1c420e36550e6bbd18de"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\intersection_diagnostics\\hf_merged_00463.png",
+      "bytes": 583079,
+      "sha256": "c6a831a69cce2b239fba9b7309b1cb3071889232226e8165b64fcec51ea48795"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\lbp_implementation_spec.json",
+      "bytes": 4141,
+      "sha256": "25fca0d0e4428229294dfb27cf0f4e75b702e8dc41b99344fd99e36f05d63e6b"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\metrics.csv",
+      "bytes": 2033914,
+      "sha256": "6c5076dc7a00c613570a08308680a66b9f433f81e1be08a902c6c5cc328fc12d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\nri_uniform_59_codebook.csv",
+      "bytes": 5647,
+      "sha256": "7eb6a7a12b7374efb50d487f2e399b3475ef0e03594da35971bf083b0188ac94"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\overlap_metrics.csv",
+      "bytes": 564906,
+      "sha256": "ad98635a4bcea9abce025f6a8cdf0baac64aa123325b52fd4f0918ec69508e2c"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00001_forehead.png",
+      "bytes": 475998,
+      "sha256": "d57eeec7081db56291cf008662e7600c63ee144e512fd7a8c47ff39e61a88157"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00069_forehead.png",
+      "bytes": 430980,
+      "sha256": "dc5034b22661892ec96081119ca86b1610434478e41bbd18c37cfc9dca98d2a5"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00112_forehead.png",
+      "bytes": 542743,
+      "sha256": "f8a4277156e962acf1c4bce75386b46f9f9d6d7d7d05b8ed40dc2373b60d2803"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00115_forehead.png",
+      "bytes": 490183,
+      "sha256": "9b2b3ece99d8b6bbf2db3263d791b22b8f566c7992322e9c6d94a468a467dbe9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00192_forehead.png",
+      "bytes": 483106,
+      "sha256": "45488f9a0a89cdab42aa68c9e155e845c05984c2f815dabd9129f8faf9b7780a"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00268_forehead.png",
+      "bytes": 506278,
+      "sha256": "e8c5d30329462c11332a2575856b3375a891f4659610d7b34e533646338301c9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\cfd_final_00543_forehead.png",
+      "bytes": 393932,
+      "sha256": "7fd437daa519649dcfac1990e1d41b465c10d138fd020a0b0e3bfbf2f629f3d9"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00001_forehead.png",
+      "bytes": 528787,
+      "sha256": "21260fe4080291904a053fa71122d183e2559de5b379a26eff3c321e63b3fb83"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00069_forehead.png",
+      "bytes": 493473,
+      "sha256": "e4aab1b859939c6df46d88a21003180b2f4f2d1c8d265de376434d0a489ec793"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00198_forehead.png",
+      "bytes": 521096,
+      "sha256": "cc40d1afff82782da6dac9b89d25e37f730c44fca9610d0aaa2046006b9964e7"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00209_forehead.png",
+      "bytes": 556645,
+      "sha256": "a08f136b922b846da45820f3b6f57f47706806880290d55f7de75866574adcdd"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00267_forehead.png",
+      "bytes": 535670,
+      "sha256": "c534ee2833aadae2bdddf81b3683a78b5afb152895bf08ad6f1b362ec51c0c50"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00311_forehead.png",
+      "bytes": 564318,
+      "sha256": "cec4e8964e1d3284766507eeb2fd6bbe14b14160aab786663388cc7d2a6a65de"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00333_forehead.png",
+      "bytes": 531132,
+      "sha256": "ceb065768d8a89206e777abb2fdfee8e982433046ebff97d4da5e58cb7316f7d"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00463_forehead.png",
+      "bytes": 531131,
+      "sha256": "a4e890ff6276f8b84a18a82cb0244c68a46d0a3d055136c1e016fc5ed22aae79"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00561_forehead.png",
+      "bytes": 563325,
+      "sha256": "b8feada7789e00b403cb2df134aed53ae8100066e01506fdc254c5dd1a5b21ec"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00694_forehead.png",
+      "bytes": 566759,
+      "sha256": "e4a581a2185f925667aee4e149c7dfb9db471d0abe369c060d89bab763c2e741"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\proposal_comparisons\\hf_merged_00722_forehead.png",
+      "bytes": 526776,
+      "sha256": "01bd8bfd7883a79ea32fa9d41f93d584590b75c57a3a341e2bd856a3fa698f38"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\roi_vertices.csv",
+      "bytes": 8075566,
+      "sha256": "182f47180de1d6d4d37c7dd5e0f3766f3af25e781e974d8b7f455c5c6daa4aff"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\source_proof.json",
+      "bytes": 3530,
+      "sha256": "37fce0a122a6e0c50641ea82d93131311f65eb165ebe048b0a96ff2a4b3b2189"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\summary.json",
+      "bytes": 7486,
+      "sha256": "2f9ae76ff4a13e09472e40a75a96c9ece8e27c8d395ec4dcf119b7be9f2dc02b"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\technical_references.json",
+      "bytes": 505,
+      "sha256": "fff98cea5ff17e8ba455a0d17968a222535fb14821b401c65aa17c17692e7d54"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\tests.log",
+      "bytes": 2256,
+      "sha256": "78c65cae0fbc87befa00ecdb8adad911f0ad4d5b3b82d89747df4042403ad2b0"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\trial100_manifest.json",
+      "bytes": 28161,
+      "sha256": "ffe795e7104052ce96b3311a20e6e31cff2899a6be4d45fbf80f8b07cbcc60cb"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\verification.json",
+      "bytes": 711,
+      "sha256": "4cc6bc5eea15276756ab7a8161e57a29f0d2806ec26dfe23b4d9236641eb6070"
+    },
+    {
+      "path": "outputs\\C1_lbp\\roi_validation\\visual_review_notes.json",
+      "bytes": 5698,
+      "sha256": "462ad20002050132ec2eeac3201eed5b5dd6c80efac0afbc98cb8bb0ef656a83"
+    }
+  ]
+}

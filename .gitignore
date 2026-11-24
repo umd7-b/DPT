@@ -1,0 +1,149 @@
+# Python environments and generated package/test caches.
+.venv*/
+venv/
+env/
+.tox/
+.nox/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local IDE/OS state; shared VS Code tasks/launch/extensions remain eligible.
+.idea/
+.vs/
+/.vscode/settings.json
+*.code-workspace
+.DS_Store
+Desktop.ini
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+/.refactor_backup/
+
+# Secrets: examples stay eligible, but must still be reviewed before staging.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+/.aws/
+/.azure/
+/.ssh/
+/.codex/
+credentials.json
+credentials.local.*
+secrets.json
+secrets.local.*
+
+# Local database contents and sidecars (also covers Thumbs.db).
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+
+# Numeric matrices/landmark archives and binary model weights: separate assets.
+*.npy
+*.npz
+*.onnx
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.tflite
+/models/*.task
+
+# Protect future local dataset copies; the current dataset is outside the repo.
+/dataset/
+/datasets/
+/dataset_HF_CFD_final/
+
+# Manual mask data/receipts can identify source portraits; keep the protocol.
+/annotations/manual_masks/**
+!/annotations/manual_masks/**/
+!/annotations/manual_masks/README.txt
+!/annotations/manual_masks/**/*.py
+
+# Experiment outputs are external artifacts by default. Reopen parent folders
+# so the exact source/spec/schema/config exceptions below remain trackable.
+# No global JSON/CSV/PNG rule: app/static, tests and source configs are unaffected.
+/outputs/**
+!/outputs/**/
+!/outputs/**/*.py
+!/outputs/**/README.md
+!/outputs/**/README.txt
+!/outputs/**/schema.json
+!/outputs/**/feature_schema.json
+!/outputs/**/gallery_integrity.json
+!/outputs/**/manifest.json
+!/outputs/**/created_files_manifest.json
+!/outputs/**/source_proof.json
+!/outputs/**/contract_lock.json
+!/outputs/**/median_params.json
+!/outputs/A_geometry/features_report_v2/raw_reference.json
+!/outputs/C1_lbp/roi_validation/contract_v0_2.json
+!/outputs/C1_lbp/roi_validation/contract_v0_2.sha256
+!/outputs/C1_lbp/roi_validation/lbp_implementation_spec.json
+!/outputs/C1_lbp/roi_validation/nri_uniform_59_codebook.csv
+!/outputs/C1_lbp/roi_remediation_v0_4/candidate_contract_v0_4.json
+
+# Generated audit evidence: keep audit tools/Markdown and reusable topology/specs.
+/docs/audits/*evidence*/**
+!/docs/audits/*evidence*/**/
+!/docs/audits/*evidence*/**/*.py
+!/docs/audits/*evidence*/**/*.ps1
+!/docs/audits/*evidence*/**/*.md
+!/docs/audits/pre_c_evidence/native_mediapipe_topology.json
+!/docs/audits/eye_c1_evidence/c1_roi_contract_proposal_v0.json
+!/docs/audits/eye_c1_evidence/landmark_source_proof.json
+!/docs/audits/evidence/requirements_register.json
+!/docs/audits/evidence/requirements_register.csv
+
+# Human-review image bundle/annotations stay private; retain the review software.
+/docs/audits/c1_v04_review/**
+!/docs/audits/c1_v04_review/**/
+!/docs/audits/c1_v04_review/*.py
+!/docs/audits/c1_v04_review/*.js
+!/docs/audits/c1_v04_review/*.css
+!/docs/audits/c1_v04_review/index.html
+!/docs/audits/c1_v04_review/review_app.html
+!/docs/audits/c1_v04_review/review_schema.json
+
+# Report build products contain portrait figures; keep report sources/build tools.
+/docs/reports/_build/**
+!/docs/reports/_build/**/
+!/docs/reports/_build/**/*.py
+!/docs/reports/_build/**/*.ps1
+/docs/reports/_build/chrome_profile*/
+/docs/reports/figures/**
+/docs/reports/*.pdf
+/docs/refactor_regression_results.json
+
+# SQLite import/query evidence is separate from schema/migrations/adapters.
+/database/evidence/**
+/database/four_feature_v1/evidence/**
+!/database/four_feature_v1/evidence/authority.json
+/database/four_feature_v1/queries/**
+
+# Local web runtime, screenshots and verification outputs; keep app/static intact.
+/app/evidence/**
+/app/runtime/
+/app/uploads/
+/app/sessions/
+/app/.cache/

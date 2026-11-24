@@ -1,0 +1,59 @@
+{
+  "schema_id": "C1_FULL_V04_MANIFEST_v1",
+  "feature_version": "C1_LBP236_FULL_ROI_V04_v1",
+  "roi_contract_hash": "c6d839d420e03555a5e34a5ae9c5b02a3a5e6a6e8e456310576c11215031bb39",
+  "lbp_spec_hash": "7c078058780fc0de21f0b02084822c7b5fabfb767d2db2a9e71faead5afa3851",
+  "codebook_file_sha256": "7eb6a7a12b7374efb50d487f2e399b3475ef0e03594da35971bf083b0188ac94",
+  "kernel_source_sha256": "c8793bbff26e871d3461c165a7e9d5168ebed7277905ff425edec2e8f2a888ff",
+  "implementation_binding": "PROJECT_SELECTED_V04_SAME_LBP_SPEC_ARITHMETIC_v1",
+  "ROI_ANATOMY_STATUS": "PROVISIONAL",
+  "processed_images": 1438,
+  "valid_vectors": 1438,
+  "missing_images": 0,
+  "source_counts": {
+    "cfd": 710,
+    "hf": 728
+  },
+  "valid_source_counts": {
+    "cfd": 710,
+    "hf": 728
+  },
+  "missing": [],
+  "artifacts": {
+    "features_C1.npy": {
+      "sha256": "34d26e5b862e012ca537a03fa313eb087b8e58495e37e1da817485276f109f97",
+      "bytes": 2715072
+    },
+    "counts.npy": {
+      "sha256": "51ce90756651bd8a6e13eef8b34354a81a75310f448c8f65f3e5668c62d0acc0",
+      "bytes": 2715072
+    },
+    "eligible_centres.npy": {
+      "sha256": "05435fc1569f2aeb3d1430fac38ff42cd62535f8877950a1133854d32b247265",
+      "bytes": 46144
+    },
+    "feature_rows.csv": {
+      "sha256": "3ec0f9ff624fa0d15fcf3073bab985bbdc080ba3d68aa11eae2ce0706bbfa5f1",
+      "bytes": 582497
+    },
+    "extraction_status.csv": {
+      "sha256": "94f7fe22596b112d7e8b2108a4c73e5cc6f898716362f6e7bb03b7395d7857b8",
+      "bytes": 321932
+    },
+    "feature_schema.json": {
+      "sha256": "2b706f20f560d5fa4dfb4f68cb3f97ee46871523b85d9a45919402c6b8b36909",
+      "bytes": 2794
+    },
+    "image_diagnostics.jsonl": {
+      "sha256": "17b97594db82d11da7f652da2689d5579eeadb973c006f0b973ce49783f26427",
+      "bytes": 1866188
+    }
+  },
+  "schema_content_sha256": "6f7e9a6076d8ab1ac7bee766234f0a89db88989ce1aac4632b677598714445e4",
+  "identity_order": "image_id ascending; explicit feature_row_index, not source row position",
+  "protected_baseline_files": 17772,
+  "anatomy_status": "PROVISIONAL",
+  "SQLite_writes": 0,
+  "C2_or_fusion_implemented": false,
+  "detector_runs": 0
+}

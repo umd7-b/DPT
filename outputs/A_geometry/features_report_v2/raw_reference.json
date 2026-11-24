@@ -1,0 +1,10 @@
+{
+  "path": "D:\\TuNam4\\portrait-retrieval\\outputs\\A_geometry\\features\\features_A_raw.npy",
+  "sha256": "aa597e80f859fc05f138a088d4f1223adce8d3a68154d895b73a6ed8294e24c9",
+  "shape": [
+    1438,
+    150
+  ],
+  "dtype": "float32",
+  "immutable": true
+}

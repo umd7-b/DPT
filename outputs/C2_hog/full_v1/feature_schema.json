@@ -1,0 +1,131 @@
+{
+  "schema_id": "C2_ROOT_HOG324_FEATURE_SCHEMA_v1",
+  "feature_version": "C2_ROOT_HOG324_FULL_v1",
+  "spec_hash": "a568f2eaec4d54cbc72c2a80d49c371362248367ff88224c158f8c5aaa10f169",
+  "spec_file_sha256": "e16394a661adba43088af4e8106eb14949b9fdf9c7ac155bc9796f097ae5967a",
+  "implementation_sha256": "9e8f596945fd29501afccdf76a122d9c5a92c7460da5e72bd6569a4c1cf846b4",
+  "preprocessing_id": "BGR_GRAY_INT16384_CENTER160x192_BORDER_SKIP_v1",
+  "logical_group": "C",
+  "feature_name": "C2",
+  "dimension": 324,
+  "dtype": "float64",
+  "cell_shape": [
+    4,
+    4,
+    9
+  ],
+  "block_shape": [
+    9,
+    36
+  ],
+  "ROI_width_height": [
+    160,
+    192
+  ],
+  "crop_xyxy_exclusive": [
+    48,
+    32,
+    208,
+    224
+  ],
+  "normalization": "Root per block with epsilon1e-8; exact global L2",
+  "distance": "Euclid324",
+  "anatomical_crop_status": "UNVERIFIED_CENTER_CROP_PROTOTYPE",
+  "spec": {
+    "schema_id": "C2_ROOT_HOG_324_SPEC_v1",
+    "version": "1.0.0",
+    "status": "TECHNICAL_PROTOTYPE_FIXED_CONVENTIONS",
+    "report_sha256": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80",
+    "pdf_exact": {
+      "ROI_width_height": [
+        160,
+        192
+      ],
+      "cell_grid_rows_columns": [
+        4,
+        4
+      ],
+      "cell_width_height": [
+        40,
+        48
+      ],
+      "Gx": "I(x+1,y)-I(x-1,y)",
+      "Gy": "I(x,y+1)-I(x,y-1)",
+      "magnitude": "sqrt(Gx*Gx+Gy*Gy)",
+      "orientation": "atan2(Gy,Gx), unsigned modulo180 degrees",
+      "cell_bins": 9,
+      "vote_weight": "gradient magnitude",
+      "block_cells_rows_columns": [
+        2,
+        2
+      ],
+      "block_stride_cells": 1,
+      "block_grid_rows_columns": [
+        3,
+        3
+      ],
+      "block_values": 36,
+      "root_transform": "sqrt(h_i/(sum(h_block)+epsilon))",
+      "dimension": 324,
+      "final_normalization": "L2 over all324 values",
+      "distance": "Euclid324"
+    },
+    "implementation_details": {
+      "input": "Existing aligned256x256 uint8 BGR; no new detector/alignment, resize or gamma",
+      "preprocessing_id": "BGR_GRAY_INT16384_CENTER160x192_BORDER_SKIP_v1",
+      "crop_xyxy_exclusive": [
+        48,
+        32,
+        208,
+        224
+      ],
+      "crop_reason": "No prior implemented C2 crop/provenance found; user-authorized center-crop prototype fallback",
+      "anatomical_crop_certification": "UNVERIFIED",
+      "gray": "uint32 numerator1868*B+9617*G+4899*R+8192; floor divide16384; uint8 then float64",
+      "gray_consistency_source": "same integer convention as C1; independent C2 implementation, not a C1 descriptor transform",
+      "gradient_boundary": "Only centres1<=x<=158 and1<=y<=190 contribute. Entire one-pixel ROI perimeter Gx=Gy=0 and magnitude0; no padding or pixels outside ROI",
+      "gradient_valid_centres": 30020,
+      "unsigned_interval": "[0,180); exact180/-180 wraps to0; atan2(0,0)=0 but magnitude0 votes zero",
+      "orientation_vote": "hard bin floor(theta/20), bins[0,20),[20,40),...,[160,180); no interpolation or clipping",
+      "spatial_vote": "pixel belongs only to cell(floor(y/48),floor(x/40)); no spatial interpolation",
+      "accumulation": "float64 magnitude accumulation in image row-major y,x order",
+      "cell_order": "row-major cell_y,cell_x; orientation0..8 innermost",
+      "block_order": "block_y0..2 then block_x0..2; within2x2 cell_y then cell_x then bin0..8",
+      "block_epsilon": 1e-08,
+      "zero_block": "root36 zeros mathematically from zero histogram; permitted intermediate block",
+      "final_L2": "sqrt(sum(root324**2)); divide exactly if positive, no added epsilon",
+      "zero_final_norm": "missing_C2; no zero-filled324-vector",
+      "nonfinite_or_bad_input": "missing_C2 with explicit reason, no imputation, zero-fill or shape repair",
+      "dtype": "float64 for gray/gradient/magnitude/orientation/cells/blocks/root/vector",
+      "retrieval_tie_break": "distance ascending then image_id ascending; self excluded by image_id",
+      "new_images": "not supported by gallery-only CLI; no assumed historical alignment",
+      "oracle_tolerances": {
+        "gradient_abs": 0.0,
+        "magnitude_abs": 1e-12,
+        "orientation_abs_degrees": 1e-12,
+        "cell_hist_abs": 1e-08,
+        "cell_hist_rel": 1e-13,
+        "root_or_final_abs": 5e-14,
+        "Euclid_abs": 1e-13,
+        "L2_abs": 1e-12
+      }
+    },
+    "unverified": [
+      "Center crop anatomical extent/occlusion for all1438 images",
+      "Historical alignment procedure beyond authenticated current dataset",
+      "Retrieval relevance/identity accuracy without relevance labels"
+    ],
+    "deviations_from_explicit_PDF_requirements": [],
+    "selection_before_retrieval": true,
+    "fusion_in_scope": false,
+    "content_sha256": "a568f2eaec4d54cbc72c2a80d49c371362248367ff88224c158f8c5aaa10f169"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "opencv": "5.1.0"
+  },
+  "source_C1_manifest_sha256": "ffe795e7104052ce96b3311a20e6e31cff2899a6be4d45fbf80f8b07cbcc60cb",
+  "catalog_sha256": "a74617294f5d60af432ff781cdd50b11f636d9a3ba43ba19a51d03a86eb535c1",
+  "content_sha256": "2de68d8ea7a8ea5030ebfabd7892c8000dc956b86e942e28043635ae7f5f2edb"
+}

@@ -1,0 +1,6630 @@
+[
+  {
+    "old": ".gitignore",
+    "new": ".gitignore",
+    "sha256": "a24c5c378ec99ed4d913675ab3b91effa8d5d98a5d51203ba4e3a6f5081c5aa9",
+    "bytes": 25,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "README.md",
+    "new": "README.md",
+    "sha256": "62d87d234d54d2123aa2693b2991f934bb6eceae33d61df26c768b948f9177bd",
+    "bytes": 16,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "requirements.txt",
+    "new": "requirements.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/README.txt",
+    "new": "annotations/manual_masks/README.txt",
+    "sha256": "62a5d4e197346691f13fd7f2999d8b5ef74a59f564ac0765f5c7dc2695cc5c56",
+    "bytes": 476,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/current.json",
+    "new": "annotations/manual_masks/cfd_final_00001/current.json",
+    "sha256": "09280a6483fa9c03837bdb33c11c2676b506e65677c1cf8417621eb18c44604e",
+    "bytes": 52,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/annotation.json",
+    "sha256": "145b2bd4bd7fed450250af5d987a113be71d1e5a37e310e2d541eea34e8a42d0",
+    "bytes": 1276,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/hair.png",
+    "sha256": "cd68d8bf58435fe2b76fa1addd36743a57178dc9a34a3e9997ec8972aee67269",
+    "bytes": 2008,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_2494867539614ab8879b65289944967c/skin.png",
+    "sha256": "b711fb9393044d29e0e38a972ae8fa6cbf8b27b866c64433f63402b48fe49679",
+    "bytes": 1816,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/annotation.json",
+    "sha256": "8686243284bbc058bc59efddcfa8938f4dca4fa8129848c5e55b2c92279dc609",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/hair.png",
+    "sha256": "cd68d8bf58435fe2b76fa1addd36743a57178dc9a34a3e9997ec8972aee67269",
+    "bytes": 2008,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_8c02954213db43b7ad7442659826cb43/skin.png",
+    "sha256": "afad472905d352b77d11598d4160e31ae77cf192256da93aa13a7a8826a42948",
+    "bytes": 1878,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/annotation.json",
+    "sha256": "5d3867f8ce94f1bdbfba7ceb8e5c90eb1e9a4e3ac2585f0faa2a5573dd566ab4",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/hair.png",
+    "sha256": "cd68d8bf58435fe2b76fa1addd36743a57178dc9a34a3e9997ec8972aee67269",
+    "bytes": 2008,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00001/rev_941d9f36bf2b4cc0a2774654785ac997/skin.png",
+    "sha256": "b711fb9393044d29e0e38a972ae8fa6cbf8b27b866c64433f63402b48fe49679",
+    "bytes": 1816,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/current.json",
+    "new": "annotations/manual_masks/cfd_final_00069/current.json",
+    "sha256": "dd2331206e6b09a86bebfbc539ab8e320f7c7f2a5365730328751a91a0269e41",
+    "bytes": 52,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/annotation.json",
+    "sha256": "b8a81e205da2853b8ca187c56c0aab22a98728a9eccabb968ee0c9f57a22981d",
+    "bytes": 1276,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/hair.png",
+    "sha256": "0714e1f3c0f6708db33ebab6b86b54f82453c4a76e5fbe1bdec587af78a75b24",
+    "bytes": 1219,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_0441c6c7cba9498e8432bef7fc1dad44/skin.png",
+    "sha256": "931c3dbd3108042a0ad636f8b1314c3a71e7ca7868f4342fd5cce6bc3b4fd1e6",
+    "bytes": 1809,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/annotation.json",
+    "sha256": "25362c732ba7c8961f43512d3236c7dee1515f6c9b28385c446ff362e9567ef8",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/hair.png",
+    "sha256": "0714e1f3c0f6708db33ebab6b86b54f82453c4a76e5fbe1bdec587af78a75b24",
+    "bytes": 1219,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_701596b4e24c49eba924f91a4defaedf/skin.png",
+    "sha256": "931c3dbd3108042a0ad636f8b1314c3a71e7ca7868f4342fd5cce6bc3b4fd1e6",
+    "bytes": 1809,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/annotation.json",
+    "sha256": "94c80134d05ddfd1bab7b8f047258b364337207de457dd8db5706a0502e3f59b",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/hair.png",
+    "sha256": "0714e1f3c0f6708db33ebab6b86b54f82453c4a76e5fbe1bdec587af78a75b24",
+    "bytes": 1219,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00069/rev_fc19a59b2a2c44fbaf54bd348bcdf698/skin.png",
+    "sha256": "f87276f6f5234e163bdda484745af271dbc8df189f7af2f5ab9f6468e81d366a",
+    "bytes": 1925,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/current.json",
+    "new": "annotations/manual_masks/cfd_final_00088/current.json",
+    "sha256": "5f1fa159f8cb39c5fb45abaddcc08e6812e1f05a1c642bdf042f89fac51c950a",
+    "bytes": 52,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/annotation.json",
+    "sha256": "120ddc9788288192c05a65852d4a4180d30cc6ad45264c6a08e38685ffb07cdd",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/hair.png",
+    "sha256": "a94f95c3c36f57f0049e636bf02d78745b94b2bea1bf00133c518586e12ff891",
+    "bytes": 1251,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_006e2620000f469e8ec1a00b34fef4c0/skin.png",
+    "sha256": "08a65bdd5675eaa8f682d133cd71eb1cff6dd9777cdbd598cd92e0e9baa8e754",
+    "bytes": 1777,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/annotation.json",
+    "sha256": "b9d7148d01fd24ba7c4970084574acef942f89b63d4bcb9126ce41c0d27831c9",
+    "bytes": 808,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/hair.png",
+    "sha256": "6c8f6c8967dea042ed2ced6bb0bd706f25ffe8afa624111df9f9ade39961cd67",
+    "bytes": 1254,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_61e7fb51b2504b7cb298d207c1d1e0aa/skin.png",
+    "sha256": "c82e9142013b10a27a484b5f963536ee960b38ab02dd74f8bb0bb5b035be57d4",
+    "bytes": 1736,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/annotation.json",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/annotation.json",
+    "sha256": "030fb85dd71e8f669e511a875cbb4b3e974531bca7f03b24100314874e4a4cb7",
+    "bytes": 1276,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/hair.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/hair.png",
+    "sha256": "6c8f6c8967dea042ed2ced6bb0bd706f25ffe8afa624111df9f9ade39961cd67",
+    "bytes": 1254,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/skin.png",
+    "new": "annotations/manual_masks/cfd_final_00088/rev_84631bc4cfc5447f85bede1b9de9f4a2/skin.png",
+    "sha256": "c82e9142013b10a27a484b5f963536ee960b38ab02dd74f8bb0bb5b035be57d4",
+    "bytes": 1736,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "models/face_landmarker.task",
+    "new": "models/face_landmarker.task",
+    "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "bytes": 3758596,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "outputs/color_regions/cfd_final_00088_regions.png",
+    "new": "outputs/B_color/color_regions/cfd_final_00088_regions.png",
+    "sha256": "aba617f048feedd27d8cd956f4f0078bc3620714ae7a80683c7ecff91d7f0223",
+    "bytes": 224568,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/cfd_final_00001_A.npy",
+    "new": "outputs/A_geometry/features/cfd_final_00001_A.npy",
+    "sha256": "7d17477cb94323b5f0ddb13a37fe5d2c17b1c56421311d884fe56ae97640d137",
+    "bytes": 728,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        150
+      ],
+      "dtype": "float32"
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/cfd_final_00069_A.npy",
+    "new": "outputs/A_geometry/features/cfd_final_00069_A.npy",
+    "sha256": "333a2708ca741b13606d44e55196e1bc3ca4d02e41194394ea13a175dd3188e4",
+    "bytes": 728,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        150
+      ],
+      "dtype": "float32"
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/failed_images.csv",
+    "new": "outputs/A_geometry/features/failed_images.csv",
+    "sha256": "bfe879f2337c3e7dc833a8a4bc58ca3a009109fb24c50eae6eb3b1d5b5d5a0b3",
+    "bytes": 22,
+    "purpose": "Geometry A",
+    "format": {
+      "columns": [
+        "image_name",
+        "reason"
+      ],
+      "data_rows": 0
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/features_A_normalized.npy",
+    "new": "outputs/A_geometry/features/features_A_normalized.npy",
+    "sha256": "440adc6f79cf63114f07cb8405a80ad8e908433706962cbe4d7a5aed028705c3",
+    "bytes": 862928,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        1438,
+        150
+      ],
+      "dtype": "float32"
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/features_A_raw.npy",
+    "new": "outputs/A_geometry/features/features_A_raw.npy",
+    "sha256": "aa597e80f859fc05f138a088d4f1223adce8d3a68154d895b73a6ed8294e24c9",
+    "bytes": 862928,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        1438,
+        150
+      ],
+      "dtype": "float32"
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/geometry_stats.npz",
+    "new": "outputs/A_geometry/features/geometry_stats.npz",
+    "sha256": "f0ecae4c4a98693d10412aa284b0e6593cfe75616ffb77734c143f423da61062",
+    "bytes": 2900,
+    "purpose": "Geometry A",
+    "format": {
+      "mean": {
+        "shape": [
+          150
+        ],
+        "dtype": "float64"
+      },
+      "std": {
+        "shape": [
+          150
+        ],
+        "dtype": "float64"
+      }
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/features/metadata.csv",
+    "new": "outputs/A_geometry/features/metadata.csv",
+    "sha256": "354bb8eae7f6d3fb3db84bd242058eb7a06e7b57e3151178309ee1d484cdacd7",
+    "bytes": 139154,
+    "purpose": "Geometry A",
+    "format": {
+      "columns": [
+        "image_name",
+        "image_path",
+        "eye_distance"
+      ],
+      "data_rows": 1438
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/abnormal_images.csv",
+    "new": "outputs/B_color/hair_evaluation/abnormal_images.csv",
+    "sha256": "f3e018ab442ad873b8d601e9926bdefe64fb90cdd66eaf8ba05719becad3a6af",
+    "bytes": 2843,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "status",
+        "hair_pixels",
+        "hair_area_ratio",
+        "components",
+        "skin_overlap_ratio",
+        "trusted_skin_overlap_ratio",
+        "face_overlap_ratio",
+        "before_hair_pixels",
+        "flags",
+        "error",
+        "baseline_error"
+      ],
+      "data_rows": 20
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/baseline_source.py",
+    "new": "outputs/B_color/hair_evaluation/baseline_source.py",
+    "sha256": "63ef3ee6a5ba511a72b965cf0a65d6c046e51c413adc471aadae8ba53b508631",
+    "bytes": 6952,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/failed_images.csv",
+    "new": "outputs/B_color/hair_evaluation/failed_images.csv",
+    "sha256": "96e24e6b873d43c7ef6fa30f4364a26d412f0b989b1e9696cc6a291a719d2540",
+    "bytes": 17,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "reason"
+      ],
+      "data_rows": 0
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/quality_report.csv",
+    "new": "outputs/B_color/hair_evaluation/quality_report.csv",
+    "sha256": "f3e018ab442ad873b8d601e9926bdefe64fb90cdd66eaf8ba05719becad3a6af",
+    "bytes": 2843,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "status",
+        "hair_pixels",
+        "hair_area_ratio",
+        "components",
+        "skin_overlap_ratio",
+        "trusted_skin_overlap_ratio",
+        "face_overlap_ratio",
+        "before_hair_pixels",
+        "flags",
+        "error",
+        "baseline_error"
+      ],
+      "data_rows": 20
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/REPORT.md",
+    "new": "outputs/B_color/hair_evaluation/REPORT.md",
+    "sha256": "dcc6fced9e0a32be31c0309dca441a437f44520080fd05315f700c0f38debad6",
+    "bytes": 11528,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/run.log",
+    "new": "outputs/B_color/hair_evaluation/run.log",
+    "sha256": "10a3b804d6ebe02ae3f5d645a194bae1de1fb62e447ed6ad08c01374538108e8",
+    "bytes": 11288,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/run_manifest.json",
+    "new": "outputs/B_color/hair_evaluation/run_manifest.json",
+    "sha256": "1e5a75926703dd97e687548e064ce3d8b2bf1fa1cfdfae42b7ee206675d75ca2",
+    "bytes": 774,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/selection.png",
+    "new": "outputs/B_color/hair_evaluation/selection.png",
+    "sha256": "486cd6ec28b85220a53d20063a80d47d5ccbbd9571ec5cb52cefc3fe94a83e40",
+    "bytes": 2212595,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        768,
+        1536,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/skin_audit.json",
+    "new": "outputs/B_color/hair_evaluation/skin_audit.json",
+    "sha256": "a021412347443557494e18889551eb4306278e5f32506803f9b91855a9d6abcc",
+    "bytes": 374,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/skin_template.png",
+    "new": "outputs/B_color/hair_evaluation/skin_template.png",
+    "sha256": "1be8e4d04d335b52b7a07680bb4168d502bc50c68183caaddbc242f15214a90e",
+    "bytes": 1553,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/test_contact_sheet.png",
+    "new": "outputs/B_color/hair_evaluation/test_contact_sheet.png",
+    "sha256": "63a3516e48a41887a3e98a650f58c71c260db64536d8a9c68913fd8f9e3a20e2",
+    "bytes": 1772347,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        1519,
+        1152,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/visual_review.csv",
+    "new": "outputs/B_color/hair_evaluation/visual_review.csv",
+    "sha256": "582152d80a373f234f03918aefe90926691634a69ce07e2fb0f557b1ecb9474e",
+    "bytes": 2132,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "visual_assessment",
+        "notes"
+      ],
+      "data_rows": 20
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00001.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00001.png",
+    "sha256": "bd9eb08956b56ad1abe34150ecc73e813c38d1104e2ade608890f7cabedbe3b9",
+    "bytes": 172009,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00069.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00069.png",
+    "sha256": "f276c2e3c427df86c150824f62466f97aa585c148fb08e8c95845d5b980042de",
+    "bytes": 134441,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00088.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00088.png",
+    "sha256": "3ed765c38c6f55ae77f6c387a48f9c7210973db702bb0baa7f0779c80b5cfc6e",
+    "bytes": 179394,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00103.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00103.png",
+    "sha256": "eafb1ac1a572034686d2344bfa2a2584e997dbca416ef389e81a93c849fb434d",
+    "bytes": 210696,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00205.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00205.png",
+    "sha256": "b48d03a537b1f8eeb58d4f7a34af39189890b5a68a3a4ab3aebc50c7264fac05",
+    "bytes": 150844,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00303.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00303.png",
+    "sha256": "bc5cea62096100f97b8c547bf88c77ec3f3a1424bbae718ad531133109472582",
+    "bytes": 133715,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00406.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00406.png",
+    "sha256": "d852ef0f9e2efc2dc208b44565e99fd2defd43017a89de645220b8215dcfda64",
+    "bytes": 263727,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00504.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00504.png",
+    "sha256": "55c5e0d053648df33b981ce18f75920123e6840ae238788873374ebf4c3e99c5",
+    "bytes": 153722,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00614.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00614.png",
+    "sha256": "405b7ff44bd62d4d55a743d5274a02a9d2fd153d1202cd29ac65d222be8a3fe8",
+    "bytes": 191296,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/cfd_final_00716.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/cfd_final_00716.png",
+    "sha256": "42b8d26b2b2fa700e6a2e76bc144549ee5d9f8767f86df059802b85752a88df6",
+    "bytes": 218739,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00051.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00051.png",
+    "sha256": "03fb1411801e3a2aa9eadfbfe79db7be74c95160cd52b3550e1429d27aff510a",
+    "bytes": 157960,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00146.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00146.png",
+    "sha256": "6299a6bca7e4dd8566d8ff6c891eedb6a90f8ac1cd792807cf5f720a42146aac",
+    "bytes": 157824,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00241.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00241.png",
+    "sha256": "371cdba7531777bf33bdfb3b53bd718079938fa1c801e894d2c6879be30e396e",
+    "bytes": 144223,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00336.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00336.png",
+    "sha256": "70427f8382c28a01bd30e7f6879802014ec228b156b9b0f9e39bc5799c412a6d",
+    "bytes": 180303,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00431.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00431.png",
+    "sha256": "3b0d9ec795a32771596f8877a6910c5da803272246a2927fc5a18639b385d2a0",
+    "bytes": 159668,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00526.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00526.png",
+    "sha256": "b6a9219b631986bde8d8b30180b2d9f96c3edf881c120e4e5e680ac6b0585419",
+    "bytes": 186074,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00621.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00621.png",
+    "sha256": "2a3a9de1cd04748e3e1f27e42989df0af43057abc8f4749d18da5d11e33fb8da",
+    "bytes": 196321,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00716.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00716.png",
+    "sha256": "6f78fff017a6584033988a34c129114ceda08f39415b7b62affe4040173fe539",
+    "bytes": 183402,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00723.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00723.png",
+    "sha256": "4c6e3ca59f20e3c15962ee9478d664749b9489b69655a52d62f59ca82cdbc8fe",
+    "bytes": 173029,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/before_after/hf_merged_00728.png",
+    "new": "outputs/B_color/hair_evaluation/before_after/hf_merged_00728.png",
+    "sha256": "4501cab94d9ba9020e2c3b5715e85554950dd2375cee60d649bf9c65af7be501",
+    "bytes": 180873,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00001.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00001.png",
+    "sha256": "40ce42641a645d62f9f38fe941807f020797702bba0e1c2bb5892f38aacc79fb",
+    "bytes": 273586,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00069.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00069.png",
+    "sha256": "def9d9b5519859d1d01d7fb164b905f30f5a198c4093f221ab4b07d42e55b0ce",
+    "bytes": 226330,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00088.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00088.png",
+    "sha256": "13fe3341668e12c5077f5cb7beea0967a1bd2a2e991981aeb166450987f7a966",
+    "bytes": 288417,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00103.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00103.png",
+    "sha256": "7ac21d2734f9d57d056b9753802fa7749a6c79b811ef715c1bd7ebb7958f907c",
+    "bytes": 290366,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00205.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00205.png",
+    "sha256": "b7756146b50967725c7c163ec5a7b82a7c3f0601c042cce0e6bcfef3b93db745",
+    "bytes": 257527,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00303.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00303.png",
+    "sha256": "a2b13b4f9d3cafbb917ac756fff32cf0f42129323d9edea0c8f28c3f04110e5d",
+    "bytes": 219198,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00406.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00406.png",
+    "sha256": "11deaa5068f42413f8ee2e1b0661a09fff1343c85436481c07983bd182122e08",
+    "bytes": 353475,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00504.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00504.png",
+    "sha256": "b0d3f9d881bcd7386af636f1b887c62d1bf1a93b022cab49aefed2414cb94294",
+    "bytes": 245044,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00614.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00614.png",
+    "sha256": "63e28237a727a5da83431fca5f08c810c92b78ab69943a4b311c5a7e8ee7066b",
+    "bytes": 306452,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/cfd_final_00716.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/cfd_final_00716.png",
+    "sha256": "9ac3c89a8e661581aa7670749397988a411caeb229f48d8f978144c211b6f3f2",
+    "bytes": 352003,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00051.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00051.png",
+    "sha256": "fd456631aed9d9ef0b4767f43664a2347529c6d2cd8073298ac8b2e6f231e06e",
+    "bytes": 278414,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00146.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00146.png",
+    "sha256": "fef71bc9b2698d1c55e9acfc51a4bbc05a991fa77f7040420f5c65be96b53be0",
+    "bytes": 280179,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00241.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00241.png",
+    "sha256": "9c0b3bdd6774192cf4932de748d5334c1dd80fb20a792eee1fdb80f47c407ee8",
+    "bytes": 257516,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00336.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00336.png",
+    "sha256": "8a2423b6c32651c84255f3c9274f443c0af9d1690630a359170f265cfdddafd5",
+    "bytes": 292198,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00431.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00431.png",
+    "sha256": "e02cee74f3d13942726d5bee6d63127462091dc2c3f66dec286b8bc35c5c2478",
+    "bytes": 282241,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00526.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00526.png",
+    "sha256": "2baddab25596e061444a2ee8741cf221bb7f4de66e7c11959477533e125d5cc7",
+    "bytes": 293067,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00621.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00621.png",
+    "sha256": "c4775e09e3355aeae9662e5ff60be596a0991f61fac8e4978f48eeca8f1c84c4",
+    "bytes": 301928,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00716.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00716.png",
+    "sha256": "f4eee4e74ca3e5cd7d10ea4647b1008558ccd8977a1db00f0a164c4c3bc33542",
+    "bytes": 288957,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00723.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00723.png",
+    "sha256": "13ca430325bc53b15af45273403547c4eb72ec50ac9042dff823a60b25ce30d2",
+    "bytes": 290039,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/comparisons/hf_merged_00728.png",
+    "new": "outputs/B_color/hair_evaluation/comparisons/hf_merged_00728.png",
+    "sha256": "0952804612ad759edd87488bd7373eeb84c268884cb3f676f455d720a37adf85",
+    "bytes": 297556,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00001.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00001.png",
+    "sha256": "bf997405978fb874266f15ab05e9e4839ca75bed7e6694275b2cdfcccccf8ef6",
+    "bytes": 115164,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00069.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00069.png",
+    "sha256": "51fae5ccc2b39b53724aff24c2605daadd837cf3279d3b35c1bca77c5e2d6f65",
+    "bytes": 101433,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00088.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00088.png",
+    "sha256": "cbeedbf2a3e2c3b2c41882cd3ca0c83309ee07418c1a9129c7fa005d40bfb6c9",
+    "bytes": 120611,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00103.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00103.png",
+    "sha256": "9c82b177872ae9228b60ea94530bbd40a50d3d9d60b421f637c77d21a8db1e1f",
+    "bytes": 119485,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00205.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00205.png",
+    "sha256": "90a7fb9e69e92ac48ce7b137b7e7e664a566dcbe06996adfa1e83d01e4adf24d",
+    "bytes": 114959,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00303.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00303.png",
+    "sha256": "100066c6beed590fe397f5c0b3c4ade403a5cb8df190cfc9260b207505e9504c",
+    "bytes": 97323,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00406.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00406.png",
+    "sha256": "38e7bab90f09440d97742087e202cc19ac70d9efe8ed4ca49e10e469bf53aecd",
+    "bytes": 142638,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00504.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00504.png",
+    "sha256": "be5eb629e8a71d6f5a0c09cdcbbac6a2fb3c017d84e6b2df46d44c7fb3f54001",
+    "bytes": 106588,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00614.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00614.png",
+    "sha256": "ec279747f16121797132a63fb7fefde0c3b0b21cd78248d0cf1bd5851d667206",
+    "bytes": 124658,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/cfd_final_00716.png",
+    "new": "outputs/B_color/hair_evaluation/originals/cfd_final_00716.png",
+    "sha256": "c2bb62889dc7eae4d5319e9e695e8591cbb1dcd12cad10305d3e5843ca8723f5",
+    "bytes": 144217,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00051.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00051.png",
+    "sha256": "16cd7d8d4182386c86ab2cf7885262060551e222aaf8928285a3060787ed99a2",
+    "bytes": 122815,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00146.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00146.png",
+    "sha256": "d1ec193e62bfa44983c86c4fafeb0dc7d6198fd483a56854558f513d4d97fb27",
+    "bytes": 129611,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00241.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00241.png",
+    "sha256": "878aeaa6d0a5f289c34f1006451c13f33eadb829fcb5e85b7a1d9aac36bf0892",
+    "bytes": 120049,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00336.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00336.png",
+    "sha256": "65dd1ffeee9bb57ad56616eb2d0212e809281229ae983660d4ac8ee13d37d7b3",
+    "bytes": 127168,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00431.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00431.png",
+    "sha256": "e4fce91d3f752eb5940e6e623dc9057066b4adc390bc4e2eaed1ed270f40bfb7",
+    "bytes": 125718,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00526.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00526.png",
+    "sha256": "7dd6049c975b96b99c180b2b31a3166cb3da27a3a0bbf8ab20730d90eb2dd09d",
+    "bytes": 128900,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00621.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00621.png",
+    "sha256": "5989eabb10086492f04efb0e9c2f1838572aef722e6771773b0e19f6bc4fad30",
+    "bytes": 129876,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00716.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00716.png",
+    "sha256": "92d09af570390d3087087b4e380e1d0aa7d4185e1916cb81ab0caef8413d2a34",
+    "bytes": 124997,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00723.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00723.png",
+    "sha256": "b18ff3cc89065dba5357ef5f36ec3fc31dac5011357968bb56dca703283923bd",
+    "bytes": 128984,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_evaluation/originals/hf_merged_00728.png",
+    "new": "outputs/B_color/hair_evaluation/originals/hf_merged_00728.png",
+    "sha256": "f53c77b7351503fa869854724596cfa1219394c66858a98b0343d2d5f177763e",
+    "bytes": 136986,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00001_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00001_hair.png",
+    "sha256": "90c05f223d8a05c9b6777aacf1eed147ff492fdaf0fb60a4be6845ccc47935d5",
+    "bytes": 34373,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00001_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00001_hair_mask.png",
+    "sha256": "d809c7363195a06f7465471605dcd8b7f28efd5b099be7cad04f37824e47a558",
+    "bytes": 2141,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00069_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00069_hair.png",
+    "sha256": "272303f512b8c45248a981df4665629b50092e2895b5055204e8b334f50e9e1f",
+    "bytes": 13745,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00069_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00069_hair_mask.png",
+    "sha256": "6e42cb025b5a949e6cb96b109efbf2bb1ba77f60efacb00c1fe693e0372404e7",
+    "bytes": 1334,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00088_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00088_hair.png",
+    "sha256": "9300749bf0931c1558f673fe200c1406004ba3ea8f1255b6173cabd81c5aebf9",
+    "bytes": 40385,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00088_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00088_hair_mask.png",
+    "sha256": "e96147bdf9cc81ffa824e969e6c80f89fb21d52eed2f50ada04e67f2fd89654e",
+    "bytes": 1225,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00103_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00103_hair.png",
+    "sha256": "37e463dcd749414fc115b51ade94324749e9a6fd174c3fccd6baf39ca26aed66",
+    "bytes": 43071,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00103_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00103_hair_mask.png",
+    "sha256": "7f4f62bc6b3ccaa97d063299a7faf020ab018bb7b7b4e56413664413f9f9214f",
+    "bytes": 2301,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00205_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00205_hair.png",
+    "sha256": "66aeca98d8a370e1707f8faec4818938c79ffdd09317a9cd2a5e635070d96ced",
+    "bytes": 18180,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00205_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00205_hair_mask.png",
+    "sha256": "173be3bb75b8f2a5c02bbeb2e0f9672251372bef97910cd9692101a4ee117756",
+    "bytes": 1155,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00303_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00303_hair.png",
+    "sha256": "167cb14a7e8e6ab75541f38ed6bf7d5c46dfe9d4e297ee234129f533d5030aeb",
+    "bytes": 13982,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00303_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00303_hair_mask.png",
+    "sha256": "c9481c0597e5e507dd8eda28dad939698d89920a25e3108bb43e5d763ddd5bbe",
+    "bytes": 1364,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00406_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00406_hair.png",
+    "sha256": "121fc6e3f4c1b211c77767f06d5d8614d4ca9efddbf8df151bbcca9b45b9c42c",
+    "bytes": 63283,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00406_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00406_hair_mask.png",
+    "sha256": "6bbc928817f1a1a81d8e63c62e3cc1e1e9ee94b39826c47f63df70a3cc27ad71",
+    "bytes": 2130,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00504_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00504_hair.png",
+    "sha256": "4efc864ab144bafc87c93424c9a89f8fe54f4b4cf9f211938d62683c68de68f3",
+    "bytes": 22647,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00504_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00504_hair_mask.png",
+    "sha256": "af070822ba918ac637eed36bca148feb91630a18f12351fab8d88efa7df4b4b8",
+    "bytes": 1517,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00614_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00614_hair.png",
+    "sha256": "e798773a671ac6dc449dad18fa73ec2c6a9f792957ce665ccb76e8e9d6f179e4",
+    "bytes": 51296,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00614_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00614_hair_mask.png",
+    "sha256": "660534c7cf6e58e255f0b59e56f7d2182e6b542e9e81a0991e6ae9ce8dd34145",
+    "bytes": 1816,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00716_hair.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00716_hair.png",
+    "sha256": "184ea4af3eac46be50b6bfcbdfdef16982bc8d940bfe0a841fe9038da24f9828",
+    "bytes": 55638,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/cfd_final_00716_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/cfd_final_00716_hair_mask.png",
+    "sha256": "348ac496a5bb96f1704d1319f499bfab0037a80e4a071137b6c68aca5ef6829d",
+    "bytes": 1987,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00051_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00051_hair.png",
+    "sha256": "2843a11dd541a142fb568967823de32e917e4880034c312aabeeee9ecbf2a0f4",
+    "bytes": 18321,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00051_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00051_hair_mask.png",
+    "sha256": "251597c83d4f36e05caffa0d86cd9ffc9f99358936ae9ef6528230ab992a2452",
+    "bytes": 2048,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00146_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00146_hair.png",
+    "sha256": "9876a3df4d7b5da62739c7bb5d706bfba43de12edbce1d6289169997019fe56f",
+    "bytes": 9393,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00146_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00146_hair_mask.png",
+    "sha256": "125a1882ce83ee01d22d65ff19631576453e35b41faeffe580fd84ed11e9fecc",
+    "bytes": 1269,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00241_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00241_hair.png",
+    "sha256": "5d28f70669e190748381a8d03eb75e9ea67ae819ce5d2ec0a85275bedcef6e7a",
+    "bytes": 6008,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00241_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00241_hair_mask.png",
+    "sha256": "c5324c78c0c22a67c206640934b0b185155119f757192b1061fbab1904087015",
+    "bytes": 1106,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00336_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00336_hair.png",
+    "sha256": "1f5af51b534c86ac9b0fe98c1604922edd98397f84584faf1999c69f25fcc9d6",
+    "bytes": 27745,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00336_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00336_hair_mask.png",
+    "sha256": "6c3afa77b2b200624fb6fa2dd742ef4902f2cd1efa43af384d68047fb7bdaf0c",
+    "bytes": 1912,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00431_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00431_hair.png",
+    "sha256": "08b7c1986a342885fa49b64e18c9f367d37bd89ac0b57544c5733bb8a1a155ad",
+    "bytes": 17077,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00431_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00431_hair_mask.png",
+    "sha256": "f2fcd3d226263512d536ad29db05fafc08040cd5574575fb1dbeeef13b72f364",
+    "bytes": 1991,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00526_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00526_hair.png",
+    "sha256": "b792d847ba5590e81ae006f088eb655a41d480c05953729aeb1914cb74dbc467",
+    "bytes": 23249,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00526_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00526_hair_mask.png",
+    "sha256": "2efb0d956221c31443771750ceed8d8b2ed90ab303415ab298980ed35cfa7d7a",
+    "bytes": 1794,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00621_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00621_hair.png",
+    "sha256": "90aa6e17fee66f3a59c9438035c1d37ede43829fe0ea9c2dd2e7a6efe7026247",
+    "bytes": 30066,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00621_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00621_hair_mask.png",
+    "sha256": "98a13dcb1bfd9b06ec7ed7be30fbfe781311d912aed816ebc690f6519af57823",
+    "bytes": 2136,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00716_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00716_hair.png",
+    "sha256": "e4fc5d1237522bc7d19b4d3dbccb56b0b613607018429b3f2ad081c427ec0de4",
+    "bytes": 29850,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00716_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00716_hair_mask.png",
+    "sha256": "d9db297d4d6111fa66458908f4063a3c0094cacb7661ba01d9c76f31e4d61ba1",
+    "bytes": 1698,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00723_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00723_hair.png",
+    "sha256": "dc2050bb868a1cb7d3f9168057cba09f4eb7d730c8924ff9403ecf1b627c1027",
+    "bytes": 19549,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00723_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00723_hair_mask.png",
+    "sha256": "5259ca4faca3b0ebd9766558d90899a701ff0374c4c5858e21e989325b7c352a",
+    "bytes": 1908,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00728_hair.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00728_hair.png",
+    "sha256": "30d5fda6d1f1f72a5d7a5c0bcda6fe0bee4652af09e5485b92878c10b17aab7d",
+    "bytes": 13158,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/hair_masks/hf_merged_00728_hair_mask.png",
+    "new": "outputs/B_color/hair_masks/hf_merged_00728_hair_mask.png",
+    "sha256": "cb0639e2cb5977af3882147278f09add8b40eeae3ea91efc054463d0d4740ba0",
+    "bytes": 1156,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/landmarks_478/cfd_final_00001_478.png",
+    "new": "outputs/A_geometry/landmarks_478/cfd_final_00001_478.png",
+    "sha256": "b624f4702f4946cc4ecd7a4d604803aaed30d05a64f6e4ccc392a55f54c13b27",
+    "bytes": 118824,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/landmarks_68/cfd_final_00001_68.png",
+    "new": "outputs/A_geometry/landmarks_68/cfd_final_00001_68.png",
+    "sha256": "5e311336e180017c6254c6fdae21db54198efed8876d4099117bd844d193e7ca",
+    "bytes": 751519,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        768,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/landmarks_68/cfd_final_00069_68.png",
+    "new": "outputs/A_geometry/landmarks_68/cfd_final_00069_68.png",
+    "sha256": "54d4c1a3add6e530b739b605c3d79f9d5bb247428354a9cd029e4a2eb9ba23e4",
+    "bytes": 651535,
+    "purpose": "Geometry A",
+    "format": {
+      "shape": [
+        768,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_check/cfd_final_00088_check.png",
+    "new": "outputs/B_color/mask_check/cfd_final_00088_check.png",
+    "sha256": "371241bc787946e8fffc2924b144ee74ba31cade551da58548cdd0e092f2f11b",
+    "bytes": 160525,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/audit_summary.json",
+    "new": "outputs/B_color/mask_validation/audit_summary.json",
+    "sha256": "ee8bbb46fa2a3a2d6730374c2c81f10a957e9143fb55655d0adcf40f7445d35f",
+    "bytes": 1248,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/dataset_audit.csv",
+    "new": "outputs/B_color/mask_validation/dataset_audit.csv",
+    "sha256": "f33ef5baced2687f1db183de82e3fd4936907808e8929e24e9e445fa02348385",
+    "bytes": 259845,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "source",
+        "image_hash_matches",
+        "image_shape",
+        "mask_reference_matches",
+        "mask_hash_matches",
+        "mask_shape",
+        "binary_0_255",
+        "mask_pixels",
+        "decoded_sha256",
+        "identical_mask_group_size",
+        "semantic_validity",
+        "review_note",
+        "issues"
+      ],
+      "data_rows": 1438
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/editor_interactive.stderr.log",
+    "new": "outputs/B_color/mask_validation/editor_interactive.stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "purpose": "Color B / mask QA",
+    "action": "copy_keep_locked_log"
+  },
+  {
+    "old": "outputs/mask_validation/editor_interactive.stdout.log",
+    "new": "outputs/B_color/mask_validation/editor_interactive.stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "purpose": "Color B / mask QA",
+    "action": "copy_keep_locked_log"
+  },
+  {
+    "old": "outputs/mask_validation/editor_visible.stderr.log",
+    "new": "outputs/B_color/mask_validation/editor_visible.stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "purpose": "Color B / mask QA",
+    "action": "copy_keep_locked_log"
+  },
+  {
+    "old": "outputs/mask_validation/editor_visible.stdout.log",
+    "new": "outputs/B_color/mask_validation/editor_visible.stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "purpose": "Color B / mask QA",
+    "action": "copy_keep_locked_log"
+  },
+  {
+    "old": "outputs/mask_validation/manual_confirmed_review.png",
+    "new": "outputs/B_color/mask_validation/manual_confirmed_review.png",
+    "sha256": "33a5de755d409918c7ef3da25d5997af677d829c0f1769734d293161fe151644",
+    "bytes": 1009405,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        846,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/manual_draft_review.png",
+    "new": "outputs/B_color/mask_validation/manual_draft_review.png",
+    "sha256": "47a444b1b436b9354c9dd0e41f9a0841fbd09a9b52f004b94b3d36c83c5098ba",
+    "bytes": 1002738,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        846,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/panel40.csv",
+    "new": "outputs/B_color/mask_validation/panel40.csv",
+    "sha256": "0e4129128dede2e517b35da6fdfa588e0052046a9c9a0e170eb660e14992e09d",
+    "bytes": 6247,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "source",
+        "sha256",
+        "selection",
+        "observed_tags",
+        "tags_user_verified",
+        "dataset_review_note",
+        "split"
+      ],
+      "data_rows": 40
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/panel40_contact_sheet.png",
+    "new": "outputs/B_color/mask_validation/panel40_contact_sheet.png",
+    "sha256": "6efb520073e7a8d24229a9592a6db1707587c38dddc061cc768248c1a8b11c6d",
+    "bytes": 2849887,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        1744,
+        960,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run.log",
+    "new": "outputs/B_color/mask_validation/prediction_run.log",
+    "sha256": "3b09a0ac565b03e24e89705119f3be494961197caeb299866548b1b68f94c521",
+    "bytes": 10586,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/README.txt",
+    "new": "outputs/B_color/mask_validation/README.txt",
+    "sha256": "32d3fe4c7224934aaa609bb3a22e031dc69940b28e64f5fb954b62d8a85a1a97",
+    "bytes": 15889,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/unit_tests.log",
+    "new": "outputs/B_color/mask_validation/unit_tests.log",
+    "sha256": "c042e3fac2f5333f4273f04e41c0a6f9384bc0046eaa2c92553e972f0c1d118d",
+    "bytes": 15612,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/metrics.csv",
+    "new": "outputs/B_color/mask_validation/core_evaluation/metrics.csv",
+    "sha256": "c0f05710a584b3b14f2b3bec6ec9794ccb96a85095ffd67e66308d756b5b78ce",
+    "bytes": 2549,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "region",
+        "status",
+        "reason",
+        "prediction_kind",
+        "prediction_path",
+        "reviewer",
+        "source_sha256",
+        "prediction_sha256",
+        "gt_revision",
+        "gt_pixels",
+        "pred_pixels",
+        "tp",
+        "fp",
+        "fn",
+        "iou",
+        "dice",
+        "precision",
+        "recall"
+      ],
+      "data_rows": 6
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/summary.json",
+    "new": "outputs/B_color/mask_validation/core_evaluation/summary.json",
+    "sha256": "fd9fb145b60f118379fd357557073b3d28a9847d3b3d1a607b55b4cb3e6bbb42",
+    "bytes": 745,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00001_hair.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00001_hair.png",
+    "sha256": "0cf4f528bb812659e8ef154021f22e7dde737305c7e7827480c052b60f3dde5d",
+    "bytes": 354785,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00001_skin.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00001_skin.png",
+    "sha256": "3796a022f0859efabb924b20bf169930b2117ecf6f6eca713f9159931ccd3d8e",
+    "bytes": 352052,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00069_hair.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00069_hair.png",
+    "sha256": "a830278ef688b5ddb0af6f4a27e9dac03b6970097870e707cccca6f7a5496084",
+    "bytes": 314250,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00069_skin.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00069_skin.png",
+    "sha256": "71ef24d0674840f56932861dd69c011dbf93b0fc38eb55e5174ac01afff2276b",
+    "bytes": 309177,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00088_hair.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00088_hair.png",
+    "sha256": "d370642cff18dea7eda75d3e0087d8509ab15882e9fcbc3f5f4088a6e393e259",
+    "bytes": 371982,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/core_evaluation/comparisons/cfd_final_00088_skin.png",
+    "new": "outputs/B_color/mask_validation/core_evaluation/comparisons/cfd_final_00088_skin.png",
+    "sha256": "3bc7895302664c748cc81edf5be9476fcb3d8c79f4fa3f08690e6b1e138cc801",
+    "bytes": 369114,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/editor_smoke/cfd_final_00001_editor.png",
+    "new": "outputs/B_color/mask_validation/editor_smoke/cfd_final_00001_editor.png",
+    "sha256": "a6b1c87342c4cadff75728cd7bb3947fef6acaa2d00a9fe766a5201c4fc5eaa7",
+    "bytes": 657096,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        667,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/editor_smoke/cfd_final_00069_editor.png",
+    "new": "outputs/B_color/mask_validation/editor_smoke/cfd_final_00069_editor.png",
+    "sha256": "29fdd2ae4055422996c2757f7b4642290a4189f72e35ff107f58423071866492",
+    "bytes": 593246,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        667,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/editor_smoke/cfd_final_00088_editor.png",
+    "new": "outputs/B_color/mask_validation/editor_smoke/cfd_final_00088_editor.png",
+    "sha256": "78396804d19462bb9869933c58483d1d731d2b81ccfeaef1c192ebfb5a34df57",
+    "bytes": 703334,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        667,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/metrics.csv",
+    "new": "outputs/B_color/mask_validation/evaluation/metrics.csv",
+    "sha256": "527eb3a2e85bb55ee15c940721a874e7c35949772ef2674e30c9d2348c93e282",
+    "bytes": 15198,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "region",
+        "status",
+        "reason",
+        "prediction_kind",
+        "prediction_path",
+        "reviewer",
+        "source_sha256",
+        "prediction_sha256",
+        "gt_revision",
+        "gt_pixels",
+        "pred_pixels",
+        "tp",
+        "fp",
+        "fn",
+        "iou",
+        "dice",
+        "precision",
+        "recall"
+      ],
+      "data_rows": 80
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/summary.json",
+    "new": "outputs/B_color/mask_validation/evaluation/summary.json",
+    "sha256": "331ec04f1ab23c704887bf647304343479445d7e461c6fe832d4de51f8c9b89d",
+    "bytes": 746,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00001_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00001_hair.png",
+    "sha256": "c91f9dedbb7ea8122d8192ac54ab4f8364bd038d45620b59d59a5bfd28fa0243",
+    "bytes": 353332,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00001_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00001_skin.png",
+    "sha256": "3796a022f0859efabb924b20bf169930b2117ecf6f6eca713f9159931ccd3d8e",
+    "bytes": 352052,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00025_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00025_hair.png",
+    "sha256": "8376df64b13e0521f8da556a22c30a69d973fb5f935dbc9bac541278ef1c4767",
+    "bytes": 286271,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00025_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00025_skin.png",
+    "sha256": "1ca2ffa821103bbeafc0c6eb3a1fcc69a896f454576cc096e3c50e29d2279ce5",
+    "bytes": 285568,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00069_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00069_hair.png",
+    "sha256": "9d1bc3e45bdabfa70522ea928e6d40e5580a37eb44870e77d45efc1950e9dadb",
+    "bytes": 314474,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00069_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00069_skin.png",
+    "sha256": "71ef24d0674840f56932861dd69c011dbf93b0fc38eb55e5174ac01afff2276b",
+    "bytes": 309177,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00074_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00074_hair.png",
+    "sha256": "f288ea31162cc0a1b6375763317fee420dc0ee6dba0565b22770857ecb7f9e49",
+    "bytes": 189639,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00074_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00074_skin.png",
+    "sha256": "d38282f109f151e7ed9d766bf21367950fd2b9360d65826705db3b36ac689a38",
+    "bytes": 188018,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00088_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00088_hair.png",
+    "sha256": "333daeb723173df60f9dbefbbdc8a8ba34547395cade055a33aaa145ae16303c",
+    "bytes": 368318,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00088_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00088_skin.png",
+    "sha256": "3bc7895302664c748cc81edf5be9476fcb3d8c79f4fa3f08690e6b1e138cc801",
+    "bytes": 369114,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00103_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00103_hair.png",
+    "sha256": "6def6e132a30a0ef574bec509ce56ddd29ceadd6b0dfe63f96233b70773d407f",
+    "bytes": 245635,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00103_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00103_skin.png",
+    "sha256": "2326193eae7e35678bdff6e6f366f0130f9d3963a68c267988c74ebdb3b38a0c",
+    "bytes": 246286,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00205_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00205_hair.png",
+    "sha256": "3d8676171eb398ef1bad9cd03151b68edd630ded587b121174683cee015497e8",
+    "bytes": 239501,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00205_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00205_skin.png",
+    "sha256": "e81b0e2ca6c785c9c231fe4c823ebbbcd0568985c02f581c8f879bd2380067aa",
+    "bytes": 237108,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00220_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00220_hair.png",
+    "sha256": "58b894bac5a53bc2398ddb0c6525f385cc2b9fa39c28a16557394ab8e73bc3b0",
+    "bytes": 219537,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00220_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00220_skin.png",
+    "sha256": "53035b370a1aa721ef6895c7fc39d7408489380c403bf1f490fd7924a33ba0b3",
+    "bytes": 219111,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00301_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00301_hair.png",
+    "sha256": "b22885808c5df9a633c88d3f320bce20d534e8254b2d992b129543580b101b23",
+    "bytes": 291474,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00301_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00301_skin.png",
+    "sha256": "8229a69eedfc53e35cbdf4e6a166fafe85cd089c49371ff7abf63c7c4de05bf1",
+    "bytes": 288672,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00303_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00303_hair.png",
+    "sha256": "5ddf4d35682f4231f9b399b2538de5e4883551bdccb6554ad8d9e7afc6d0b135",
+    "bytes": 204621,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00303_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00303_skin.png",
+    "sha256": "f77e1c7e25dc01f94d04048855b91a95279b9b3640342123e9ad5ccefd499683",
+    "bytes": 202372,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00346_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00346_hair.png",
+    "sha256": "2f6693dbeea0ad1d4ea7a96283ce716be59349420b33c249e7f6e2a70a5c98f9",
+    "bytes": 244607,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00346_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00346_skin.png",
+    "sha256": "6bc78bb5ee254fb4df2c5b93fc83b7acc9dc6e0617a7fe0a022f74f11184a3b2",
+    "bytes": 246722,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00359_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00359_hair.png",
+    "sha256": "4e331a62fdc60b8e1db81a1546d7ad6903a9bbf6e1367b1e67f9a3c7b14a4623",
+    "bytes": 240590,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00359_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00359_skin.png",
+    "sha256": "da2c58258efdf5ce6060841d4fcf68e0eec5b68ee67b0c29ea937dbec14692cd",
+    "bytes": 239321,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00406_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00406_hair.png",
+    "sha256": "c9b449f3757b95f33808afe0b50ceb018f639a0f40e06880e99124208b296f82",
+    "bytes": 288946,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00406_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00406_skin.png",
+    "sha256": "59f2c6662378d96b72a927974966743ad8f5a0c1629b606eb325b34ee2b10790",
+    "bytes": 294175,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00438_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00438_hair.png",
+    "sha256": "a0118af2f0ba642d71a6608b464e8c1cfd594337814494842517ffa82781aedf",
+    "bytes": 299766,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00438_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00438_skin.png",
+    "sha256": "eb7b3e4649d122b885865fd0e31b81932be38d6011b8b65622334f7956d6e57b",
+    "bytes": 302858,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00504_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00504_hair.png",
+    "sha256": "b09dcf57a155ab54bfa27f0f4a2546ed406ea50b4d695579248c7c1d4b868f38",
+    "bytes": 221889,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00504_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00504_skin.png",
+    "sha256": "e478a8fa71a25f23a92229fd2b4812600a68c4ac14e69f48896e7fb7dbcd763f",
+    "bytes": 220832,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00513_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00513_hair.png",
+    "sha256": "76ecc59199c58fc9035052bf22b83eb96f94d88e19f75377f29cd01b79853524",
+    "bytes": 264737,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00513_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00513_skin.png",
+    "sha256": "c44b94886b40be4fee351eac8e6a1a161d19a96f495fa4990ff3eb36c2cddff1",
+    "bytes": 268394,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00524_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00524_hair.png",
+    "sha256": "c3429c30c4f2b41b22a2699b2d65be8a92a31fb56105f3b6c84729f92c35d049",
+    "bytes": 220535,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00524_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00524_skin.png",
+    "sha256": "130ec4b2cf52aa11247d7065bc70033b188cd1039732a24b8193c21ec3e88f5c",
+    "bytes": 219609,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00614_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00614_hair.png",
+    "sha256": "be3e87a2a36b695d9dfd221f4a1946901fc21acafbe702c58351196375f30087",
+    "bytes": 255054,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00614_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00614_skin.png",
+    "sha256": "0795dbafa3c99d3d25882454c97fed0a89807dc1f90393959fdbb9b25386883f",
+    "bytes": 257795,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00695_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00695_hair.png",
+    "sha256": "c1ed2dffd16eee92ba1041673f336422fd488b617d7bd239e50a85d42e76da2a",
+    "bytes": 242099,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00695_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00695_skin.png",
+    "sha256": "bef2f77e370041515c9ffd895b926140efeba8f84340aaf4ffbfa7128fcc619c",
+    "bytes": 244444,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00716_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00716_hair.png",
+    "sha256": "25d3ba6d610daf59245f81bcce0451fb603df81127654ad6f33dec493742ceb8",
+    "bytes": 293763,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/cfd_final_00716_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/cfd_final_00716_skin.png",
+    "sha256": "de18e564b953183887dd489683cbf2234ffbbdec9ff825bcb20c4d8e255c470c",
+    "bytes": 298296,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00051_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00051_hair.png",
+    "sha256": "e37a340ea09cf625aa8dca02a1e4a1ad8264325cdde2083fbb93592999a10d85",
+    "bytes": 257824,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00051_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00051_skin.png",
+    "sha256": "8a66c0abd99f98aaef70bbd401816cbc730b0791b742f1a9aba4e004d94467f2",
+    "bytes": 255504,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00052_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00052_hair.png",
+    "sha256": "de4236e8c1b18b4a2eff3f4a5c867cc677fea2a6422cd883ad0d0afcb3458946",
+    "bytes": 271696,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00052_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00052_skin.png",
+    "sha256": "6f3ac3b2585705e7bdb7773c04af3959c6a8a5b958fd4de44243c08324ce547f",
+    "bytes": 274239,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00146_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00146_hair.png",
+    "sha256": "bc445c1eeeed582ac40e591b6b55512b0985522c4c448e8b015766ec864c35a1",
+    "bytes": 270408,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00146_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00146_skin.png",
+    "sha256": "1bc1a49a2b9062a779fe4421998118aec2ac06b80ed06dd4c264729cb4e85b59",
+    "bytes": 268461,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00163_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00163_hair.png",
+    "sha256": "aa0a22605a8e7c56b434067a6c948792df668321c130756583d6620c84904a5b",
+    "bytes": 256487,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00163_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00163_skin.png",
+    "sha256": "b1626c2ada9a32fbc6ad9df703a9f928a8d0f1cce8a2045f53e5327b25c6c69d",
+    "bytes": 254996,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00177_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00177_hair.png",
+    "sha256": "5f82eb1dca13f6a78c49a8abbcc628a63259af29915803a2f6a16b9f83999659",
+    "bytes": 256587,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00177_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00177_skin.png",
+    "sha256": "dceeeb14f89a005755f6a52dbdc0464a428f54984306f05f6baaccd0139fda77",
+    "bytes": 257721,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00241_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00241_hair.png",
+    "sha256": "340ea890d4ecd8e4d81401563d9b57d426c59c6c90697a8118faa858e34afd00",
+    "bytes": 251492,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00241_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00241_skin.png",
+    "sha256": "724ae5046b1c18b27792c8d3b18339d872771ace2145f32d4b6c6921d0447e29",
+    "bytes": 248894,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00283_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00283_hair.png",
+    "sha256": "d571cfe124474a3126dd7748fd92f29de9a04301654c506a015237ffc46f6f37",
+    "bytes": 282380,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00283_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00283_skin.png",
+    "sha256": "299c30a462505753a6105cb10ea10f7eb9ceada9cf9695fed9f3c7dd1c88863d",
+    "bytes": 280633,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00336_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00336_hair.png",
+    "sha256": "9e277a90c2d5bc75f7c2aec4118cb062a7c60bbdced786ef267ec024f5f7a7f9",
+    "bytes": 262540,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00336_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00336_skin.png",
+    "sha256": "dad04cffd0eca32c6a0b106698d2efe4bc97f41be8a71adcf50289551231f468",
+    "bytes": 263530,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00363_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00363_hair.png",
+    "sha256": "9f440dc11520e870fb3e5883ab114109be0de889c9eab7d325d2a4876fd839e5",
+    "bytes": 248342,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00363_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00363_skin.png",
+    "sha256": "d908a4c8e8cfe50006f121658b8f3740b068aa695b515504b4a013d192d46935",
+    "bytes": 247883,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00418_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00418_hair.png",
+    "sha256": "867c4a365ed2aae00ddd4566dd5a5ba3932db660fc85d009a8af83bbd62116ed",
+    "bytes": 273060,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00418_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00418_skin.png",
+    "sha256": "eabdad320cfc555ac443f93913e7437b3a20f7bf1da19446d4305c75e2e27312",
+    "bytes": 273622,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00431_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00431_hair.png",
+    "sha256": "a4ad3453c61974e2ac8a1116a21c88f6df6d8c235df2e7ac03727d72da8a16c2",
+    "bytes": 263282,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00431_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00431_skin.png",
+    "sha256": "04793e9aef307e29c527a9ec07e001822676ddb5088e518460a44292ef872766",
+    "bytes": 261744,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00493_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00493_hair.png",
+    "sha256": "fc0206b8afd40b4f9096672c042089869ca66e6132394b1c7b1753def278bd1e",
+    "bytes": 271285,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00493_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00493_skin.png",
+    "sha256": "3e1ced9d8ed9514160cefe114944aabc40d5b059c0e92d8868fcf98461041f2b",
+    "bytes": 269589,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00526_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00526_hair.png",
+    "sha256": "74da6182de5f3173dec7ea2b12f113e3380760f1ec862b47e0ee561b63cfac8d",
+    "bytes": 268505,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00526_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00526_skin.png",
+    "sha256": "00b2f008a90266703d27a8bdb21b4243d07ed315328f7951a5676d7d5b6837b1",
+    "bytes": 267860,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00612_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00612_hair.png",
+    "sha256": "f5624057f63be56aef409c6913eb2199617cb6e6a48c54a0c4c7285d74d69a63",
+    "bytes": 257008,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00612_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00612_skin.png",
+    "sha256": "e4faf710902af1026c82b965f42231f8f45305abe7dfcf1a0fb6477c6b150b30",
+    "bytes": 255778,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00621_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00621_hair.png",
+    "sha256": "15e9b4735cda7e8ac3256f40aba49729c1cfaca926deb3e315dc7ef0939e7699",
+    "bytes": 270802,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00621_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00621_skin.png",
+    "sha256": "67f87d22bb039f6c96a87b1450635ba4ebbcb5a9f8dfa73ba6371612e1f5e0fc",
+    "bytes": 270187,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00676_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00676_hair.png",
+    "sha256": "c650980a6607f8fcbf833a4539ae6f5b362a332238b64340fa9b2e9984072179",
+    "bytes": 277290,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00676_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00676_skin.png",
+    "sha256": "768c97595bd767310866551c3ce0000a12faf7684fde2a78000a67bfc15aa43a",
+    "bytes": 275171,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00713_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00713_hair.png",
+    "sha256": "b242ff3a8698e4fb66bdcd0fcc5e8e990185706f9a25d22ce939ea29d7e89f19",
+    "bytes": 262990,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00713_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00713_skin.png",
+    "sha256": "9294da0af09a0565c5561f62e590f0e9e96928048d9900b6a7515cb698e08bf4",
+    "bytes": 262325,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00716_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00716_hair.png",
+    "sha256": "07411500ec7dadfe11beeaade37e3565666e75216abd2c7513c047e922af65a9",
+    "bytes": 258745,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00716_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00716_skin.png",
+    "sha256": "46afdea0a7fe09d10ef1f185205ded03da131f6801b5a9af66a42bf793e4aba4",
+    "bytes": 259646,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00723_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00723_hair.png",
+    "sha256": "f747378473729985ea87e8d5e2dbc2da74cad0ea3c98e142dc67c3caff4f70e9",
+    "bytes": 268525,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00723_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00723_skin.png",
+    "sha256": "6d328efc83ecf005f3f2cb2bbce7a0703fc00f4ebe69331de397e7464d0e1711",
+    "bytes": 269887,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00728_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00728_hair.png",
+    "sha256": "b11762f73779b8e889f6736f72e5ef53317abc8c01de63cfab0e02fcbe822d21",
+    "bytes": 284256,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation/comparisons/hf_merged_00728_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation/comparisons/hf_merged_00728_skin.png",
+    "sha256": "5741a18b455abd325b5a566ff4976fba34ac47710ae969f95e9e057d1f08b1f6",
+    "bytes": 285280,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/metrics.csv",
+    "new": "outputs/B_color/mask_validation/evaluation_three/metrics.csv",
+    "sha256": "80696c6e687a8e21dfc58bc4034f6fb9e0814a4c8f1f614b7fc5a225f89f7af5",
+    "bytes": 2692,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "region",
+        "status",
+        "reason",
+        "prediction_kind",
+        "prediction_path",
+        "reviewer",
+        "source_sha256",
+        "prediction_sha256",
+        "gt_revision",
+        "gt_pixels",
+        "pred_pixels",
+        "tp",
+        "fp",
+        "fn",
+        "iou",
+        "dice",
+        "precision",
+        "recall"
+      ],
+      "data_rows": 6
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/summary.json",
+    "new": "outputs/B_color/mask_validation/evaluation_three/summary.json",
+    "sha256": "8acab9eb550a3558c236b030593c3a75e216b87a88a17a88df87c8cd55ba35e4",
+    "bytes": 740,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00001_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00001_hair.png",
+    "sha256": "c91f9dedbb7ea8122d8192ac54ab4f8364bd038d45620b59d59a5bfd28fa0243",
+    "bytes": 353332,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00001_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00001_skin.png",
+    "sha256": "3796a022f0859efabb924b20bf169930b2117ecf6f6eca713f9159931ccd3d8e",
+    "bytes": 352052,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00069_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00069_hair.png",
+    "sha256": "9d1bc3e45bdabfa70522ea928e6d40e5580a37eb44870e77d45efc1950e9dadb",
+    "bytes": 314474,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00069_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00069_skin.png",
+    "sha256": "71ef24d0674840f56932861dd69c011dbf93b0fc38eb55e5174ac01afff2276b",
+    "bytes": 309177,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00088_hair.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00088_hair.png",
+    "sha256": "333daeb723173df60f9dbefbbdc8a8ba34547395cade055a33aaa145ae16303c",
+    "bytes": 368318,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/evaluation_three/comparisons/cfd_final_00088_skin.png",
+    "new": "outputs/B_color/mask_validation/evaluation_three/comparisons/cfd_final_00088_skin.png",
+    "sha256": "3bc7895302664c748cc81edf5be9476fcb3d8c79f4fa3f08690e6b1e138cc801",
+    "bytes": 369114,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00001_core_preview.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00001_core_preview.png",
+    "sha256": "b2ab912eb6b141d8be6c364fd66c213aec8bcaee6dcc26ca2fecd75c42db5844",
+    "bytes": 347907,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00001_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00001_hair_mask.png",
+    "sha256": "a064aeb0939c3eada5d4b2b75df329fe9399826c4fa884606898889346b2e934",
+    "bytes": 1113,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00069_core_preview.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00069_core_preview.png",
+    "sha256": "59634899078a368612672fd784091915b7d2d51d3f95c8f59a2d6ab2ff4209f2",
+    "bytes": 309046,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00069_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00069_hair_mask.png",
+    "sha256": "b9c4d4a27ec3c35010522e2adabfb4e2f17f6785cc10f13c0b94376ee3253734",
+    "bytes": 702,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00088_core_preview.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00088_core_preview.png",
+    "sha256": "dfd5aa16a16f487e2ba9bd8cc6ae10eb1d142dc1c5914ba3f5c39b3340aee586",
+    "bytes": 363895,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        282,
+        768,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/cfd_final_00088_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/hair_core/cfd_final_00088_hair_mask.png",
+    "sha256": "299f178190cad16440a960eb01a3f2e43c34187d309172c4edd464c9ccc900fd",
+    "bytes": 1273,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/hair_core/core_report.csv",
+    "new": "outputs/B_color/mask_validation/hair_core/core_report.csv",
+    "sha256": "6eb2030eb96b9a0031dd11bdcb20d51431080e20c86f8ff651938a136cd38cb9",
+    "bytes": 327,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "filename",
+        "status",
+        "reason",
+        "pred_pixels",
+        "core_pixels",
+        "retained_fraction"
+      ],
+      "data_rows": 3
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/prediction_manifest.json",
+    "new": "outputs/B_color/mask_validation/predictions/prediction_manifest.json",
+    "sha256": "5da4f1d790dfdfea43c7bd3f427ca21ba4df1fcc4608a9f2c3ffc4808f3f5bb1",
+    "bytes": 9292,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00001_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00001_hair.png",
+    "sha256": "90c05f223d8a05c9b6777aacf1eed147ff492fdaf0fb60a4be6845ccc47935d5",
+    "bytes": 34373,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00001_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00001_hair_mask.png",
+    "sha256": "d809c7363195a06f7465471605dcd8b7f28efd5b099be7cad04f37824e47a558",
+    "bytes": 2141,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00025_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00025_hair.png",
+    "sha256": "46181153408746842aa121ad888906abc5cd4e7c329e5477db4fa139dbfbf74d",
+    "bytes": 25185,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00025_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00025_hair_mask.png",
+    "sha256": "3a5a7dfab4b76d911be9c1eef82a0b6bea437a1139f3e34f65c468a6aca46595",
+    "bytes": 1631,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00069_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00069_hair.png",
+    "sha256": "272303f512b8c45248a981df4665629b50092e2895b5055204e8b334f50e9e1f",
+    "bytes": 13745,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00069_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00069_hair_mask.png",
+    "sha256": "6e42cb025b5a949e6cb96b109efbf2bb1ba77f60efacb00c1fe693e0372404e7",
+    "bytes": 1334,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00074_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00074_hair.png",
+    "sha256": "e522f3dbafbd5394d6fe0803e953d85a53562d36abbf8566185e8859dec6fd34",
+    "bytes": 17634,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00074_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00074_hair_mask.png",
+    "sha256": "c1d542dcac989c222c87d560d81f5e3d4589f951ae57bf6271c9b617d82c3f6d",
+    "bytes": 1357,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00088_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00088_hair.png",
+    "sha256": "9300749bf0931c1558f673fe200c1406004ba3ea8f1255b6173cabd81c5aebf9",
+    "bytes": 40385,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00088_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00088_hair_mask.png",
+    "sha256": "e96147bdf9cc81ffa824e969e6c80f89fb21d52eed2f50ada04e67f2fd89654e",
+    "bytes": 1225,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00103_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00103_hair.png",
+    "sha256": "37e463dcd749414fc115b51ade94324749e9a6fd174c3fccd6baf39ca26aed66",
+    "bytes": 43071,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00103_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00103_hair_mask.png",
+    "sha256": "7f4f62bc6b3ccaa97d063299a7faf020ab018bb7b7b4e56413664413f9f9214f",
+    "bytes": 2301,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00205_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00205_hair.png",
+    "sha256": "66aeca98d8a370e1707f8faec4818938c79ffdd09317a9cd2a5e635070d96ced",
+    "bytes": 18180,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00205_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00205_hair_mask.png",
+    "sha256": "173be3bb75b8f2a5c02bbeb2e0f9672251372bef97910cd9692101a4ee117756",
+    "bytes": 1155,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00220_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00220_hair.png",
+    "sha256": "c2a644551800166ccf3f0675c65ac42961fec108ade3c38aa665421846f7fa11",
+    "bytes": 34002,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00220_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00220_hair_mask.png",
+    "sha256": "82e007051e5aa120a9a5d316b59aff59f04bbbc06a7d5bcc158603f704da22a8",
+    "bytes": 1462,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00301_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00301_hair.png",
+    "sha256": "8af66fc84e44b567cf00d081bd39177551ab858c21e75123b32aa256190eb479",
+    "bytes": 4856,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00301_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00301_hair_mask.png",
+    "sha256": "6a95784b06e7db9fdfc6eeb689be7c16bf7c6b84e23d86d3a26d6695d70e296d",
+    "bytes": 965,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00303_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00303_hair.png",
+    "sha256": "167cb14a7e8e6ab75541f38ed6bf7d5c46dfe9d4e297ee234129f533d5030aeb",
+    "bytes": 13982,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00303_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00303_hair_mask.png",
+    "sha256": "c9481c0597e5e507dd8eda28dad939698d89920a25e3108bb43e5d763ddd5bbe",
+    "bytes": 1364,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00346_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00346_hair.png",
+    "sha256": "7066da8fa6358408799c1f5a84d85639e1df19a843730fb3242c03a66567ce26",
+    "bytes": 43957,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00346_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00346_hair_mask.png",
+    "sha256": "9ceb67fb9efea70fabe14661e5867f9539e92c0d8c93cd795097b961400793ba",
+    "bytes": 1562,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00359_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00359_hair.png",
+    "sha256": "6ca6285b48ac10f013e5075c907802eed70d6f67bf90b89c72a2a7d54d60ee14",
+    "bytes": 15764,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00359_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00359_hair_mask.png",
+    "sha256": "3d4a3807b9dbe76fa52ba8291d3c202e4605f2bcbc3fffc7bf12674f51c404f8",
+    "bytes": 1397,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00406_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00406_hair.png",
+    "sha256": "121fc6e3f4c1b211c77767f06d5d8614d4ca9efddbf8df151bbcca9b45b9c42c",
+    "bytes": 63283,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00406_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00406_hair_mask.png",
+    "sha256": "6bbc928817f1a1a81d8e63c62e3cc1e1e9ee94b39826c47f63df70a3cc27ad71",
+    "bytes": 2130,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00438_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00438_hair.png",
+    "sha256": "44794bb071cbc16e2aad06b34d21e2bd11abafa64e30f20b0f29135b8dd39f69",
+    "bytes": 49343,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00438_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00438_hair_mask.png",
+    "sha256": "abf7d9178dff74e27599d072b2cdfa4cad863e6fbcdb311a86fd3a54f0af1dc3",
+    "bytes": 2244,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00504_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00504_hair.png",
+    "sha256": "4efc864ab144bafc87c93424c9a89f8fe54f4b4cf9f211938d62683c68de68f3",
+    "bytes": 22647,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00504_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00504_hair_mask.png",
+    "sha256": "af070822ba918ac637eed36bca148feb91630a18f12351fab8d88efa7df4b4b8",
+    "bytes": 1517,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00513_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00513_hair.png",
+    "sha256": "6ff960e7f3d47ef4225485f0aed28b5bf72278a625da40650dbbbb711d733cb0",
+    "bytes": 52633,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00513_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00513_hair_mask.png",
+    "sha256": "b868fd46ed6c78022d33df9b9c9867d79a99a58fc88cd9c8a1d37d1e17bf39d0",
+    "bytes": 2006,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00524_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00524_hair.png",
+    "sha256": "04b472f495457b16ad358266f80f643d2370903aaafe588555d800441b46ce3b",
+    "bytes": 17256,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00524_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00524_hair_mask.png",
+    "sha256": "7c755e41950a6181bed8ebace10760e7b2b908cc123c900f5741f412c217d784",
+    "bytes": 1517,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00614_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00614_hair.png",
+    "sha256": "e798773a671ac6dc449dad18fa73ec2c6a9f792957ce665ccb76e8e9d6f179e4",
+    "bytes": 51296,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00614_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00614_hair_mask.png",
+    "sha256": "660534c7cf6e58e255f0b59e56f7d2182e6b542e9e81a0991e6ae9ce8dd34145",
+    "bytes": 1816,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00695_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00695_hair.png",
+    "sha256": "aa16aac7f5f022d27fb30b461a9d3deae9c348d395042f66f877e4c95a290def",
+    "bytes": 43008,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00695_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00695_hair_mask.png",
+    "sha256": "69d736fd740208c6e8fbb707dbdfdd5c2bd774f3dfe72a80110d04926bb73b2d",
+    "bytes": 1917,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00716_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00716_hair.png",
+    "sha256": "184ea4af3eac46be50b6bfcbdfdef16982bc8d940bfe0a841fe9038da24f9828",
+    "bytes": 55638,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/cfd_final_00716_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/cfd_final_00716_hair_mask.png",
+    "sha256": "348ac496a5bb96f1704d1319f499bfab0037a80e4a071137b6c68aca5ef6829d",
+    "bytes": 1987,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00051_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00051_hair.png",
+    "sha256": "2843a11dd541a142fb568967823de32e917e4880034c312aabeeee9ecbf2a0f4",
+    "bytes": 18321,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00051_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00051_hair_mask.png",
+    "sha256": "251597c83d4f36e05caffa0d86cd9ffc9f99358936ae9ef6528230ab992a2452",
+    "bytes": 2048,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00052_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00052_hair.png",
+    "sha256": "88dbb85e399d268bfd22b740170c5d73a7fb4f022c1791499aeb3abd4e6e69f3",
+    "bytes": 43107,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00052_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00052_hair_mask.png",
+    "sha256": "903880d61e8148dabdf1e83b24bc69c3cd85c3f35ff9e2847ddfaf7bdddaa3a0",
+    "bytes": 2170,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00146_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00146_hair.png",
+    "sha256": "9876a3df4d7b5da62739c7bb5d706bfba43de12edbce1d6289169997019fe56f",
+    "bytes": 9393,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00146_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00146_hair_mask.png",
+    "sha256": "125a1882ce83ee01d22d65ff19631576453e35b41faeffe580fd84ed11e9fecc",
+    "bytes": 1269,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00163_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00163_hair.png",
+    "sha256": "34a884d7b1097321a5c0d3544230310d8c8e67856a7b72904b24eaff779ce71b",
+    "bytes": 5861,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00163_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00163_hair_mask.png",
+    "sha256": "457df9559048773623f4486bb21498a438f39a9956b37275cb3963bc904c8ac8",
+    "bytes": 999,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00177_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00177_hair.png",
+    "sha256": "36ab746e8b7d1ecf774195cc7b2c0fb2e1834c41209af9e67224fc78fe3d783f",
+    "bytes": 34666,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00177_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00177_hair_mask.png",
+    "sha256": "e6e91d4b09879855791e8196eee3430273460ff090b22b6ad2fd6c392ef4d8bc",
+    "bytes": 2350,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00241_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00241_hair.png",
+    "sha256": "5d28f70669e190748381a8d03eb75e9ea67ae819ce5d2ec0a85275bedcef6e7a",
+    "bytes": 6008,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00241_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00241_hair_mask.png",
+    "sha256": "c5324c78c0c22a67c206640934b0b185155119f757192b1061fbab1904087015",
+    "bytes": 1106,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00283_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00283_hair.png",
+    "sha256": "b34dd2007c5908813af5b16d7b4957591d96c903d519ee8b30b6fe868df4ddc2",
+    "bytes": 9041,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00283_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00283_hair_mask.png",
+    "sha256": "c01e83d4a376092b04577e61aa10bfec838f044f468caee279665e2c7e921100",
+    "bytes": 1353,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00336_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00336_hair.png",
+    "sha256": "1f5af51b534c86ac9b0fe98c1604922edd98397f84584faf1999c69f25fcc9d6",
+    "bytes": 27745,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00336_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00336_hair_mask.png",
+    "sha256": "6c3afa77b2b200624fb6fa2dd742ef4902f2cd1efa43af384d68047fb7bdaf0c",
+    "bytes": 1912,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00363_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00363_hair.png",
+    "sha256": "560de8888e2c5db73dba7ed0377945ea0f06515937fc26b64ce684745d927935",
+    "bytes": 31183,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00363_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00363_hair_mask.png",
+    "sha256": "cb0a3b7a8ead6b8cc088d247b183bbf89d8c795493ba7eb74263f92244a8746c",
+    "bytes": 2493,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00418_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00418_hair.png",
+    "sha256": "31b928bb0b4d9799babdb8c07522975dc856f7bbe846d9d7a3a6ab361efdc103",
+    "bytes": 33217,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00418_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00418_hair_mask.png",
+    "sha256": "bd387c1eb6b1128ed097c8e2a273c5a924d46c7c3307334743e2afc46ed12116",
+    "bytes": 1896,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00431_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00431_hair.png",
+    "sha256": "08b7c1986a342885fa49b64e18c9f367d37bd89ac0b57544c5733bb8a1a155ad",
+    "bytes": 17077,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00431_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00431_hair_mask.png",
+    "sha256": "f2fcd3d226263512d536ad29db05fafc08040cd5574575fb1dbeeef13b72f364",
+    "bytes": 1991,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00493_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00493_hair.png",
+    "sha256": "d428a78c842a06dcdc36ff825d2b7fa229b2dcf9dec30d7744e72abcee295963",
+    "bytes": 12216,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00493_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00493_hair_mask.png",
+    "sha256": "8d1fb7ecffb7b6a5e6ca5ae8d0edf37a713dd9d5b780ab42d1cd14b43df5a006",
+    "bytes": 1760,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00526_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00526_hair.png",
+    "sha256": "b792d847ba5590e81ae006f088eb655a41d480c05953729aeb1914cb74dbc467",
+    "bytes": 23249,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00526_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00526_hair_mask.png",
+    "sha256": "2efb0d956221c31443771750ceed8d8b2ed90ab303415ab298980ed35cfa7d7a",
+    "bytes": 1794,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00612_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00612_hair.png",
+    "sha256": "a9bfb4882623e96d09bbeb57e67646ac28d4bae1022e610f8a6b95f133720485",
+    "bytes": 10586,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00612_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00612_hair_mask.png",
+    "sha256": "af32561b1d59a2d52443a635a65acac4575481b89ef513a3aab55bb124ce9066",
+    "bytes": 1511,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00621_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00621_hair.png",
+    "sha256": "90aa6e17fee66f3a59c9438035c1d37ede43829fe0ea9c2dd2e7a6efe7026247",
+    "bytes": 30066,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00621_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00621_hair_mask.png",
+    "sha256": "98a13dcb1bfd9b06ec7ed7be30fbfe781311d912aed816ebc690f6519af57823",
+    "bytes": 2136,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00676_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00676_hair.png",
+    "sha256": "34a000a6dbbcb4991feb419026c539bf5c3a1fd7aef8e312a033dc2b157acd87",
+    "bytes": 9116,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00676_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00676_hair_mask.png",
+    "sha256": "7e6f49f777a24836c25c4302a0c1bdba8f4cfc47bb7210ba5301f8785ca6daa8",
+    "bytes": 939,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00713_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00713_hair.png",
+    "sha256": "ecc96127ca94c7f82e72d6b8fc8292ec2f51f80c246195145c27290986c54b46",
+    "bytes": 11012,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00713_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00713_hair_mask.png",
+    "sha256": "4072520132678e278fc4927f0d44c01ff99da02648a1a3d1e58608d06defde76",
+    "bytes": 1520,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00716_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00716_hair.png",
+    "sha256": "e4fc5d1237522bc7d19b4d3dbccb56b0b613607018429b3f2ad081c427ec0de4",
+    "bytes": 29850,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00716_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00716_hair_mask.png",
+    "sha256": "d9db297d4d6111fa66458908f4063a3c0094cacb7661ba01d9c76f31e4d61ba1",
+    "bytes": 1698,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00723_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00723_hair.png",
+    "sha256": "dc2050bb868a1cb7d3f9168057cba09f4eb7d730c8924ff9403ecf1b627c1027",
+    "bytes": 19549,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00723_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00723_hair_mask.png",
+    "sha256": "5259ca4faca3b0ebd9766558d90899a701ff0374c4c5858e21e989325b7c352a",
+    "bytes": 1908,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00728_hair.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00728_hair.png",
+    "sha256": "30d5fda6d1f1f72a5d7a5c0bcda6fe0bee4652af09e5485b92878c10b17aab7d",
+    "bytes": 13158,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/predictions/hair/hf_merged_00728_hair_mask.png",
+    "new": "outputs/B_color/mask_validation/predictions/hair/hf_merged_00728_hair_mask.png",
+    "sha256": "cb0639e2cb5977af3882147278f09add8b40eeae3ea91efc054463d0d4740ba0",
+    "bytes": 1156,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/abnormal_images.csv",
+    "new": "outputs/B_color/mask_validation/prediction_run/abnormal_images.csv",
+    "sha256": "ecb40727ac5fe51e0758e93bcd4fd970c678b43ef046259aa2c999444b5cfdd7",
+    "bytes": 5163,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "status",
+        "hair_pixels",
+        "hair_area_ratio",
+        "components",
+        "skin_overlap_ratio",
+        "trusted_skin_overlap_ratio",
+        "face_overlap_ratio",
+        "before_hair_pixels",
+        "flags",
+        "error",
+        "baseline_error"
+      ],
+      "data_rows": 40
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/failed_images.csv",
+    "new": "outputs/B_color/mask_validation/prediction_run/failed_images.csv",
+    "sha256": "96e24e6b873d43c7ef6fa30f4364a26d412f0b989b1e9696cc6a291a719d2540",
+    "bytes": 17,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "reason"
+      ],
+      "data_rows": 0
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/quality_report.csv",
+    "new": "outputs/B_color/mask_validation/prediction_run/quality_report.csv",
+    "sha256": "ecb40727ac5fe51e0758e93bcd4fd970c678b43ef046259aa2c999444b5cfdd7",
+    "bytes": 5163,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "columns": [
+        "image",
+        "status",
+        "hair_pixels",
+        "hair_area_ratio",
+        "components",
+        "skin_overlap_ratio",
+        "trusted_skin_overlap_ratio",
+        "face_overlap_ratio",
+        "before_hair_pixels",
+        "flags",
+        "error",
+        "baseline_error"
+      ],
+      "data_rows": 40
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/run.log",
+    "new": "outputs/B_color/mask_validation/prediction_run/run.log",
+    "sha256": "8cce66016934b6e76df75d4a09a5a6ead759a374acf586d65ce4ecf3477c2560",
+    "bytes": 4282,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/run_manifest.json",
+    "new": "outputs/B_color/mask_validation/prediction_run/run_manifest.json",
+    "sha256": "b8edc5c5b84053cdfee8abdfbdba49929ebcd56c1d91093993e8e9b45baf65c1",
+    "bytes": 1334,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/test_contact_sheet.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/test_contact_sheet.png",
+    "sha256": "dc13d0f4a87fb71e0c7e4a658e0278c7323d169b7acb810e720c45f5ca2a7ab4",
+    "bytes": 3537263,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        3038,
+        1152,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00001.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00001.png",
+    "sha256": "40ce42641a645d62f9f38fe941807f020797702bba0e1c2bb5892f38aacc79fb",
+    "bytes": 273586,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00025.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00025.png",
+    "sha256": "ef376810f7ee0af3a76ec82c980e56a88998b56916ae10f1a75d09fcde56e25c",
+    "bytes": 312656,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00069.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00069.png",
+    "sha256": "def9d9b5519859d1d01d7fb164b905f30f5a198c4093f221ab4b07d42e55b0ce",
+    "bytes": 226330,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00074.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00074.png",
+    "sha256": "c6e79551d3f73f6f86f377bc76eb1f04b317b4a44b9dc2fa30891e68ecd78ad4",
+    "bytes": 207083,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00088.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00088.png",
+    "sha256": "13fe3341668e12c5077f5cb7beea0967a1bd2a2e991981aeb166450987f7a966",
+    "bytes": 288417,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00103.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00103.png",
+    "sha256": "7ac21d2734f9d57d056b9753802fa7749a6c79b811ef715c1bd7ebb7958f907c",
+    "bytes": 290366,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00205.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00205.png",
+    "sha256": "b7756146b50967725c7c163ec5a7b82a7c3f0601c042cce0e6bcfef3b93db745",
+    "bytes": 257527,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00220.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00220.png",
+    "sha256": "c0d41fb3c07f0db8f0664eb833d760fd567a4c04e5add48f041fd0804958597e",
+    "bytes": 253248,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00301.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00301.png",
+    "sha256": "4cdf8c830ae0e970c4b7babd6ff7e740b1f0b5a0331af430cfbc87bf2964d3e3",
+    "bytes": 295978,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00303.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00303.png",
+    "sha256": "a2b13b4f9d3cafbb917ac756fff32cf0f42129323d9edea0c8f28c3f04110e5d",
+    "bytes": 219198,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00346.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00346.png",
+    "sha256": "d7ba60c3588773e4077ca67902f330a6f21197c2ec218dab01b59fdb520d9833",
+    "bytes": 288741,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00359.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00359.png",
+    "sha256": "879952caf6bf78159ed246d69cb9e36931b7d142df67554e7f2fe8a254a69ff0",
+    "bytes": 257257,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00406.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00406.png",
+    "sha256": "11deaa5068f42413f8ee2e1b0661a09fff1343c85436481c07983bd182122e08",
+    "bytes": 353475,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00438.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00438.png",
+    "sha256": "4f5ded3d71d0a82b94134343da3bb70dada442e6670f6565312c8782c10745fa",
+    "bytes": 352308,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00504.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00504.png",
+    "sha256": "b0d3f9d881bcd7386af636f1b887c62d1bf1a93b022cab49aefed2414cb94294",
+    "bytes": 245044,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00513.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00513.png",
+    "sha256": "c0d53c5f28d454266894b5f4538a0aa25085d21e1fae8da03f183508d110560f",
+    "bytes": 318756,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00524.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00524.png",
+    "sha256": "2406b1ec9f2632add75f2b7d753ec4d796e15ceca0ba29df381f7d10d89329fb",
+    "bytes": 238962,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00614.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00614.png",
+    "sha256": "63e28237a727a5da83431fca5f08c810c92b78ab69943a4b311c5a7e8ee7066b",
+    "bytes": 306452,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00695.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00695.png",
+    "sha256": "ce83af2bd5fcced2a87024621a417198fa57bad1e00a7f00e8d6c982af985b10",
+    "bytes": 286246,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/cfd_final_00716.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/cfd_final_00716.png",
+    "sha256": "9ac3c89a8e661581aa7670749397988a411caeb229f48d8f978144c211b6f3f2",
+    "bytes": 352003,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00051.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00051.png",
+    "sha256": "fd456631aed9d9ef0b4767f43664a2347529c6d2cd8073298ac8b2e6f231e06e",
+    "bytes": 278414,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00052.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00052.png",
+    "sha256": "0c5f2247d22f0153dde2d7f5118e00121f252f14246d0cffda7d2a62f9fc56f3",
+    "bytes": 316981,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00146.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00146.png",
+    "sha256": "fef71bc9b2698d1c55e9acfc51a4bbc05a991fa77f7040420f5c65be96b53be0",
+    "bytes": 280179,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00163.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00163.png",
+    "sha256": "b5374b2f0ad4994447214e6462a4f6c36bdf3791ec62c8952a486d377771731c",
+    "bytes": 262254,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00177.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00177.png",
+    "sha256": "23ae63df52aae7a4085f721c4767220cc89ed5278e395c3cc97a308736385ddc",
+    "bytes": 294237,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00241.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00241.png",
+    "sha256": "9c0b3bdd6774192cf4932de748d5334c1dd80fb20a792eee1fdb80f47c407ee8",
+    "bytes": 257516,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00283.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00283.png",
+    "sha256": "e0f915082bbb4228729c4d656d5d0b69e91ae2d2a2330bd447271c65aab6852d",
+    "bytes": 292910,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00336.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00336.png",
+    "sha256": "8a2423b6c32651c84255f3c9274f443c0af9d1690630a359170f265cfdddafd5",
+    "bytes": 292198,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00363.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00363.png",
+    "sha256": "e3ba2d9a3ccae3fbef4a81367e8e2fa0f47b834f81467405a71661eab389c77c",
+    "bytes": 282162,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00418.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00418.png",
+    "sha256": "a15c5e8082c1826d48aa793cb62109e7d01a4219dfc6525abbaf9bb7f69e938b",
+    "bytes": 307838,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00431.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00431.png",
+    "sha256": "e02cee74f3d13942726d5bee6d63127462091dc2c3f66dec286b8bc35c5c2478",
+    "bytes": 282241,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00493.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00493.png",
+    "sha256": "3f494e53664d5928f81fe5fe2b7c8f804568cd58d64763e06a0a1df6c1197ba1",
+    "bytes": 285674,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00526.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00526.png",
+    "sha256": "2baddab25596e061444a2ee8741cf221bb7f4de66e7c11959477533e125d5cc7",
+    "bytes": 293067,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00612.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00612.png",
+    "sha256": "c3a00578bf903ac23a03c10c0db6f916215b40088a0f75c4d83d0e7aa2a94da0",
+    "bytes": 268859,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00621.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00621.png",
+    "sha256": "c4775e09e3355aeae9662e5ff60be596a0991f61fac8e4978f48eeca8f1c84c4",
+    "bytes": 301928,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00676.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00676.png",
+    "sha256": "e5d8fe1df0f5c7ab25a21b8bfb2c2cb12c101b6b46d5b1b700c8ffe295e41458",
+    "bytes": 285060,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00713.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00713.png",
+    "sha256": "e687f541ab119330edfef0be4252e8eb2379cf18cd331c22587e1d0f6d8cbfd3",
+    "bytes": 275480,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00716.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00716.png",
+    "sha256": "f4eee4e74ca3e5cd7d10ea4647b1008558ccd8977a1db00f0a164c4c3bc33542",
+    "bytes": 288957,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00723.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00723.png",
+    "sha256": "13ca430325bc53b15af45273403547c4eb72ec50ac9042dff823a60b25ce30d2",
+    "bytes": 290039,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/comparisons/hf_merged_00728.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/comparisons/hf_merged_00728.png",
+    "sha256": "0952804612ad759edd87488bd7373eeb84c268884cb3f676f455d720a37adf85",
+    "bytes": 297556,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        281,
+        1024,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00001.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00001.png",
+    "sha256": "bf997405978fb874266f15ab05e9e4839ca75bed7e6694275b2cdfcccccf8ef6",
+    "bytes": 115164,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00025.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00025.png",
+    "sha256": "2c46c8cac8f4fb58e37d9d42818911c3e8f957a32a0594eb2dd872a195ad79ab",
+    "bytes": 138349,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00069.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00069.png",
+    "sha256": "51fae5ccc2b39b53724aff24c2605daadd837cf3279d3b35c1bca77c5e2d6f65",
+    "bytes": 101433,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00074.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00074.png",
+    "sha256": "7d6c13fcb0ddd093a30b4acd14e94391fc57739147d3af243836ef0e608e000a",
+    "bytes": 90015,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00088.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00088.png",
+    "sha256": "cbeedbf2a3e2c3b2c41882cd3ca0c83309ee07418c1a9129c7fa005d40bfb6c9",
+    "bytes": 120611,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00103.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00103.png",
+    "sha256": "9c82b177872ae9228b60ea94530bbd40a50d3d9d60b421f637c77d21a8db1e1f",
+    "bytes": 119485,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00205.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00205.png",
+    "sha256": "90a7fb9e69e92ac48ce7b137b7e7e664a566dcbe06996adfa1e83d01e4adf24d",
+    "bytes": 114959,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00220.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00220.png",
+    "sha256": "445140b20266eefb75bbd35eb3ccdc2aa063e7c3ed778496ff6feca1c1643dd7",
+    "bytes": 105757,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00301.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00301.png",
+    "sha256": "e1bfc38f6371428f8b099b727d45b22a800bb035e1d90c2c57c6c7f74fd87fae",
+    "bytes": 140014,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00303.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00303.png",
+    "sha256": "100066c6beed590fe397f5c0b3c4ade403a5cb8df190cfc9260b207505e9504c",
+    "bytes": 97323,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00346.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00346.png",
+    "sha256": "a5a225bd11dcec895018d473d658419b1cceedac7f38cf9d3aedb87080b50a90",
+    "bytes": 119047,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00359.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00359.png",
+    "sha256": "318b65a015c8a002990a5b345ec92a6d8a455a077f87fc6fca099aff10ff06fc",
+    "bytes": 115720,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00406.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00406.png",
+    "sha256": "38e7bab90f09440d97742087e202cc19ac70d9efe8ed4ca49e10e469bf53aecd",
+    "bytes": 142638,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00438.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00438.png",
+    "sha256": "83995f951d88c325e12b6fbdc2c823f3ec06f5a6e1497ca06275af880f9045ba",
+    "bytes": 146582,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00504.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00504.png",
+    "sha256": "be5eb629e8a71d6f5a0c09cdcbbac6a2fb3c017d84e6b2df46d44c7fb3f54001",
+    "bytes": 106588,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00513.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00513.png",
+    "sha256": "73f9db477c831dbc769feb6af85bec06b0e1d6c1bd2361c8938ecd451b09f15e",
+    "bytes": 129957,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00524.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00524.png",
+    "sha256": "e88f0404f75148075ed5fd277c5c2216c2ad0099a4e6733a91fe0a568eb398c8",
+    "bytes": 105921,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00614.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00614.png",
+    "sha256": "ec279747f16121797132a63fb7fefde0c3b0b21cd78248d0cf1bd5851d667206",
+    "bytes": 124658,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00695.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00695.png",
+    "sha256": "922fd1163bbf84d03f8a5729b5b80dff8dfcc8a4762ff3fd13626ebd0fd8efec",
+    "bytes": 117812,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/cfd_final_00716.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/cfd_final_00716.png",
+    "sha256": "c2bb62889dc7eae4d5319e9e695e8591cbb1dcd12cad10305d3e5843ca8723f5",
+    "bytes": 144217,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00051.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00051.png",
+    "sha256": "16cd7d8d4182386c86ab2cf7885262060551e222aaf8928285a3060787ed99a2",
+    "bytes": 122815,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00052.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00052.png",
+    "sha256": "1319c132e13b86bbdf968bea6c11660f7c3007cdd0a4ea72189b9e9ce465b695",
+    "bytes": 132562,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00146.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00146.png",
+    "sha256": "d1ec193e62bfa44983c86c4fafeb0dc7d6198fd483a56854558f513d4d97fb27",
+    "bytes": 129611,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00163.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00163.png",
+    "sha256": "1b54b36e074881c9138d264b06c75d2b4bafc30ef9953fdf0df7c6ea61b03df1",
+    "bytes": 122384,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00177.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00177.png",
+    "sha256": "39aa92d0924c6c2f5388f694808c35f2aaaf5dac2a47875e015cebc6b1567f8a",
+    "bytes": 124128,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00241.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00241.png",
+    "sha256": "878aeaa6d0a5f289c34f1006451c13f33eadb829fcb5e85b7a1d9aac36bf0892",
+    "bytes": 120049,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00283.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00283.png",
+    "sha256": "f587cec959fb09ad810e06287e1d3d62fa792f9e1800f703352e47d004c7ef29",
+    "bytes": 134965,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00336.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00336.png",
+    "sha256": "65dd1ffeee9bb57ad56616eb2d0212e809281229ae983660d4ac8ee13d37d7b3",
+    "bytes": 127168,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00363.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00363.png",
+    "sha256": "469cf9941f1ff2b59f6f2fe2ef4ca84be999a2a6245e42fdc7a970363d7668f6",
+    "bytes": 119023,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00418.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00418.png",
+    "sha256": "ca9acd2eb5e0df2142fb9b2b99e8227261db776f9116c6ac4c1c6e3b0252343b",
+    "bytes": 132054,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00431.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00431.png",
+    "sha256": "e4fce91d3f752eb5940e6e623dc9057066b4adc390bc4e2eaed1ed270f40bfb7",
+    "bytes": 125718,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00493.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00493.png",
+    "sha256": "177e9c5a307a1038e71cf6ebc68d19de947af78ff9b361e95ccf448915dba330",
+    "bytes": 129830,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00526.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00526.png",
+    "sha256": "7dd6049c975b96b99c180b2b31a3166cb3da27a3a0bbf8ab20730d90eb2dd09d",
+    "bytes": 128900,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00612.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00612.png",
+    "sha256": "d97c7bef3482c032cc48d266883fdb330ec6c4d653f69ff45e4298263e54fd08",
+    "bytes": 122549,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00621.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00621.png",
+    "sha256": "5989eabb10086492f04efb0e9c2f1838572aef722e6771773b0e19f6bc4fad30",
+    "bytes": 129876,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00676.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00676.png",
+    "sha256": "dfd4b62d77350d8d98570fc82b1b8275e09ae8ea93b0b5233e535a3c5aded1da",
+    "bytes": 133009,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00713.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00713.png",
+    "sha256": "e9cc94b3e1580d404fdd63aaea8a751f2823b03717fe2e9397a7003a57ccd83f",
+    "bytes": 125897,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00716.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00716.png",
+    "sha256": "92d09af570390d3087087b4e380e1d0aa7d4185e1916cb81ab0caef8413d2a34",
+    "bytes": 124997,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00723.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00723.png",
+    "sha256": "b18ff3cc89065dba5357ef5f36ec3fc31dac5011357968bb56dca703283923bd",
+    "bytes": 128984,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/mask_validation/prediction_run/originals/hf_merged_00728.png",
+    "new": "outputs/B_color/mask_validation/prediction_run/originals/hf_merged_00728.png",
+    "sha256": "f53c77b7351503fa869854724596cfa1219394c66858a98b0343d2d5f177763e",
+    "bytes": 136986,
+    "purpose": "Color B / mask QA",
+    "format": {
+      "shape": [
+        256,
+        256,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/search_results/cfd_final_00001_top5.png",
+    "new": "outputs/retrieval/search_results/cfd_final_00001_top5.png",
+    "sha256": "75af4f4d7705ced0f6f6b829ce75dbda2f7bab58f7aa832f99ca23729e70837b",
+    "bytes": 749858,
+    "purpose": "Retrieval",
+    "format": {
+      "shape": [
+        310,
+        1536,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/search_results/cfd_final_00088_top5.png",
+    "new": "outputs/retrieval/search_results/cfd_final_00088_top5.png",
+    "sha256": "c92b4fae871b9c469a76ee87100262a55add895e0447ccca2ca2149757258c84",
+    "bytes": 766703,
+    "purpose": "Retrieval",
+    "format": {
+      "shape": [
+        310,
+        1536,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "outputs/search_results/cfd_final_00144_top5.png",
+    "new": "outputs/retrieval/search_results/cfd_final_00144_top5.png",
+    "sha256": "a6d23d938f995e06a6b238fc2ae065fb6a70c3fbfb5170d87f0685cbef3b8e46",
+    "bytes": 813019,
+    "purpose": "Retrieval",
+    "format": {
+      "shape": [
+        310,
+        1536,
+        3
+      ]
+    },
+    "action": "move"
+  },
+  {
+    "old": "src/annotate_masks.py",
+    "new": "features/B_color/src/annotate_masks.py",
+    "sha256": "e07d391281ae23140f4cba580360ac845855c2ee904ee40d8623ec2d81ffbc60",
+    "bytes": 8583,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/check_existing_masks.py",
+    "new": "features/B_color/src/check_existing_masks.py",
+    "sha256": "c722bfc831723699d9d4289fab7cbc13ad8b69efbbb948f7b274bd6398716310",
+    "bytes": 1695,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/detect_landmarks.py",
+    "new": "shared/detect_landmarks.py",
+    "sha256": "364a220216d6c7db67612be8482f9289ab87b5dc7417ccca3ee2907564d03e13",
+    "bytes": 1948,
+    "purpose": "Shared landmark diagnostic",
+    "action": "move"
+  },
+  {
+    "old": "src/evaluate_masks.py",
+    "new": "features/B_color/src/evaluate_masks.py",
+    "sha256": "0fa47cfc5e85580df339911f6fa6e72e729ee7c4708c2149fe5366acb3d6edc7",
+    "bytes": 6449,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/extract_all_features.py",
+    "new": "features/A_geometry/src/extract_all_features.py",
+    "sha256": "0bf89ca4cea9d5e721562dfc9028ae40719cc38b4db6c6b2be1d38f49a70fd4f",
+    "bytes": 5012,
+    "purpose": "Geometry A",
+    "action": "move"
+  },
+  {
+    "old": "src/geometry_features.py",
+    "new": "features/A_geometry/src/geometry_features.py",
+    "sha256": "c345e3e77e57957710fc7e3673d265b2b7ca9f0ae2bc00644135142736fcd76d",
+    "bytes": 7198,
+    "purpose": "Geometry A",
+    "action": "move"
+  },
+  {
+    "old": "src/hair_color_core.py",
+    "new": "features/B_color/src/hair_color_core.py",
+    "sha256": "abae5c3ab47b4dcb8e593a0297e61b4de4e4f2524fa7cb9572ff51bdbbf5fe7c",
+    "bytes": 4061,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/map_68_landmarks.py",
+    "new": "features/A_geometry/src/map_68_landmarks.py",
+    "sha256": "86366a51e3c22c6b26cbd8246ea8b426187a38277a83071aabd284d1fa6ebd05",
+    "bytes": 3046,
+    "purpose": "Geometry A",
+    "action": "move"
+  },
+  {
+    "old": "src/mask_labels.py",
+    "new": "features/B_color/src/mask_labels.py",
+    "sha256": "79c0b089971a95062a12e8ce8cfd73f244697bb515b2fef02b56d8da7a28c8ea",
+    "bytes": 8557,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/normalize_features.py",
+    "new": "features/A_geometry/src/normalize_features.py",
+    "sha256": "3f68edcd2cb7aec2b4224bb10b341e2c9a462b02d837da94776c892b59c2fcd8",
+    "bytes": 1521,
+    "purpose": "Geometry A",
+    "action": "move"
+  },
+  {
+    "old": "src/prepare_mask_validation.py",
+    "new": "features/B_color/src/prepare_mask_validation.py",
+    "sha256": "f600bf5b5b3ec98cae0a9cd745d47a21786b1f0fe0e9ea8a05c0c2d27d01f031",
+    "bytes": 9599,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/refine_hair_mask.py",
+    "new": "features/B_color/src/refine_hair_mask.py",
+    "sha256": "e17aacd3bad913a38e5b4f09426ff4b6cf511b21ba85e7c2edbe1965ae212718",
+    "bytes": 17056,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/search_geometry.py",
+    "new": "retrieval/search_geometry.py",
+    "sha256": "2f8cc791d58a9f83fba4880b27ace2db5fe4831f428eb6258b3d9be59e053579",
+    "bytes": 3546,
+    "purpose": "Preserved in place",
+    "action": "move"
+  },
+  {
+    "old": "src/visualize_color_regions.py",
+    "new": "features/B_color/src/visualize_color_regions.py",
+    "sha256": "163f49545c1ed7be2dcd4001b7a9057e60804f2f1758bc93e97c5c1cd33d22eb",
+    "bytes": 4083,
+    "purpose": "Color B / mask QA",
+    "action": "move"
+  },
+  {
+    "old": "src/__pycache__/annotate_masks.cpython-311.pyc",
+    "new": "src/__pycache__/annotate_masks.cpython-311.pyc",
+    "sha256": "9c0eea20aefa25c9ec97d1af335df41bf8c4308a1eb66523aa49a9d3a16991ba",
+    "bytes": 15143,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/evaluate_masks.cpython-311.pyc",
+    "new": "src/__pycache__/evaluate_masks.cpython-311.pyc",
+    "sha256": "80a552bcfff27cb40d099b18e9b8d8836dd5e22aa38f43773e13248f031b2a7d",
+    "bytes": 10756,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/geometry_features.cpython-311.pyc",
+    "new": "src/__pycache__/geometry_features.cpython-311.pyc",
+    "sha256": "5b8c327b2ec93b2a18a59202fc1882d3c0817d81428654e598f2374dae9aa4c1",
+    "bytes": 10590,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/hair_color_core.cpython-311.pyc",
+    "new": "src/__pycache__/hair_color_core.cpython-311.pyc",
+    "sha256": "9e5c614916b3bccbb4b8a3ddaba531146eba4f3c6d4cde01cdd7dc270539e3c4",
+    "bytes": 8554,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/mask_labels.cpython-311.pyc",
+    "new": "src/__pycache__/mask_labels.cpython-311.pyc",
+    "sha256": "422e615412b56d29bacb0fbb4bef8f699706029023046e34fd39c4db9d83ab08",
+    "bytes": 17680,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/prepare_mask_validation.cpython-311.pyc",
+    "new": "src/__pycache__/prepare_mask_validation.cpython-311.pyc",
+    "sha256": "a136045a5d6d40c7f1e8e0bdabf63e0a629b70456bed09c95aa0292722659cb7",
+    "bytes": 20001,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "src/__pycache__/refine_hair_mask.cpython-311.pyc",
+    "new": "src/__pycache__/refine_hair_mask.cpython-311.pyc",
+    "sha256": "222ae28b7f6fe3b8a33843104734fc63db8f2b8a641783a60c2aa7dd9a80f5a7",
+    "bytes": 32358,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "tests/test_hair_pipeline.py",
+    "new": "tests/test_hair_pipeline.py",
+    "sha256": "4089de976b8584dead7bb6c888c761e5d378a582e4850cf8e2d03f3b9f5efc0d",
+    "bytes": 3505,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "tests/test_mask_validation.py",
+    "new": "tests/test_mask_validation.py",
+    "sha256": "39da3526f8a97cf04fe43cc822ddc771dbe39d3813b4f3085f28ac508dc6fb56",
+    "bytes": 9385,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "tests/__pycache__/test_hair_pipeline.cpython-311.pyc",
+    "new": "tests/__pycache__/test_hair_pipeline.cpython-311.pyc",
+    "sha256": "aa587573106ba140ddb85eb50e39405890b5bd73e0ed8c0c1803324a41d719ff",
+    "bytes": 9498,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  },
+  {
+    "old": "tests/__pycache__/test_mask_validation.cpython-311.pyc",
+    "new": "tests/__pycache__/test_mask_validation.cpython-311.pyc",
+    "sha256": "93d04de82cf7e405fbc217fa6abc75d3e94b32077787fa91dd9b2e0ed4fc0ed3",
+    "bytes": 22890,
+    "purpose": "Preserved in place",
+    "action": "retain"
+  }
+]

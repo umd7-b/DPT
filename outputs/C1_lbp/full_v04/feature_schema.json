@@ -1,0 +1,55 @@
+{
+  "schema_id": "C1_LBP236_FULL_DATASET_SCHEMA_v1",
+  "feature_version": "C1_LBP236_FULL_ROI_V04_v1",
+  "roi_contract_hash": "c6d839d420e03555a5e34a5ae9c5b02a3a5e6a6e8e456310576c11215031bb39",
+  "lbp_spec_hash": "7c078058780fc0de21f0b02084822c7b5fabfb767d2db2a9e71faead5afa3851",
+  "codebook_file_sha256": "7eb6a7a12b7374efb50d487f2e399b3475ef0e03594da35971bf083b0188ac94",
+  "kernel_source_sha256": "c8793bbff26e871d3461c165a7e9d5168ebed7277905ff425edec2e8f2a888ff",
+  "implementation_binding": "PROJECT_SELECTED_V04_SAME_LBP_SPEC_ARITHMETIC_v1",
+  "ROI_ANATOMY_STATUS": "PROVISIONAL",
+  "logical_group": "C",
+  "feature_name": "C1",
+  "dimension": 236,
+  "dtype": "float64",
+  "count_dtype": "uint64",
+  "region_order": [
+    "forehead_brow",
+    "cheek_left_viewer",
+    "cheek_right_viewer",
+    "nose_mouth"
+  ],
+  "region_bins": 59,
+  "normalization": "Independent L1 per59 bins; no global normalization/refit",
+  "distance": {
+    "name": "Chi-square",
+    "coefficient": 0.5,
+    "epsilon": 1e-08,
+    "formula": "0.5*sum((a-b)^2/(a+b+epsilon))"
+  },
+  "spec_binding": {
+    "original_spec_schema": "C1_LBP_236_IMPLEMENTATION_SPEC_v0.1.0",
+    "original_spec_content_hash": "7c078058780fc0de21f0b02084822c7b5fabfb767d2db2a9e71faead5afa3851",
+    "original_spec_ROI_dependency": "61b04936237bdc6a84f991688f667e06a252965d4e24b8028cc2e2f9f63eb69c",
+    "implementation_ROI": "c6d839d420e03555a5e34a5ae9c5b02a3a5e6a6e8e456310576c11215031bb39",
+    "reason": "Project owner explicitly selected ROI v0.4 for full dataset in current task; only ROI binding differs; arithmetic is reused unchanged.",
+    "anatomical_approval_claimed": false,
+    "old_spec_or_review_records_modified": false
+  },
+  "ROI_file_sha256": "7535c7ce88ae54f5564f8f9da6bfcad212d7049703afbd9ced850ac285db1f68",
+  "landmark_archive_sha256": "a21e4abce28354d3a1fe5541bf0d2b7ab6d4b6d1119207d3231471bcacf263ed",
+  "source_status": "PROJECT_SELECTED_IMPLEMENTATION; ANATOMY_PROVISIONAL",
+  "project_selection": {
+    "source": "User task: COMPLETE C1 LBP236 FOR THE FULL DATASET",
+    "instruction": "Sử dụng ROI v0.4 làm phiên bản triển khai được chủ dự án lựa chọn cho nhiệm vụ này, không tuyên bố đã được chứng nhận chính xác giải phẫu.",
+    "date_local": "2026-11-24",
+    "timezone": "Asia/Saigon"
+  },
+  "image_policy": "Existing aligned256x256 uint8 BGR gallery images + authenticated pixel landmarks; no detector/alignment rerun",
+  "missing": "Any invalid ROI or support<64 -> missing_C1; no vector/zero-fill",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "opencv": "5.1.0"
+  },
+  "content_sha256": "6f7e9a6076d8ab1ac7bee766234f0a89db88989ce1aac4632b677598714445e4"
+}

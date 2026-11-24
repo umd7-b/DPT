@@ -1,0 +1,569 @@
+{
+  "schema_id": "C1_ROI_RAW_CONTRACT_v0.2.0",
+  "version": "0.2.0",
+  "status": "PROVISIONAL",
+  "report_sha256": "8d390cbdbf888e0e51870eb2708531598cfdab852a85e87ecdb7a9e8f1d70c80",
+  "source_proposal_id": "C1_ROI_PROPOSAL_v0.1",
+  "source_proposal_sha256": "11ba7d9e494ceae3786887a9cb5a02a8f8dca4b0de1da7e2853d02207075468b",
+  "polygons": {
+    "forehead_brow": [
+      {
+        "ref": "MP478_AUX",
+        "index": 127,
+        "mediapipe_index": 127,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 162,
+        "mediapipe_index": 162,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 21,
+        "mediapipe_index": 21,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 54,
+        "mediapipe_index": 54,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 103,
+        "mediapipe_index": 103,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 67,
+        "mediapipe_index": 67,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 109,
+        "mediapipe_index": 109,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 10,
+        "mediapipe_index": 10,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 338,
+        "mediapipe_index": 338,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 297,
+        "mediapipe_index": 297,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 332,
+        "mediapipe_index": 332,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 284,
+        "mediapipe_index": 284,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 251,
+        "mediapipe_index": 251,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 389,
+        "mediapipe_index": 389,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "MP478_AUX",
+        "index": 356,
+        "mediapipe_index": 356,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 26,
+        "mediapipe_index": 300,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 25,
+        "mediapipe_index": 293,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 24,
+        "mediapipe_index": 334,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 23,
+        "mediapipe_index": 296,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 22,
+        "mediapipe_index": 336,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 21,
+        "mediapipe_index": 107,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 20,
+        "mediapipe_index": 66,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 19,
+        "mediapipe_index": 105,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 18,
+        "mediapipe_index": 63,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      },
+      {
+        "ref": "A68",
+        "index": 17,
+        "mediapipe_index": 70,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.05
+      }
+    ],
+    "cheek_left_viewer": [
+      {
+        "ref": "A68",
+        "index": 36,
+        "mediapipe_index": 33,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 41,
+        "mediapipe_index": 144,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 40,
+        "mediapipe_index": 153,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 5,
+        "mediapipe_index": 136,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 4,
+        "mediapipe_index": 172,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 3,
+        "mediapipe_index": 58,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 2,
+        "mediapipe_index": 132,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 1,
+        "mediapipe_index": 93,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 0,
+        "mediapipe_index": 234,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "cheek_right_viewer": [
+      {
+        "ref": "A68",
+        "index": 45,
+        "mediapipe_index": 263,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 46,
+        "mediapipe_index": 373,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 47,
+        "mediapipe_index": 380,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 11,
+        "mediapipe_index": 365,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 12,
+        "mediapipe_index": 397,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 13,
+        "mediapipe_index": 288,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 14,
+        "mediapipe_index": 361,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 15,
+        "mediapipe_index": 323,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 16,
+        "mediapipe_index": 454,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      }
+    ],
+    "nose_mouth": [
+      {
+        "ref": "A68",
+        "index": 27,
+        "mediapipe_index": 168,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 42,
+        "mediapipe_index": 362,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      },
+      {
+        "ref": "A68",
+        "index": 35,
+        "mediapipe_index": 358,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 54,
+        "mediapipe_index": 291,
+        "offset_u_ipd": 0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 55,
+        "mediapipe_index": 321,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 56,
+        "mediapipe_index": 314,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 57,
+        "mediapipe_index": 17,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 58,
+        "mediapipe_index": 84,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 59,
+        "mediapipe_index": 91,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.06
+      },
+      {
+        "ref": "A68",
+        "index": 48,
+        "mediapipe_index": 61,
+        "offset_u_ipd": -0.05,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 31,
+        "mediapipe_index": 129,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.0
+      },
+      {
+        "ref": "A68",
+        "index": 39,
+        "mediapipe_index": 133,
+        "offset_u_ipd": 0.0,
+        "offset_v_ipd": 0.08
+      }
+    ]
+  },
+  "geometry_sha256": "edba1f488fbc4733889d257c7e25053357e64f6085815442a1be3c7f2729bc54",
+  "geometry_changed_from_v0_1": false,
+  "region_order": [
+    "forehead_brow",
+    "cheek_left_viewer",
+    "cheek_right_viewer",
+    "nose_mouth"
+  ],
+  "side_convention": "viewer/code left/right; relation to PDF anatomical frame requires approval",
+  "auxiliary_upper_face_oval": [
+    127,
+    162,
+    21,
+    54,
+    103,
+    67,
+    109,
+    10,
+    338,
+    297,
+    332,
+    284,
+    251,
+    389,
+    356
+  ],
+  "indices68_unchanged": [
+    234,
+    93,
+    132,
+    58,
+    172,
+    136,
+    150,
+    149,
+    152,
+    378,
+    379,
+    365,
+    397,
+    288,
+    361,
+    323,
+    454,
+    70,
+    63,
+    105,
+    66,
+    107,
+    336,
+    296,
+    334,
+    293,
+    300,
+    168,
+    6,
+    197,
+    1,
+    129,
+    48,
+    4,
+    278,
+    358,
+    33,
+    160,
+    158,
+    133,
+    153,
+    144,
+    362,
+    385,
+    387,
+    263,
+    373,
+    380,
+    61,
+    40,
+    37,
+    0,
+    267,
+    270,
+    291,
+    321,
+    314,
+    17,
+    84,
+    91,
+    78,
+    81,
+    13,
+    311,
+    308,
+    402,
+    14,
+    178
+  ],
+  "frame": "u=normalized right-eye minus left-eye; v=(-u_y,u_x), positive image-y; D=inter-eye distance",
+  "vertex_equation": "P=source_landmark + D*(offset_u_ipd*u + offset_v_ipd*v)",
+  "connection": "straight edges in listed order; last vertex connects to first; no splines or hull",
+  "pixel_rule": "float64 derived vertices cast to float32 contour; integer pixel centres (x,y); cv2.pointPolygonTest >=0 includes boundary",
+  "clipping": "evaluate only 0<=x<width,0<=y<height; no clamp of vertices; no extrapolation",
+  "overlap_policy": "RAW_INDEPENDENT_MEMBERSHIP; shared pixels remain in each region; no priority subtraction",
+  "priority_subtraction_applied": false,
+  "future_pooling": "Each raw ROI pools independently; overlap ownership is not assigned to one ROI",
+  "missing_policy": "Future C1 unavailable if any required ROI invalid or fewer than 64 support-valid centres; no zero-fill",
+  "numerical_guards": {
+    "min_ipd_pixels": 1e-06,
+    "min_polygon_area_pixels_squared": 1e-06,
+    "min_edge_length_pixels": 1e-09,
+    "segment_collinearity_and_bounds_tolerance": 1e-09
+  },
+  "technical_review_thresholds": {
+    "raw_pixels_lt": 256,
+    "support_centres_lt": 64,
+    "authority": "Implementation conventions selected before full-dataset metrics; not PDF quality thresholds"
+  },
+  "anatomical_validation": "UNVERIFIED; native-contour and eyebrow proxies are not manual anatomical ground truth",
+  "modifications_proposed_but_not_active": [
+    "Forehead lower boundary from native lower-eyebrow chain +0.02 IPD"
+  ],
+  "extractor_implemented": false,
+  "c1_c2_vectors_created": false,
+  "retrieval_used_to_choose_roi": false,
+  "content_sha256": "61b04936237bdc6a84f991688f667e06a252965d4e24b8028cc2e2f9f63eb69c"
+}

@@ -1,0 +1,24 @@
+# Keep audited artifacts and their source files byte-for-byte across checkouts.
+# Existing tracked pipelines retain their previous attributes.
+/.gitattributes -text
+/database/** -text
+/docs/audits/** -text
+/docs/C1_final_roi_contract.md -text
+/docs/C1_lbp_236_feature_spec.md -text
+/features/A_geometry/src/report_v2.py -text
+/features/B_color/src/report_v2.py -text
+/outputs/A_geometry/features_report_v2/** -text
+/outputs/B_color/color_features_report_v2/** -text
+/outputs/C1_lbp/roi_validation/** -text
+/outputs/retrieval/ab_experiment/** -text
+/outputs/retrieval/ab_report_v2/** -text
+/outputs/retrieval/ab_validation/** -text
+/retrieval/ab_query_worker.py -text
+/retrieval/ab_query_worker_v2.py -text
+/retrieval/search_ab.py -text
+/retrieval/search_ab_v2.py -text
+/scripts/report_ab_v2.py -text
+/scripts/verify_ab_report_v2.py -text
+/shared/report_v2.py -text
+/tests/test_report_v2.py -text
+/tests/test_search_ab.py -text

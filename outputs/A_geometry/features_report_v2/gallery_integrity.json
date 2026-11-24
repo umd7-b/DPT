@@ -1,0 +1,9 @@
+{
+  "schema.json": "a371503c7bcb2bacb46174b0b7e80d26d12acc3120464c5c1c7a3df639a8812b",
+  "raw_reference.json": "846ae3865913eba6e575216c9c445d42a266ce331e5b801b25c6804ac58781d7",
+  "metadata.csv": "478165d66cd6e9546390ac073a138b9d85d61b0d91c7f3800fba4926a8629840",
+  "normalization_stats.npz": "1b81b4268fa3eb45d2ada7cc5f90afa8faeda1eb85d3b8101e7a2d31c075fe57",
+  "features_A_normalized.npy": "8305c3679ca2896795e17ac6bcd3d849e55d47e1da5c353b814173c26fa07f39",
+  "source_provenance.json": "6e283536a8c3a145d4bb0f57d6c166956498c83116cc4f3e57451c5fa4cfb4b7",
+  "comparison_v1_v2.json": "5b7e5d216e7382ba35f654316034ab27fdc4665ae7281397c914ffff4513463f"
+}

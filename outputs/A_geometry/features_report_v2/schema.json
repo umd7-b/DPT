@@ -1,0 +1,13 @@
+{
+  "id": "A150_report_v2.0.0",
+  "version": "2.0.0",
+  "dimension": 150,
+  "normalization": "(raw-mean)/(raw_sigma+epsilon)",
+  "epsilon": 1e-08,
+  "ddof": 0,
+  "normalized_dtype": "float64",
+  "raw_dtype": "float32",
+  "query_refit": false,
+  "authority": "PDF section 2.5.2 + explicit user-approved v2 epsilon/ddof",
+  "geometry_status": "Legacy mapping/eye centers/A2 unchanged; anatomical decisions remain UNVERIFIED"
+}

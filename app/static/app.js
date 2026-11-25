@@ -2,10 +2,10 @@
 const $ = id => document.getElementById(id);
 const kinds = ['a', 'b', 'c1', 'c2'];
 const modeInfo = {a:['A · Hình học','Euclid 150'], b:['B · Màu sắc','Euclid 144'], c1:['C1 · Kết cấu LBP','Chi-square × 0,5'], c2:['C2 · Root-HOG','Euclid 324'], fusion:['Fusion · Bốn bộ','Khoảng cách tổng hợp D']};
-const state = {overview:null, mode:'fusion', selected:null, result:null, busy:false, galleryOffset:0, galleryTotal:0, gallerySerial:0};
+const state = {overview:null, mode:'fusion', selected:null, result:null, busy:false, inputMode:'gallery',galleryOffset:0, galleryTotal:0, gallerySerial:0};
 function element(tag, className, text) { const el=document.createElement(tag); if(className) el.className=className; if(text!==undefined) el.textContent=text; return el; }
 function message(id, text, error=false) { const el=$(id); el.textContent=text||''; el.hidden=!text; if(id==='query-notice') el.className='notice '+(error?'error':'info'); }
-function format(value, digits=6) { return Number(value).toFixed(digits); }
+function format(value, digits=6) { return value===null||value===undefined?'—':Number(value).toFixed(digits); }
 function imageFor(item, className='') { const image=element('img',className); image.src=item.image_url; image.alt=item.filename; image.addEventListener('error',()=>{const failed=element('div','image-failed','Không đọc được ảnh nguồn. Kiểm tra catalog và file ảnh.'); failed.dataset.imageError=item.image_id; image.replaceWith(failed);}); return image; }
 async function request(path, options={}) { const response=await fetch(path, {cache:'no-store',...options}); let data; try { data=await response.json(); } catch {throw new Error('Server không trả về JSON hợp lệ.');} if(!response.ok) throw new Error(data.error?.message||'Không thực hiện được yêu cầu.'); return data; }
 function currentWeights() { return Object.fromEntries(kinds.map(k=>[k,Number($('weight-'+k).value)])); }
@@ -14,15 +14,17 @@ function validate() {
   const valid=kinds.every(k=>$('weight-'+k).value.trim()!=='') && values.every(v=>Number.isFinite(v)&&v>=0) && Math.abs(sum-1)<=1e-12;
   $('weight-total').textContent='Tổng trọng số: '+(Number.isFinite(sum)?sum.toLocaleString('vi-VN',{maximumFractionDigits:12}):'không hợp lệ');
   message('weight-error',valid?'':'Trọng số phải hữu hạn, không âm và tổng bằng 1 (sai số tuyệt đối 1e-12). Không tự chia lại trọng số.');
-  $('search-button').disabled=state.busy||!valid||!state.overview;
+  $('search-button').disabled=state.busy||!valid||!state.overview||(state.inputMode==='import'&&!externalUI.confirmed);
   return valid;
 }
 function paintQuery(item) {
+  $('query-kind').textContent=item.source==='external'?'IMPORT TẠM':'GALLERY';
+  if(item.image_id)state.gallerySelection=item;
   state.selected=item; const image=$('query-image'); image.src=item.image_url; image.alt=item.filename; image.hidden=false; $('query-placeholder').hidden=true;
   $('query-filename').textContent=item.filename; $('query-source').textContent='Nguồn '+item.source.toUpperCase()+' · 256 × 256';
   $('query-features').replaceChildren(); for(const f of item.features||[]) $('query-features').append(element('span','feature-badge'+(f.status==='missing'?' missing':''),f.feature_name+(f.status==='missing'?' thiếu':' ✓')));
 }
-async function choose(item, run=true) { paintQuery(item); $('query-input').value=item.filename; if($('gallery-dialog').open) $('gallery-dialog').close(); if($('detail-dialog').open) $('detail-dialog').close(); if(run) await search(); }
+async function choose(item, run=true) { if(state.inputMode==='import')sourceMode('gallery');paintQuery(item); $('query-input').value=item.filename; if($('gallery-dialog').open) $('gallery-dialog').close(); if($('detail-dialog').open) $('detail-dialog').close(); if(run) await search(); }
 function setMode(mode) { state.mode=mode; for(const tab of document.querySelectorAll('[data-mode]')) { const selected=tab.dataset.mode===mode; tab.classList.toggle('selected',selected); tab.setAttribute('aria-selected',String(selected)); } $('weights-fieldset').disabled=!['fusion','compare'].includes(mode); if(state.result) paintResults(); }
 function resultCard(row) {
   const card=element('button','result-card'); card.type='button'; card.dataset.imageId=row.image_id; card.dataset.score=String(row.score); card.setAttribute('aria-label','Hạng '+row.rank+', '+row.filename+', khoảng cách '+row.score);
@@ -37,7 +39,7 @@ function paintResults() {
   $('result-title').textContent=state.mode==='compare'?'So sánh năm chế độ':('Top-5 · '+modeInfo[state.mode][0]);
   $('result-meta').textContent=result.query.filename+' · '+result.candidate_count.toLocaleString('vi-VN')+' ứng viên · Loại self: '+result.self_exclusion_count;
   $('result-count').textContent=state.mode==='compare'?'5 CHẾ ĐỘ × TOP 5':'TOP 5';
-  if(result.status!=='ok') { root.append(element('div','empty-state','fusion_unavailable · Ảnh thiếu B, không có kết quả từ backend bốn bộ.')); $('distance-panel').hidden=true; return; }
+  if(result.status!=='ok') { root.append(element('div','empty-state','fusion_unavailable · Query chưa có đủ bốn đặc trưng hợp lệ.')); $('distance-panel').hidden=true; return; }
   const modes=state.mode==='compare'?['a','b','c1','c2','fusion']:[state.mode];
   for(const mode of modes) { const group=element('section','result-group'); group.dataset.resultMode=mode;
     if(state.mode==='compare') { const heading=element('div','group-heading'); heading.append(element('span','group-tag',mode.toUpperCase()),element('h3','',modeInfo[mode][0]),element('span','',modeInfo[mode][1])); group.append(heading); }
@@ -51,6 +53,8 @@ function paintResults() {
 }
 async function search() {
   if(!validate()||state.busy) return;
+  if(state.inputMode==='import')return externalUI.search();
+  clearResults('Đang tìm kiếm trên SQLite; chưa có kết quả cho query mới.');
   state.busy=true; validate(); $('result-section').setAttribute('aria-busy','true'); $('search-button').textContent='Đang truy vấn SQLite…'; message('global-error','');message('query-notice','');
   try {
     const result=await request('/api/search',{method:'POST',headers:{'Content-Type':'application/json','X-Application-Token':state.overview.csrf_token},body:JSON.stringify({image:$('query-input').value.trim(),mode:state.mode,weights:currentWeights(),top_k:5})});
@@ -91,7 +95,7 @@ $('query-input').addEventListener('input',debounce(async()=>{try{const result=aw
 for(const id of ['open-gallery','change-image','nav-gallery']) $(id).addEventListener('click',openGallery);
 for(const id of ['nav-method','system-button','method-footer']) $(id).addEventListener('click',method);
 $('nav-search').addEventListener('click',()=>{$('query-input').focus();$('overview').scrollIntoView({behavior:'smooth'});});
-$('query-detail').addEventListener('click',()=>{if(state.selected) detail(state.selected.image_id);});
+$('query-detail').addEventListener('click',()=>{if(state.inputMode==='import')externalUI.detail();else if(state.selected) detail(state.selected.image_id);});
 for(const close of document.querySelectorAll('.close-dialog')) close.addEventListener('click',()=>close.closest('dialog').close());
 for(const dialog of document.querySelectorAll('dialog')) dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
 $('gallery-filter').addEventListener('input',debounce(()=>galleryPage(true)));$('gallery-source').addEventListener('change',()=>galleryPage(true));$('gallery-more').addEventListener('click',()=>galleryPage(false));
@@ -102,7 +106,7 @@ async function init() {
     for(const [id,key] of [['stat-images','image_count'],['stat-vectors','valid_vectors'],['stat-pool','comparison_pool'],['stat-missing','missing_vectors']]) $(id).textContent=state.overview[key].toLocaleString('vi-VN');
     document.querySelector('.key-hint').textContent=state.overview.image_count.toLocaleString('vi-VN')+' ảnh';
     const medians=element('div','method-median');for(const k of kinds){const box=element('div');box.append(element('strong','',k.toUpperCase()+' median'),element('span','',format(state.overview.medians[k],12)));medians.append(box);}$('method-values').replaceChildren(medians);
-    $('version-details').textContent=JSON.stringify({feature_versions:state.overview.feature_versions,medians:state.overview.medians,epsilon:state.overview.epsilon,epsilon_c1:state.overview.epsilon_c1,calibration_id:state.overview.calibration_id,database_sha256:state.overview.database_sha256,readonly:state.overview.readonly,new_image_support:false},null,2);
+    $('version-details').textContent=JSON.stringify({feature_versions:state.overview.feature_versions,medians:state.overview.medians,epsilon:state.overview.epsilon,epsilon_c1:state.overview.epsilon_c1,calibration_id:state.overview.calibration_id,database_sha256:state.overview.database_sha256,readonly:state.overview.readonly,new_image_support:true},null,2);
     const data=await request('/api/images/cfd_final_00001');await choose(data);
   }catch(error){message('global-error',error.message,true);$('query-placeholder').textContent='Không đọc được gallery';}finally{validate();}
 }

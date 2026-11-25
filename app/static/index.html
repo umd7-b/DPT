@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portrait Atlas · Tra cứu chân dung</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/crop.css"><script src="/app.js" defer></script><script src="/crop.js" defer></script>
 </head>
 <body>
 <aside class="sidebar">
@@ -29,15 +29,18 @@
   <div id="global-error" class="notice error" role="alert" hidden></div>
   <section class="workspace" aria-label="Công cụ tra cứu">
     <aside class="query-panel panel">
-      <div class="section-kicker">ẢNH TRUY VẤN <span class="small-badge">GALLERY</span></div>
+      <div class="section-kicker">ẢNH TRUY VẤN <span class="small-badge" id="query-kind">GALLERY</span></div>
+      <div class="source-modes"><button id="source-gallery" class="selected" type="button">Gallery</button><button id="source-import" type="button">Import từ máy</button></div>
+      <div id="import-controls" hidden><input id="upload-input" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp"><button id="upload-zone" class="upload-zone" type="button">Chọn hoặc kéo thả ảnh<span>PNG · JPEG · WebP / tối đa 10 MiB</span></button><div id="original-preview" hidden><span>Ảnh import gốc (đã xử lý EXIF)</span><img id="original-image" alt="Ảnh nguồn được import"><button id="edit-crop" class="text-button" type="button">Chỉnh crop / xem ảnh 256×256</button></div><div id="external-state" class="external-state" role="status"></div></div>
       <button class="query-photo" id="query-detail" aria-label="Xem metadata ảnh truy vấn"><img id="query-image" alt="Ảnh truy vấn đã chọn" hidden><span id="query-placeholder">Đang tải gallery…</span></button>
       <div class="query-caption"><strong id="query-filename">Chưa chọn ảnh</strong><span id="query-source">Chỉ sử dụng ảnh có trong kho</span></div>
       <div id="query-features" class="feature-badges" aria-label="Trạng thái đặc trưng của query"></div>
-      <label for="query-input">ID hoặc tên file</label>
+      <div id="gallery-input-controls"><label for="query-input">ID hoặc tên file</label>
       <div class="query-input-wrap"><input id="query-input" type="text" placeholder="cfd_final_00001.png" autocomplete="off" spellcheck="false" list="query-suggestions"><datalist id="query-suggestions"></datalist></div>
+      </div>
       <button type="button" class="primary" id="search-button">Tìm kiếm chân dung <span aria-hidden="true">⌕</span></button>
       <button class="text-button full" id="change-image">Chọn ảnh khác trong gallery</button>
-      <div class="query-footnote"><strong>Chỉ truy vấn gallery</strong><p>Ảnh mới: chưa hỗ trợ — cần pipeline A/B/C1/C2 cho ảnh mới.</p></div>
+      <div class="query-footnote"><strong>Gallery hoặc ảnh import tạm</strong><p>Crop vuông không đồng nghĩa đã alignment hai mắt. Ảnh import không được thêm vào gallery.</p></div>
     </aside>
     <div class="results-workspace">
       <section class="panel controls">
@@ -73,6 +76,7 @@
 </main>
 <dialog id="gallery-dialog"><div class="dialog-heading"><div><div class="eyebrow">VERIFIED CATALOG</div><h2>Chọn ảnh trong gallery</h2></div><button class="icon-button close-dialog" aria-label="Đóng gallery">×</button></div><div class="gallery-tools"><label class="sr-only" for="gallery-filter">Tìm ID hoặc tên file</label><input id="gallery-filter" placeholder="Tìm theo ID hoặc tên file…" autocomplete="off"><label class="sr-only" for="gallery-source">Nguồn ảnh</label><select id="gallery-source"><option value="">Tất cả nguồn</option><option>CFD</option><option>HF</option></select><span id="gallery-total"></span></div><div id="gallery-error" class="notice error" role="alert" hidden></div><div id="gallery-grid" class="gallery-grid"></div><button class="secondary load-more" id="gallery-more">Xem thêm ảnh</button></dialog>
 <dialog id="detail-dialog"><div class="dialog-heading"><div><div class="eyebrow">CATALOG METADATA</div><h2>Chi tiết chân dung</h2></div><button class="icon-button close-dialog" aria-label="Đóng chi tiết">×</button></div><div id="detail-content"></div></dialog>
+<dialog id="crop-dialog"><div class="dialog-heading"><div><div class="eyebrow">EXTERNAL QUERY · MANUAL CROP</div><h2>Chọn vùng cắt vuông</h2></div><button class="icon-button close-dialog" aria-label="Đóng công cụ crop">×</button></div><p class="crop-instruction">Kéo trong khung để chọn vùng; kéo góc để đổi kích thước. Zoom/pan chỉ hỗ trợ quan sát, không tự alignment hoặc làm đẹp ảnh.</p><div class="crop-layout"><div><div class="crop-toolbar"><button id="crop-zoom-out" type="button" aria-label="Zoom out">−</button><button id="crop-zoom-in" type="button" aria-label="Zoom in">+</button><button id="crop-pan" type="button" aria-pressed="false">Pan ảnh</button><button id="crop-reset" type="button">Reset Crop</button><button id="crop-other" type="button">Chọn ảnh khác</button></div><canvas id="crop-canvas" width="760" height="460" aria-label="Kéo khung crop hoặc kéo các góc để thay đổi vùng chọn"></canvas><div class="crop-numbers"><label>X<input id="crop-x" type="number" min="0" step="1"></label><label>Y<input id="crop-y" type="number" min="0" step="1"></label><label>Cạnh vuông (pixel gốc)<input id="crop-size" type="number" min="1" step="1"></label></div><p id="crop-source-info"></p></div><aside><h3>Ảnh cuối 256×256</h3><img id="crop-preview" alt="Preview 256×256 do backend tạo"><p>Bicubic cố định, từ độ phân giải ảnh gốc đã xử lý EXIF. Đây chính là PNG được dùng để trích xuất.</p><div id="crop-preview-status" role="status"></div><button id="crop-confirm" class="primary" type="button" disabled>Confirm Crop</button><p>ROI C1 v0.4 vẫn PROVISIONAL. Không tự căn chỉnh, sharpen hoặc đổi tương phản.</p></aside></div><div id="crop-error" class="notice error" role="alert" hidden></div></dialog>
 <dialog id="method-dialog"><div class="dialog-heading"><div><div class="eyebrow">RETRIEVAL METHODS</div><h2>Độ đo & thông tin hệ thống</h2></div><button class="icon-button close-dialog" aria-label="Đóng thông tin">×</button></div><div class="method-copy"><p>A150, B144 và C2_324 dùng Euclid. C1_236 dùng Chi-square với hệ số 0,5. Fusion cộng bốn khoảng cách sau khi chia cho median tương ứng cộng epsilon.</p><div id="method-values"></div><p><strong>Trọng số mặc định:</strong> 0,25 / 0,25 / 0,25 / 0,25 — cấu hình thử nghiệm, không phải trọng số PDF bắt buộc. Không tự tối ưu hoặc chia lại trọng số.</p><p><strong>Tập so sánh:</strong> cùng 1.437 ảnh đủ bốn bộ; loại chính image_id query, giữ thứ tự distance/image_id khi hòa. Query đầy đủ còn 1.436 ứng viên.</p><p><strong>Giới hạn:</strong> C1 ROI v0.4 chưa anatomy-approved. Chưa có relevance ground truth để kết luận chất lượng. Metadata mắt là phép đo audit, không chứng minh alignment lịch sử.</p><p>Ứng dụng chỉ đọc snapshot SQLite. Không có endpoint sửa dữ liệu, lưu lịch sử hoặc xử lý ảnh mới.</p><details><summary>Phiên bản dữ liệu đã xác minh</summary><pre id="version-details"></pre></details></div></dialog>
 <div id="toast" class="toast" role="status" hidden></div>
 </body>

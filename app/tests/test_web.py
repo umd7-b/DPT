@@ -43,7 +43,7 @@ class WebTests(unittest.TestCase):
         self.assertEqual((result['image_count'],result['valid_vectors'],result['missing_vectors'],result['comparison_pool']),(1438,5751,1,1437))
         self.assertEqual(result['medians'],self.service.gallery.params['medians'])
         self.assertEqual(result['default_weights'],dict.fromkeys(four.fusion.KINDS,.25))
-        self.assertTrue(result['readonly']);self.assertFalse(result['history_enabled']);self.assertFalse(result['new_image_support'])
+        self.assertTrue(result['readonly']);self.assertFalse(result['history_enabled']);self.assertTrue(result['new_image_support'])
 
     def test_default_top5_parity_all_six_queries_and_all_modes(self):
         for key in ['cfd_final_00001','cfd_final_00069','hf_merged_00001','hf_merged_00198','hf_merged_00722','hf_merged_00209']:
@@ -146,7 +146,7 @@ class WebTests(unittest.TestCase):
     def test_static_security_headers_and_no_fake_upload(self):
         status,html,headers=self.http('/');self.assertEqual(status,200)
         self.assertEqual(headers['X-Content-Type-Options'],'nosniff');self.assertIn("frame-ancestors 'none'",headers['Content-Security-Policy'])
-        self.assertNotIn(b'type="file"',html);self.assertIn('Ảnh mới: chưa hỗ trợ'.encode('utf8'),html)
+        self.assertIn(b'type="file"',html);self.assertIn('Import từ máy'.encode('utf8'),html)
 
 
 if __name__=='__main__':unittest.main()

@@ -7,11 +7,14 @@ import json
 from pathlib import Path
 import secrets
 import sqlite3
+import socket
 from urllib.parse import parse_qs, unquote, urlsplit
 
 from database import four_feature as four
 from database import store
 from retrieval.fusion_four import validate_weights
+from app.external import ExternalStore,ExternalError
+from app import external_config
 
 ROOT=Path(__file__).resolve().parent
 DATABASE_SHA256='4d9b5436ac40209fe24b23c46657d00b3befafdbf2e40e37e4ce4f755ce9e2c7'
@@ -19,7 +22,9 @@ IMAGE_ROOT=Path('D:/TuNam4/dataset_HF_CFD_final/images').resolve()
 STATIC={'/':('index.html','text/html; charset=utf-8'),
         '/styles.css':('styles.css','text/css; charset=utf-8'),
         '/app.js':('app.js','text/javascript; charset=utf-8'),
-        '/favicon.svg':('favicon.svg','image/svg+xml')}
+        '/favicon.svg':('favicon.svg','image/svg+xml'),
+        '/crop.js':('crop.js','text/javascript; charset=utf-8'),
+        '/crop.css':('crop.css','text/css; charset=utf-8')}
 
 
 class ApiError(Exception):
@@ -50,6 +55,7 @@ class PortraitService:
         for r in self.catalog.values():
             if IMAGE_ROOT not in Path(r['image_path']).resolve().parents:
                 raise ValueError('Catalog image is outside the verified image root')
+        self.external=ExternalStore(self)
 
     def _signature(self):
         stat=self.database.stat()
@@ -82,7 +88,9 @@ class PortraitService:
             counts=self.counts,medians=self.gallery.params['medians'],epsilon=self.gallery.params['epsilon'],
             epsilon_c1=self.gallery.params['epsilon_c1'],feature_versions=self.gallery.params['feature_versions'],
             default_weights=dict.fromkeys(four.fusion.KINDS,.25),weight_configuration='EXPERIMENTAL_EQUAL_WEIGHTS',
-            readonly=True,history_enabled=False,new_image_support=False,database_sha256=DATABASE_SHA256,
+            readonly=True,history_enabled=False,new_image_support=True,database_sha256=DATABASE_SHA256,
+            external_upload=dict(max_bytes=external_config.MAX_UPLOAD_BYTES,max_pixels=external_config.MAX_PIXELS,
+                max_side=external_config.MAX_SIDE,ttl_seconds=external_config.TTL_SECONDS,preprocessing=external_config.PREPROCESSING),
             calibration_id=four.CALIBRATION_ID,csrf_token=self.token)
 
     def list_images(self,query='',source='',offset=0,limit=24):
@@ -141,10 +149,21 @@ class PortraitService:
 
 class AppServer(ThreadingHTTPServer):
     daemon_threads=True
+    allow_reuse_address=False
     def __init__(self,address,service):
         if address[0]!='127.0.0.1':raise ValueError('This demo binds only to 127.0.0.1')
         self.service=service
         super().__init__(address,Handler)
+
+    def server_bind(self):
+        # Windows SO_REUSEADDR can route requests to a previous demo process.
+        if hasattr(socket,'SO_EXCLUSIVEADDRUSE'):
+            self.socket.setsockopt(socket.SOL_SOCKET,socket.SO_EXCLUSIVEADDRUSE,1)
+        super().server_bind()
+
+    def server_close(self):
+        super().server_close()
+        self.service.external.close()
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -176,8 +195,14 @@ class Handler(BaseHTTPRequestHandler):
         try:
             path=self.guard();service=self.server.service
             if self.command=='POST':
-                if path!='/api/search':raise ApiError(405,'read_only','Không có endpoint sửa dữ liệu nguồn.')
+                if path not in ('/api/search','/api/external/upload','/api/external/crop','/api/external/confirm','/api/external/search','/api/external/discard'):
+                    raise ApiError(405,'read_only','Không có endpoint sửa dữ liệu nguồn.')
                 if self.headers.get('X-Application-Token')!=service.token:raise ApiError(403,'invalid_token','Phiên ứng dụng không hợp lệ. Tải lại trang.')
+                if path=='/api/external/upload':
+                    try:length=int(self.headers.get('Content-Length','0'))
+                    except ValueError:raise ApiError(400,'invalid_upload','Content-Length không hợp lệ.') from None
+                    if not 0<length<=external_config.MAX_UPLOAD_BYTES:raise ApiError(413,'upload_limit','File vượt giới hạn 10 MiB hoặc rỗng.')
+                    return self.json(201,service.external.upload(self.rfile.read(length),self.headers.get_content_type(),unquote(self.headers.get('X-File-Name','upload'))))
                 if self.headers.get_content_type()!='application/json':raise ApiError(415,'invalid_content_type','Request phải là JSON.')
                 try:length=int(self.headers.get('Content-Length','0'))
                 except ValueError:raise ApiError(400,'invalid_json','Độ dài request không hợp lệ.') from None
@@ -185,11 +210,27 @@ class Handler(BaseHTTPRequestHandler):
                 def constant(value):raise ValueError('Nonfinite JSON value')
                 try:data=json.loads(self.rfile.read(length),parse_constant=constant)
                 except (ValueError,UnicodeError):raise ApiError(400,'invalid_json','JSON không hợp lệ hoặc chứa NaN/Infinity.') from None
-                return self.json(200,service.search(data))
+                if path=='/api/search':return self.json(200,service.search(data))
+                if not isinstance(data,dict):raise ExternalError('Request phải là object JSON.')
+                key=data.get('job_id')
+                if path=='/api/external/crop':return self.json(200,service.external.crop(key,data.get('x'),data.get('y'),data.get('size'),data.get('revision')))
+                if path=='/api/external/confirm':return self.json(200,service.external.confirm(key,data.get('revision')))
+                if path=='/api/external/discard':service.external.discard(key);return self.json(200,dict(status='discarded'))
+                weights=data.get('weights',dict.fromkeys(four.fusion.KINDS,.25))
+                if not isinstance(weights,dict) or set(weights)!=set(four.fusion.KINDS) or any(type(v) not in (float,int) for v in weights.values()):raise ExternalError('Trọng số không hợp lệ.')
+                return self.json(202,service.external.start(key,[weights[k] for k in four.fusion.KINDS],data.get('mode','fusion'),data.get('top_k',5)))
             if self.command not in ('GET','HEAD'):raise ApiError(405,'read_only','Chỉ hỗ trợ đọc và tìm kiếm.')
             if path in STATIC:
                 name,kind=STATIC[path];return self.send(200,(ROOT/'static'/name).read_bytes(),kind)
             if path=='/api/overview':return self.json(200,service.overview())
+            if path.startswith('/api/external/jobs/'):return self.json(200,service.external.status(path[len('/api/external/jobs/'):]))
+            if path.startswith('/api/external/media/'):
+                parts=path[len('/api/external/media/'):].split('/')
+                if len(parts)!=2:raise ExternalError('Media query không hợp lệ.')
+                args=parse_qs(urlsplit(self.path).query)
+                try:revision=int(args.get('revision',['0'])[0])
+                except ValueError:raise ExternalError('Crop revision không hợp lệ.') from None
+                return self.send(200,service.external.media(parts[0],parts[1],revision),'image/png')
             if path=='/api/gallery':
                 args=parse_qs(urlsplit(self.path).query,keep_blank_values=True)
                 if set(args)-{'q','source','offset','limit'} or any(len(v)!=1 for v in args.values()):raise ApiError(422,'invalid_filter','Bộ lọc gallery không hợp lệ.')
@@ -200,6 +241,7 @@ class Handler(BaseHTTPRequestHandler):
             if path.startswith('/media/'):return self.send(200,service.media(path[len('/media/'):]),'image/png')
             raise ApiError(404,'not_found','Không tìm thấy endpoint hoặc tài nguyên.')
         except ApiError as error:self.json(error.status,dict(error=dict(code=error.code,message=error.message)))
+        except (ExternalError,OverflowError) as error:self.json(422,dict(error=dict(code='invalid_external_query',message=str(error))))
         except (ValueError,OSError,sqlite3.Error):self.json(503,dict(error=dict(code='backend_unavailable',message='Không đọc được dữ liệu đã xác minh. Kiểm tra snapshot và khởi động lại ứng dụng.')))
 
     do_GET=dispatch
